@@ -1,0 +1,26 @@
+<suite name="Test - Suite">
+        <test name="checkout">
+        <classes>
+            <class name="driver.LogedUserBuyDownloadablePrViaBraintree" />
+            <class name="driver.LogedUserBuySimplePrViaCheckMoneyorder" />
+            <class name="driver.LogedUserBuySimplePrViaBraintree" />
+            <class name="driver.LogedUserBuyBundlePrViaBraintree" />
+            <class name="driver.LogedUserBuyConfigurablePrViaBraintree" />
+            <class name="driver.LogedUserBuyGroupedPrViaBraintree" />
+            <class name="driver.LogedUserBuyPrViaAmountDiscount" />
+            <class name="driver.LogedUserBuyPrViaPersentDiscount" />
+            <class name="driver.LogedUserBuyPrViaStoreCredit" />
+            <class name="driver.LogedUserBuyPrViaStorePickupAndPurchaseOrder" />
+            <class name="driver.LogedUserBuySimplePrViaBraintreeAndChangeBilling" />
+            <class name="driver.LogedUserBuyVirtualPrViaPayBraintree" />
+            <class name="driver.LogedUserChangeAddress" />
+            <class name="driver.LogedUserCreateNewAdress" />
+            <class name="driver.NonLogedUserBuyPrViaBraintreeAndChangeBilling" />
+            <class name="driver.NonLogedUserBuyPrViaBraintreeAndStorePickUp" />
+            <class name="driver.NonLogedUserBuyPrViaBraintreeWithAmountDiscountNotWork" />
+            <class name="driver.NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork" />
+            <class name="driver.NonLogedUserBuyPrViaPayPalBraintree" />
+        </classes>
+        </test>
+        </suite>
+

@@ -1,0 +1,24 @@
+2016-12-07 21:56:52,540 INFO  [Log4j] New driver instantiated 
+2016-12-07 21:56:52,698 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2016-12-07 21:56:52,853 INFO  [Log4j] Web application launched 
+2016-12-07 22:03:21,757 INFO  [Log4j] New driver instantiated 
+2016-12-07 22:03:21,810 INFO  [Log4j] Implicit wait applied on the driver for 10 seconds 
+2016-12-07 22:03:37,987 INFO  [Log4j] Web application launched 
+2016-12-07 22:03:41,436 INFO  [Log4j] Click action performed on My Account link 
+2016-12-07 22:03:41,888 INFO  [Log4j] Username entered in the Username text box 
+2016-12-07 22:03:41,958 INFO  [Log4j] Password entered in the Password text box 
+2016-12-07 22:03:43,986 INFO  [Log4j] Click action performed on Submit button 
+2016-12-09 00:55:59,819 INFO  [Log] New driver instantiated 
+2016-12-09 00:56:00,489 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-12-09 00:56:07,665 INFO  [Log] Web application launched 
+2016-12-09 00:56:08,087 INFO  [Log] Click action performed on My Account link 
+2016-12-09 00:56:10,314 INFO  [Log] Username entered in the Username text box 
+2016-12-09 00:56:10,408 INFO  [Log] Password entered in the Password text box 
+2016-12-09 00:56:11,160 INFO  [Log] Click action performed on Submit button 
+2016-12-09 00:57:36,707 INFO  [Log] New driver instantiated 
+2016-12-09 00:57:36,745 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2016-12-09 00:57:41,161 INFO  [Log] Web application launched 
+2016-12-09 00:57:43,834 INFO  [Log] Click action performed on My Account link 
+2016-12-09 00:57:43,960 INFO  [Log] Username entered in the Username text box 
+2016-12-09 00:57:44,895 INFO  [Log] Password entered in the Password text box 
+2016-12-09 00:57:45,008 INFO  [Log] Click action performed on Submit button 
