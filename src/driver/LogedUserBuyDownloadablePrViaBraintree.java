@@ -69,12 +69,12 @@ public class LogedUserBuyDownloadablePrViaBraintree {
         driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
         driver.findElement(By.id("cvv")).sendKeys("111");
         driver.switchTo().defaultContent();
-        driver.findElement(By.id("braintree_vault_enabler")).click();
+        driver.findElement(By.id("braintree_enable_vault")).click();
 
         driver.findElement(By.cssSelector("#agreement_1")).click();
 
 
-        driver.findElement(By.cssSelector("._active .action.primary.checkout")).click();
+        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
         wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
@@ -83,12 +83,12 @@ public class LogedUserBuyDownloadablePrViaBraintree {
         }
 
 
-    @AfterMethod
+   /* @AfterMethod
 
     public void afterMethod() {
 
         driver.quit();
 
-    }
+    }*/
 
 }

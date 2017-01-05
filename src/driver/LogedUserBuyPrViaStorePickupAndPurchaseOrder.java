@@ -70,7 +70,7 @@ public class LogedUserBuyPrViaStorePickupAndPurchaseOrder {
         driver.findElement(By.xpath("//span[contains(.,'Purchase Order')]")).click();
         driver.findElement(By.id("po_number")).sendKeys("5555");
         driver.findElement(By.cssSelector("#agreement_1")).click();
-        driver.findElement(By.cssSelector("._active .action.primary.checkout")).click();
+        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
         wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();

@@ -61,7 +61,7 @@ public class LogedUserBuySimplePrViaCheckMoneyorder {
 		wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 		driver.findElement(By.xpath("//span[contains(.,'Check / Money order')]")).click();
 		driver.findElement(By.cssSelector("#agreement_1")).click();
-		driver.findElement(By.cssSelector("._active .action.primary.checkout")).click();
+		driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
 		wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
 		String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();

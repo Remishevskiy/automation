@@ -110,7 +110,7 @@ public class NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork {
 
         driver.findElement(By.cssSelector("#agreement_1")).click();
 
-        driver.findElement(By.cssSelector("._active .action.primary.checkout")).click();
+        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
         String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
