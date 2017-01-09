@@ -54,11 +54,21 @@ public class LogedUserBuyVirtualPrViaPayBraintree {
         }catch (TimeoutException e) {
             System.out.println(1);
         }
+
         String homePage = driver.getWindowHandle();
         //PayPal Braintree payment
-        driver.findElement(By.xpath("//span[contains(.,'PayPal (Braintree)')]")).click();
+        driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
+        
+        try{
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".loading-mask")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loading-mask")));
+
+        }catch (TimeoutException e) {
+            System.out.println(2);
+        }
+
         driver.findElement(By.cssSelector("#agreement_1")).click();
-        driver.findElement(By.xpath("//button[@title='Continue to PayPal']")).click();
+        driver.findElement(By.cssSelector(".iwd-place-order-button>button")).click();
         Set<String> windows = driver.getWindowHandles();
         //System.out.println(windows.size());
 
@@ -82,13 +92,13 @@ public class LogedUserBuyVirtualPrViaPayBraintree {
     }}}
 
 
-    @AfterMethod
+    /*@AfterMethod
 
     public void afterMethod() {
 
         driver.quit();
 
-    }
+    }*/
 
 }
 

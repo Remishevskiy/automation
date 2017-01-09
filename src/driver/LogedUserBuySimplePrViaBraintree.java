@@ -71,7 +71,7 @@ public class LogedUserBuySimplePrViaBraintree {
         driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
         driver.findElement(By.id("cvv")).sendKeys("111");
         driver.switchTo().defaultContent();
-        driver.findElement(By.id("braintree_vault_enabler")).click();
+        driver.findElement(By.id("braintree_enable_vault")).click();
 
         driver.findElement(By.cssSelector("#agreement_1")).click();
 

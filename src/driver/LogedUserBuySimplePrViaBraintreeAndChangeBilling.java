@@ -80,7 +80,7 @@ public class LogedUserBuySimplePrViaBraintreeAndChangeBilling {
 
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='postcode']")).sendKeys("99212");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("509-924-6673");
-        driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='field choice'] #braintree_vault_enabler")).click();
+        driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='field choice'] #braintree_enable_vault")).click();
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='primary'] .action.action-update")).click();
 
     /*BrainTree*/
@@ -96,7 +96,7 @@ public class LogedUserBuySimplePrViaBraintreeAndChangeBilling {
         driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
         driver.findElement(By.id("cvv")).sendKeys("111");
         driver.switchTo().defaultContent();
-        driver.findElement(By.id("braintree_vault_enabler")).click();
+        driver.findElement(By.id("braintree_enable_vault")).click();
 
         driver.findElement(By.cssSelector("#agreement_1")).click();
         driver.findElement(By.cssSelector(".iwd-place-order-button")).click();

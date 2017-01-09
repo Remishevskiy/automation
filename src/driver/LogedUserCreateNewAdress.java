@@ -45,7 +45,13 @@ public class LogedUserCreateNewAdress {
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 15);
-        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try{
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+
+        }catch (TimeoutException e) {
+            System.out.println(1);
+        }
         driver.findElement(By.cssSelector(".action.action-show-popup")).click();
 
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Test");

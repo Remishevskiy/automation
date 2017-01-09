@@ -107,21 +107,21 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 package driver;
 
 
-        import java.util.Iterator;
-        import java.util.Set;
-        import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.TimeoutException;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-        import org.openqa.selenium.support.ui.ExpectedConditions;
-        import org.openqa.selenium.support.ui.Select;
-        import org.openqa.selenium.support.ui.WebDriverWait;
-        import org.testng.annotations.Test;
-        import org.testng.annotations.BeforeMethod;
-        import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class NonLogedUserBuyPrViaPayPalBraintree {
+import java.util.concurrent.TimeUnit;
+
+public class NonLogedUserBuySimplePrPayPalCredit {
 
     public WebDriver driver;
 
@@ -182,40 +182,34 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
             System.out.println(3);
         }
 
-        driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
+        driver.findElement(By.xpath("//span[contains(.,'PayPal Credit')]")).click();
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         }catch (TimeoutException e) {
-            System.out.println(3);
+            System.out.println(4);
         }
         driver.findElement(By.cssSelector("#agreement_1")).click();
 
-        String homePage = driver.getWindowHandle();
-        //System.out.println(homePage);
-
         driver.findElement(By.cssSelector(".iwd-place-order-button>button")).click();
 
-        Set<String> windows = driver.getWindowHandles();
-        //System.out.println(windows.size());
+				/*driver.switchTo().frame(driver.findElement(By.id("yui-history-iframe")));*/
+        try{
+            driver.findElement(By.cssSelector("div[class='subhead'] input[id='loadLogin']")).click();
+        }catch (NoSuchElementException e) {
+            System.out.println("Unable to locate element");
+        }
+        driver.findElement(By.id("login_email")).clear();
+        driver.findElement(By.id("login_email")).sendKeys("max-buyer@iwdagency.com");
+        driver.findElement(By.id("login_password")).sendKeys("123321qazwsx");
+        driver.findElement(By.id("submitLogin")).click();
+        driver.findElement(By.id("continue_abovefold")).click();
 
-        Iterator iterator = windows.iterator();
-        String currentWindowId;
-
-        while(iterator.hasNext()){
-            currentWindowId = iterator.next().toString();
-            //System.out.println(currentWindowId);
-
-            if(!currentWindowId.equals(homePage)){
-                driver.switchTo().window(currentWindowId);
-                driver.findElement(By.id("return_url")).click();
-                driver.switchTo().window(homePage);
-
-                wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
-                String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
-                System.out.println(order);
-    }}}
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
+        String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
+        System.out.println(order);
+    }
 
 
     @AfterMethod
@@ -224,6 +218,4 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 
         driver.quit();
 
-    }
-
-}
+    }}

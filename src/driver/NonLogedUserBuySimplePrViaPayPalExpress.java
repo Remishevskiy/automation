@@ -107,21 +107,22 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 package driver;
 
 
-        import java.util.Iterator;
-        import java.util.Set;
-        import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
-        import org.openqa.selenium.TimeoutException;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.firefox.FirefoxDriver;
-        import org.openqa.selenium.support.ui.ExpectedConditions;
-        import org.openqa.selenium.support.ui.Select;
-        import org.openqa.selenium.support.ui.WebDriverWait;
-        import org.testng.annotations.Test;
-        import org.testng.annotations.BeforeMethod;
-        import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class NonLogedUserBuyPrViaPayPalBraintree {
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+public class NonLogedUserBuySimplePrViaPayPalExpress {
 
     public WebDriver driver;
 
@@ -182,13 +183,13 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
             System.out.println(3);
         }
 
-        driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
+        driver.findElement(By.xpath("//label[@for='paypal_express']")).click();
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         }catch (TimeoutException e) {
-            System.out.println(3);
+            System.out.println(4);
         }
         driver.findElement(By.cssSelector("#agreement_1")).click();
 
@@ -209,7 +210,28 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 
             if(!currentWindowId.equals(homePage)){
                 driver.switchTo().window(currentWindowId);
-                driver.findElement(By.id("return_url")).click();
+                try{
+                    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("spinner")));
+                    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("spinner")));
+
+                }catch (TimeoutException e) {
+                    System.out.println(5);
+                }
+                driver.switchTo().frame(driver.findElement(By.name("injectedUl")));
+                driver.findElement(By.id("email")).sendKeys("max-buyer@iwdagency.com");
+                driver.findElement(By.id("password")).sendKeys("123321qazwsx");
+                driver.findElement(By.id("btnLogin")).click();
+                driver.switchTo().defaultContent();
+                try{
+                    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("spinner")));
+                    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("spinner")));
+
+                }catch (TimeoutException e) {
+                    System.out.println(6);
+                }
+                driver.findElement(By.id("confirmButtonTop")).click();
+
+
                 driver.switchTo().window(homePage);
 
                 wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));

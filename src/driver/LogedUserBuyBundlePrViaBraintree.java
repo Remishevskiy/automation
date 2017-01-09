@@ -7,6 +7,7 @@ package driver;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
+        import org.openqa.selenium.support.ui.Select;
         import org.openqa.selenium.support.ui.WebDriverWait;
         import org.testng.annotations.Test;
         import org.testng.annotations.BeforeMethod;
@@ -39,8 +40,17 @@ public class LogedUserBuyBundlePrViaBraintree {
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
-        driver.get("http://dev.m2ce.deviwd.com//sprite-yoga-companion-kit.html");
+        driver.get("https://dev.m2ce.deviwd.com/sprite-yoga-companion-kit-1.html");
+
         driver.findElement(By.id("bundle-slide")).click();
+        Select SelectDropdown = new Select(driver.findElement(By.id("bundle-option-50")));
+        SelectDropdown.selectByValue("164");
+        driver.findElement(By.id("bundle-option-51-168")).click();
+        Select MultiSelect = new Select(driver.findElement(By.id("bundle-option-52")));
+        MultiSelect.selectByValue("171");
+        MultiSelect.selectByValue("172");
+        MultiSelect.selectByValue("173");
+
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com//checkout");
@@ -76,7 +86,7 @@ public class LogedUserBuyBundlePrViaBraintree {
             driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
             driver.findElement(By.id("cvv")).sendKeys("111");
             driver.switchTo().defaultContent();
-            driver.findElement(By.id("braintree_vault_enabler")).click();
+            driver.findElement(By.id("braintree_enable_vault")).click();
 
             driver.findElement(By.cssSelector("#agreement_1")).click();
 

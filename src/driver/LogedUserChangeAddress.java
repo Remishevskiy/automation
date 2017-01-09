@@ -44,7 +44,13 @@ public class LogedUserChangeAddress {
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 10);
-        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try{
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+
+        }catch (TimeoutException e) {
+            System.out.println(1);
+        }
         driver.findElement(By.cssSelector(".iwd-not-selected-item:nth-of-type(2)")).click();
 
         WebDriverWait wait3 = new WebDriverWait(driver, 10);

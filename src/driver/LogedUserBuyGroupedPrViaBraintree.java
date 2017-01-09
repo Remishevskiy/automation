@@ -39,10 +39,10 @@ public class LogedUserBuyGroupedPrViaBraintree {
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
-        driver.get("http://dev.m2ce.deviwd.com/set-of-sprite-yoga-straps.html");
-        driver.findElement(By.xpath("//input[@name='super_group[33]']")).sendKeys("1");
+        driver.get("https://dev.m2ce.deviwd.com/set-of-sprite-yoga-straps-1.html");
+       /* driver.findElement(By.xpath("//input[@name='super_group[33]']")).sendKeys("1");
         driver.findElement(By.xpath("//input[@name='super_group[34]']")).sendKeys("1");
-        driver.findElement(By.xpath("//input[@name='super_group[35]']")).sendKeys("1");
+        driver.findElement(By.xpath("//input[@name='super_group[35]']")).sendKeys("1");*/
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
@@ -78,7 +78,7 @@ public class LogedUserBuyGroupedPrViaBraintree {
             driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
             driver.findElement(By.id("cvv")).sendKeys("111");
             driver.switchTo().defaultContent();
-            driver.findElement(By.id("braintree_vault_enabler")).click();
+            driver.findElement(By.id("braintree_enable_vault")).click();
 
             driver.findElement(By.cssSelector("#agreement_1")).click();
 
