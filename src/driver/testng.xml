@@ -1,25 +1,25 @@
 <suite name="Test - Suite">
         <test name="checkout">
         <classes>
-            <class name="driver.LogedUserBuyDownloadablePrViaBraintree" />
-            <class name="driver.LogedUserBuySimplePrViaCheckMoneyorder" />
-            <class name="driver.LogedUserBuySimplePrViaBraintree" />
-            <class name="driver.LogedUserBuyBundlePrViaBraintree" />
-            <class name="driver.LogedUserBuyConfigurablePrViaBraintree" />
-            <class name="driver.LogedUserBuyGroupedPrViaBraintree" />
-            <class name="driver.LogedUserBuyPrViaAmountDiscount" />
-            <class name="driver.LogedUserBuyPrViaPersentDiscount" />
-            <class name="driver.LogedUserBuyPrViaStoreCredit" />
-            <class name="driver.LogedUserBuyPrViaStorePickupAndPurchaseOrder" />
-            <class name="driver.LogedUserBuySimplePrViaBraintreeAndChangeBilling" />
-            <class name="driver.LogedUserBuyVirtualPrViaPayBraintree" />
-            <class name="driver.LogedUserChangeAddress" />
-            <class name="driver.LogedUserCreateNewAdress" />
-            <class name="driver.NonLogedUserBuyPrViaBraintreeAndChangeBilling" />
-            <class name="driver.NonLogedUserBuyPrViaBraintreeAndStorePickUp" />
-            <class name="driver.NonLogedUserBuyPrViaBraintreeWithAmountDiscountNotWork" />
-            <class name="driver.NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork" />
-            <class name="driver.NonLogedUserBuyPrViaPayPalBraintree" />
+            <class name="driver.LoggedUserBuyDownloadablePrViaBraintree" />
+            <class name="driver.LoggedUserBuySimplePrViaCheckMoneyorder" />
+            <class name="driver.LoggedUserBuySimplePrViaBraintree" />
+            <class name="driver.LoggedUserBuyBundlePrViaBraintree" />
+            <class name="driver.LoggedUserBuyConfigurablePrViaBraintree" />
+            <class name="driver.LoggedUserBuyGroupedPrViaBraintree" />
+            <class name="driver.LoggedUserBuyPrViaAmountDiscount" />
+            <class name="driver.LoggedUserBuyPrViaPersentDiscount" />
+            <class name="driver.LoggedUserBuyPrViaStoreCredit" />
+            <class name="driver.LoggedUserBuyPrViaStorePickupAndPurchaseOrder" />
+            <class name="driver.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
+            <class name="driver.LoggedUserBuyVirtualPrViaPayBraintree" />
+            <class name="driver.LoggedUserChangeAddress" />
+            <class name="driver.LoggedUserCreateNewAdress" />
+            <class name="driver.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
+            <class name="driver.NotLoggedUserBuyPrViaBraintreeAndStorePickUp" />
+            <class name="driver.NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork" />
+            <class name="driver.NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork" />
+            <class name="driver.NotLoggedUserBuyPrViaPayPalBraintree" />
         </classes>
         </test>
         </suite>

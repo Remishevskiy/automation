@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserBuyPrViaPersentDiscount {
+public class LoggedUserBuyPrViaPersentDiscount {
 
     public WebDriver driver;
 

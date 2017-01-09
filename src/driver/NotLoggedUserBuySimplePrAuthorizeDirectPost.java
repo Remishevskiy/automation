@@ -108,7 +108,6 @@ package driver;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -119,9 +118,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class NonLogedUserBuySimplePrPayPalCredit {
+public class NotLoggedUserBuySimplePrAuthorizeDirectPost {
 
     public WebDriver driver;
 
@@ -182,7 +183,7 @@ public class NonLogedUserBuySimplePrPayPalCredit {
             System.out.println(3);
         }
 
-        driver.findElement(By.xpath("//span[contains(.,'PayPal Credit')]")).click();
+        driver.findElement(By.xpath("//span[contains(.,'Credit Card Direct Post (Authorize.net)')]")).click();
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
@@ -190,21 +191,15 @@ public class NonLogedUserBuySimplePrPayPalCredit {
         }catch (TimeoutException e) {
             System.out.println(4);
         }
+
+        driver.findElement(By.cssSelector("#authorizenet_directpost_cc_number")).sendKeys("371449635398431");
+        Select SelectMonth = new Select(driver.findElement(By.id("authorizenet_directpost_expiration")));
+        SelectMonth.selectByValue("9");
+        Select SelectYear = new Select(driver.findElement(By.cssSelector("#authorizenet_directpost_expiration_yr")));
+        SelectYear.selectByValue("2021");
+
         driver.findElement(By.cssSelector("#agreement_1")).click();
-
-        driver.findElement(By.cssSelector(".iwd-place-order-button>button")).click();
-
-				/*driver.switchTo().frame(driver.findElement(By.id("yui-history-iframe")));*/
-        try{
-            driver.findElement(By.cssSelector("div[class='subhead'] input[id='loadLogin']")).click();
-        }catch (NoSuchElementException e) {
-            System.out.println("Unable to locate element");
-        }
-        driver.findElement(By.id("login_email")).clear();
-        driver.findElement(By.id("login_email")).sendKeys("max-buyer@iwdagency.com");
-        driver.findElement(By.id("login_password")).sendKeys("123321qazwsx");
-        driver.findElement(By.id("submitLogin")).click();
-        driver.findElement(By.id("continue_abovefold")).click();
+        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
         String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();

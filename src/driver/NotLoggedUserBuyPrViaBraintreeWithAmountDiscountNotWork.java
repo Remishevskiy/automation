@@ -13,7 +13,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork {
+public class NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork {
 
     public WebDriver driver;
 
@@ -34,24 +34,23 @@ public class NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork {
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
         wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("iwd-newsletterpopup-wrapper")));
-
         driver.findElement(By.id("product-addtocart-button")).click();
-
         driver.get("http://dev.m2ce.deviwd.com/checkout");
-        try{
+
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(1);
         }
         driver.findElement(By.id("customer-email")).sendKeys("test666test@mail.com");
 
-        try{
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(2);
         }
 
@@ -66,34 +65,34 @@ public class NonLogedUserBuyPrViaBraintreeWithPersentDiscountNotWork {
 
         driver.findElement(By.id("label_method_bestway_tablerate")).click();
 
-        try{
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(3);
         }
         driver.findElement(By.id("block-discount-heading")).click();
-        driver.findElement(By.id("discount-code")).sendKeys("test50per");
+        driver.findElement(By.id("discount-code")).sendKeys("test10");
         driver.findElement(By.cssSelector(".action.iwd-action-code-button.iwd-action-apply.action-apply")).click();
-
         try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".message.message-success.success")));
             String Diskount = driver.findElement(By.cssSelector(".message.message-success.success")).getText();
-            System.out.println(Diskount + " persent 50 discount add");
-        }catch (TimeoutException e) {
-            System.out.println("Test failed, persent discount wasn't added");
+            System.out.println(Diskount + " amount 50 discount add");
+        } catch (TimeoutException e) {
+            System.out.println("Test failed, amount discount wasn't added");
         }
 
-        try{
+
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(4);
         }
 
-        /*BrainTree*/
+        //*BrainTree*//*
         driver.findElement(By.xpath("//span[contains(.,'Credit Card (Braintree)')]")).click();
         driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-number")));
         driver.findElement(By.id("credit-card-number")).sendKeys("4111111111111111");

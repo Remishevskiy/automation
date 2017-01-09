@@ -1,9 +1,6 @@
 package driver;
 
-
-        import java.util.Iterator;
-        import java.util.Set;
-        import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -14,7 +11,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserBuyVirtualPrViaPayBraintree {
+public class LoggedUserBuyPrViaStoreCredit {
 
     public WebDriver driver;
 
@@ -34,19 +31,19 @@ public class LogedUserBuyVirtualPrViaPayBraintree {
     public void main() {
 
         driver.findElement(By.cssSelector(".action-close")).click();
-        WebDriverWait wait1 = new WebDriverWait(driver, 15);
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
         wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("iwd-newsletterpopup-wrapper")));
 
         driver.findElement(By.cssSelector(".authorization-link>a")).click();
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
-        driver.get("http://dev.m2ce.deviwd.com/mh01-blue-xs.html");
+        driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
-        WebDriverWait wait2 = new WebDriverWait(driver, 15);
+        WebDriverWait wait2 = new WebDriverWait(driver, 10);
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
@@ -54,53 +51,38 @@ public class LogedUserBuyVirtualPrViaPayBraintree {
         }catch (TimeoutException e) {
             System.out.println(1);
         }
+        driver.findElement(By.id("label_method_1DM_ups")).click();
 
-        String homePage = driver.getWindowHandle();
-        //PayPal Braintree payment
-        driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
-        
         try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".loading-mask")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loading-mask")));
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         }catch (TimeoutException e) {
             System.out.println(2);
-        }
+        driver.findElement(By.cssSelector("#use-customer-balance")).click();
+            try{
+                wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+                wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
+            }catch (TimeoutException e1) {
+                System.out.println(3);
+            }
         driver.findElement(By.cssSelector("#agreement_1")).click();
-        driver.findElement(By.cssSelector(".iwd-place-order-button>button")).click();
-        Set<String> windows = driver.getWindowHandles();
-        //System.out.println(windows.size());
+        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
-        Iterator iterator = windows.iterator();
-        String currentWindowId;
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
+        String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
+        System.out.println(order);
 
-        while(iterator.hasNext()){
-            currentWindowId = iterator.next().toString();
-            //System.out.println(currentWindowId);
+    }}
 
 
-            if(!currentWindowId.equals(homePage)){
-                driver.switchTo().window(currentWindowId);
-                driver.findElement(By.id("return_url")).click();
-                driver.switchTo().window(homePage);
-
-                wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
-                String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
-                System.out.println(order);
-
-    }}}
-
-
-    /*@AfterMethod
+    @AfterMethod
 
     public void afterMethod() {
 
         driver.quit();
 
-    }*/
+    }
 
 }
-
-
-

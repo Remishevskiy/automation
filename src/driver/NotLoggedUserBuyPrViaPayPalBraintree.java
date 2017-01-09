@@ -121,7 +121,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class NonLogedUserBuyPrViaPayPalBraintree {
+public class NotLoggedUserBuyPrViaPayPalBraintree {
 
     public WebDriver driver;
 

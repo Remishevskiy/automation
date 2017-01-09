@@ -12,7 +12,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserBuyGroupedPrViaBraintree {
+public class LoggedUserBuyGroupedPrViaBraintree {
 
     public WebDriver driver;
 

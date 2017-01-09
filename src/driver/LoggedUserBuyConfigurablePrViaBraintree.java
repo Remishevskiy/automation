@@ -1,10 +1,12 @@
 package driver;
 
 
+        import java.util.List;
         import java.util.concurrent.TimeUnit;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.WebElement;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.Select;
@@ -13,7 +15,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserBuyBundlePrViaBraintree {
+public class LoggedUserBuyConfigurablePrViaBraintree {
 
     public WebDriver driver;
 
@@ -40,20 +42,23 @@ public class LogedUserBuyBundlePrViaBraintree {
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
-        driver.get("https://dev.m2ce.deviwd.com/sprite-yoga-companion-kit-1.html");
+        driver.get("https://dev.m2ce.deviwd.com/ana-running-short.html");
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".swatch-select.color")));
+        Select CustomOption1 = new Select(driver.findElement(By.cssSelector(".swatch-select.color")));
+        CustomOption1.selectByValue("59");
+        driver.findElement(By.cssSelector(".swatch-option.text[option-id='172']")).click();
 
-        driver.findElement(By.id("bundle-slide")).click();
-        Select SelectDropdown = new Select(driver.findElement(By.id("bundle-option-50")));
-        SelectDropdown.selectByValue("164");
-        driver.findElement(By.id("bundle-option-51-168")).click();
-        Select MultiSelect = new Select(driver.findElement(By.id("bundle-option-52")));
-        MultiSelect.selectByValue("171");
-        MultiSelect.selectByValue("172");
-        MultiSelect.selectByValue("173");
 
+            /*ProductDesigner*/
+    /*driver.findElement(By.cssSelector(".fpd-add-text.fpd-btn-raised.fpd-secondary-bg-color.fpd-secondary-text-color>span")).click();
+    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".modal-body>textarea")));
+    driver.findElement(By.cssSelector(".modal-body>textarea")).sendKeys("Automation Test");
+    driver.findElement(By.cssSelector(".btn.action.primary.iwdpd-add-text-btn")).click();
+    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-body>textarea")));*/
+    /*wait1.until(ExpectedConditions.elementToBeClickable(By.id("product-addtocart-button")));*/
         driver.findElement(By.id("product-addtocart-button")).click();
 
-        driver.get("http://dev.m2ce.deviwd.com//checkout");
+        driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 15);
         try{
@@ -97,7 +102,7 @@ public class LogedUserBuyBundlePrViaBraintree {
             String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
             System.out.println(order);
 
-    }}
+        }}
 
 
     @AfterMethod

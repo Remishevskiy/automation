@@ -13,7 +13,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserCreateNewAdress {
+public class LoggedUserCreateNewAdress {
 
     public WebDriver driver;
 

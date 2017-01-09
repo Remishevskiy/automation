@@ -1,6 +1,5 @@
 package driver;
 
-
         import java.util.concurrent.TimeUnit;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
@@ -13,7 +12,7 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class NonLogedUserBuyPrViaBraintreeAndChangeBilling {
+public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
 
     public WebDriver driver;
 
@@ -24,7 +23,7 @@ public class NonLogedUserBuyPrViaBraintreeAndChangeBilling {
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
+        driver.get("http://dev.m2ce.deviwd.com/");
         driver.manage().window().maximize();
 
     }
@@ -36,49 +35,42 @@ public class NonLogedUserBuyPrViaBraintreeAndChangeBilling {
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
         wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("iwd-newsletterpopup-wrapper")));
 
+        driver.findElement(By.cssSelector(".authorization-link>a")).click();
+        driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
+        driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
+        driver.findElement(By.id("send2")).click();
+        driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
+
+        WebDriverWait wait2 = new WebDriverWait(driver, 15);
         try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         }catch (TimeoutException e) {
             System.out.println(1);
         }
-        driver.findElement(By.id("customer-email")).sendKeys("test666test@mail.com");
+
+        driver.findElement(By.id("label_method_2DA_ups")).click();
 
         try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         }catch (TimeoutException e) {
             System.out.println(2);
         }
 
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='firstname']")).sendKeys("Test");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='lastname']")).sendKeys("Ignore");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='street[0]']")).sendKeys("1978 Lindale Avenue");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='city']")).sendKeys("San Francisco");
-        Select oSelect = new Select(driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .select[name='region_id']")));
-        oSelect.selectByVisibleText("California");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");
-
-        driver.findElement(By.id("s_method_flatrate_flatrate")).click();
-
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
-            System.out.println(3);
-        }
+        //Braintree payment
 
         driver.findElement(By.xpath("//span[contains(.,'Credit Card (Braintree)')]")).click();
         driver.findElement(By.id("billing-address-same-as-shipping-braintree")).click();
 
     /*Change billing address*/
+        Select SelectNewAdress = new Select(driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .select[name=billing_address_id]")));
+        SelectNewAdress.selectByVisibleText("New Address");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='firstname']")).sendKeys("Tadeush");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='lastname']")).sendKeys("Borowskiy");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='street[0]']")).sendKeys("8104 E Nora Ave");
@@ -88,6 +80,7 @@ public class NonLogedUserBuyPrViaBraintreeAndChangeBilling {
 
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='postcode']")).sendKeys("99212");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("509-924-6673");
+        driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='field choice'] #braintree_enable_vault")).click();
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='primary'] .action.action-update")).click();
 
     /*BrainTree*/
@@ -103,17 +96,16 @@ public class NonLogedUserBuyPrViaBraintreeAndChangeBilling {
         driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
         driver.findElement(By.id("cvv")).sendKeys("111");
         driver.switchTo().defaultContent();
+        driver.findElement(By.id("braintree_enable_vault")).click();
 
         driver.findElement(By.cssSelector("#agreement_1")).click();
-
         driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
-        String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
+        wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
+        String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
         System.out.println(order);
 
-        }
-
+    }
 
     @AfterMethod
 

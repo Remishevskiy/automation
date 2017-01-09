@@ -12,13 +12,14 @@ package driver;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
 
-public class LogedUserChangeAddress {
+public class LoggedUserBuyDownloadablePrViaBraintree {
 
     public WebDriver driver;
 
     @BeforeMethod
 
     public void beforeMethod() {
+
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -38,12 +39,12 @@ public class LogedUserChangeAddress {
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
-        driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
-        driver.findElement(By.xpath("./*//*[@id='product-addtocart-button']")).click();
+        driver.get("http://dev.m2ce.deviwd.com/lifelong-fitness-iv.html");
+        driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
-        WebDriverWait wait2 = new WebDriverWait(driver, 10);
+        WebDriverWait wait2 = new WebDriverWait(driver, 15);
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
@@ -51,30 +52,43 @@ public class LogedUserChangeAddress {
         }catch (TimeoutException e) {
             System.out.println(1);
         }
-        driver.findElement(By.cssSelector(".iwd-not-selected-item:nth-of-type(2)")).click();
 
-        WebDriverWait wait3 = new WebDriverWait(driver, 10);
-        wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        //Braintree payment
 
-        WebDriverWait wait4 = new WebDriverWait(driver, 10);
-        wait4.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-        driver.findElement(By.xpath("//span[contains(.,'Check / Money order')]")).click();
+        driver.findElement(By.xpath("//span[contains(.,'Credit Card (Braintree)')]")).click();
+
+        driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-number")));
+        driver.findElement(By.id("credit-card-number")).sendKeys("5555555555554444");
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-expirationMonth")));
+        driver.findElement(By.id("expiration-month")).sendKeys("12");
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-expirationYear")));
+        driver.findElement(By.id("expiration-year")).sendKeys("20");
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-cvv")));
+        driver.findElement(By.id("cvv")).sendKeys("111");
+        driver.switchTo().defaultContent();
+        driver.findElement(By.id("braintree_enable_vault")).click();
+
         driver.findElement(By.cssSelector("#agreement_1")).click();
+
+
         driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
         wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
         System.out.println(order);
+
         }
 
 
-    @AfterMethod
+   /* @AfterMethod
 
     public void afterMethod() {
 
         driver.quit();
 
-    }
+    }*/
 
 }
