@@ -80,7 +80,7 @@ public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
 
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control'] .input-text[name='postcode']")).sendKeys("99212");
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("509-924-6673");
-        driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='field choice'] #braintree_enable_vault")).click();
+        driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='choice field'] #billing-save-in-address-book")).click();
         driver.findElement(By.cssSelector("div[class='payment-method payment-method-braintree _active'] div[class='primary'] .action.action-update")).click();
 
     /*BrainTree*/
