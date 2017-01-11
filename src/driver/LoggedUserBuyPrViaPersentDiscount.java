@@ -42,10 +42,13 @@ public class LoggedUserBuyPrViaPersentDiscount {
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
+        try{
+            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
+        }catch (TimeoutException e1) {
+            System.out.println(2);
+        }
         driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
 
         try{

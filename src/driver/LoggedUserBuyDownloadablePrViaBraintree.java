@@ -83,12 +83,12 @@ public class LoggedUserBuyDownloadablePrViaBraintree {
         }
 
 
-   /* @AfterMethod
+    @AfterMethod
 
     public void afterMethod() {
 
         driver.quit();
 
-    }*/
+    }
 
 }

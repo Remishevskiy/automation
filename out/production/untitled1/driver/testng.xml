@@ -26,11 +26,8 @@
             <class name="driver.NotLoggedUserBuySimplePrAuthorizeDirectPost" />
             <class name="driver.NotLoggedUserBuySimplePrPayPalCredit" />
             <class name="driver.NotLoggedUserBuySimplePrViaPayPalExpress" />
-
-
-
-
-
+            <class name="driver.LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling" />
+            <class name="driver.NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling" />
 
 
         </classes>
