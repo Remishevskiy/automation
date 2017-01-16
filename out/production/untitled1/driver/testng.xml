@@ -9,7 +9,6 @@
             <class name="driver.LoggedUserBuyGroupedPrViaBraintree" />
             <class name="driver.LoggedUserBuyPrViaAmountDiscount" />
             <class name="driver.LoggedUserBuyPrViaPersentDiscount" />
-            <class name="driver.LoggedUserBuyPrViaStoreCredit" />
             <class name="driver.LoggedUserBuyPrViaStorePickupAndPurchaseOrder" />
             <class name="driver.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
             <class name="driver.LoggedUserBuyVirtualPrViaPayBraintree" />
@@ -28,9 +27,14 @@
             <class name="driver.NotLoggedUserBuySimplePrViaPayPalExpress" />
             <class name="driver.LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling" />
             <class name="driver.NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling" />
+            <class name="driver.LoggedUserBuyPrViaStoreCredit" />
+
 
 
         </classes>
         </test>
         </suite>
+
+
+
 

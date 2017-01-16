@@ -67,6 +67,13 @@ public class LoggedUserBuyPrViaStoreCredit {
             }catch (TimeoutException e1) {
                 System.out.println(3);
             }
+
+            /*wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".message.message-success.success>div")));
+            String Diskount = driver.findElement(By.cssSelector(".message.message-success.success>div")).getText();
+            System.out.println(Diskount);*/
+
+            driver.findElement(By.xpath("//span[contains(.,'Zero Subtotal Checkout')]")).click();
+
         driver.findElement(By.cssSelector("#agreement_1")).click();
         driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
 
