@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test Results - D__Testing_untitled1_src_driver_testng_xml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/practiceTestCases/TestngDataProviders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/practiceTestCases/TestngParameters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/practiceTestCases/testng1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/driver.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/driver.rar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStoreCredit.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStoreCredit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/testng.xml" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStoreCredit.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStoreCredit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/testng.xml" afterPath="$PROJECT_DIR$/src/driver/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/practiceTestCases/Log4j.java" afterPath="$PROJECT_DIR$/src/practiceTestCases/Log4j.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -778,6 +764,14 @@
       <option name="presentableId" value="Default" />
       <updated>1477343265214</updated>
     </task>
+    <task id="LOCAL-00001" summary=" Negative test">
+      <created>1484609195958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1484609195958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +817,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -834,7 +828,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33045357" sideWeight="0.5063966" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -866,6 +860,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" Negative test" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Negative test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
