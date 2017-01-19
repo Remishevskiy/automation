@@ -112,14 +112,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformation {
+import static org.testng.Assert.assertEquals;
+
+public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformationNew {
 
     public WebDriver driver;
 
@@ -135,7 +136,7 @@ public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformat
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -204,14 +205,18 @@ public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformat
         }catch (NoSuchElementException e) {
             System.out.println(6);
         }
-
-        String element1 = driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).getCssValue("border-right-color");
+        String element1 = (String) (((JavascriptExecutor)driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-top-color')"));
         System.out.println(element1);
-        Assert.assertEquals("rgba(237, 55, 51, 1)", element1);
+        assertEquals("rgb(237, 131, 128)", element1);
+        //assertEquals("rgb(237, 131, 121)", (((JavascriptExecutor)driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-right-color')")));
+
+        /*System.out.println(((JavascriptExecutor)driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-right-color')"));
+        System.out.println(((JavascriptExecutor)driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-left-color')"));
+        System.out.println(((JavascriptExecutor)driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-bottom-color')"));*/
 
 
-        /*String element2 = driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='city']")).getCssValue("border-color");
-        System.out.println(element2);*/
+        //System.out.println("CssValue - of the webelement  e is -> " + actualValue);
+
 
         /*wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
         String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
