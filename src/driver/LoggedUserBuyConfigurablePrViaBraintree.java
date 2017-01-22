@@ -1,12 +1,11 @@
 package driver;
 
 
-        import java.util.List;
         import java.util.concurrent.TimeUnit;
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.WebElement;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.Select;
@@ -43,8 +42,12 @@ public class LoggedUserBuyConfigurablePrViaBraintree {
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
         driver.get("https://dev.m2ce.deviwd.com/ana-running-short.html");
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".swatch-select.color")));
-        Select CustomOption1 = new Select(driver.findElement(By.cssSelector(".swatch-select.color")));
+        try{
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".swatch-option")));
+        }catch (TimeoutException e) {
+            System.out.println("swatch-option");
+        }
+        Select CustomOption1 = new Select(driver.findElement(By.cssSelector(".swatch-option.color")));
         CustomOption1.selectByValue("59");
         driver.findElement(By.cssSelector(".swatch-option.text[option-id='172']")).click();
 
@@ -70,7 +73,9 @@ public class LoggedUserBuyConfigurablePrViaBraintree {
         }
 
         //Braintree payment
-        driver.findElement(By.id("label_method_1DP_ups")).click();
+        CheckoutPage.UPS_NextDayAir(driver).click();
+
+        //driver.findElement(By.id("label_method_1DP_ups")).click();
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));

@@ -107,13 +107,9 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 package driver;
 
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -123,7 +119,9 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class NotLoggedUserBuySimplePrViaPayPalExpress {
+import static com.thoughtworks.selenium.SeleneseTestNgHelper.assertEquals;
+
+public class NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation {
 
     public WebDriver driver;
 
@@ -148,102 +146,79 @@ public class NotLoggedUserBuySimplePrViaPayPalExpress {
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
-        try{
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(1);
         }
         driver.findElement(By.id("customer-email")).sendKeys("test666test@mail.com");
 
-        try{
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(2);
         }
 
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='firstname']")).sendKeys("Test");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='lastname']")).sendKeys("Ignore");
+        /*driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='lastname']")).sendKeys("Ignore");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='street[0]']")).sendKeys("1978 Lindale Avenue");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='city']")).sendKeys("San Francisco");
         Select oSelect = new Select(driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .select[name='region_id']")));
         oSelect.selectByVisibleText("California");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
-        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");
+        driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");*/
 
         driver.findElement(By.id("s_method_tablerate_bestway")).click();
 
-        try{
+        try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        } catch (TimeoutException e) {
             System.out.println(3);
         }
-        try{
-        driver.findElement(By.xpath("//label[@for='paypal_express']")).click();
+        try {
+            driver.findElement(By.xpath("//label[@for='paypal_express']")).click();
+            driver.findElement(By.cssSelector("#agreement_1")).click();
+            driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
         } catch (NoSuchElementException e) {
-        System.out.println(4);
+            System.out.println(6);
         }
 
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        String element1 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.lastname\"] input').css('border-top-color')"));
+        System.out.println(element1);
+        assertEquals("rgb(237, 131, 128)", element1);
+        System.out.println("Test done1");
 
-        }catch (TimeoutException e) {
-            System.out.println(4);
-        }
-        driver.findElement(By.cssSelector("#agreement_1")).click();
+        /*String element2 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.street.0\"] input').css('border-right-color')"));
+        System.out.println(element2);
+        assertEquals("rgb(237, 55, 51)", element2);
+        System.out.println("Test done2");*/
 
-        String homePage = driver.getWindowHandle();
-        //System.out.println(homePage);
+        String element3 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.city\"] input').css('border-left-color')"));
+        System.out.println(element3);
+        assertEquals("rgb(237, 131, 128)", element3);
+        System.out.println("Test done3");
 
-        driver.findElement(By.cssSelector(".iwd-place-order-button")).click();
+        String element4 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.region_id\"] select').css('border-right-color')"));
+        System.out.println(element4);
+        assertEquals("rgb(237, 131, 128)", element4);
+        System.out.println("Test done4");
 
-        Set<String> windows = driver.getWindowHandles();
-        //System.out.println(windows.size());
+        String element5 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.postcode\"] input').css('border-left-color')"));
+        System.out.println(element5);
+        assertEquals("rgb(237, 131, 128)", element5);
+        System.out.println("Test done5");
 
-        Iterator iterator = windows.iterator();
-        String currentWindowId;
-
-        while(iterator.hasNext()){
-            currentWindowId = iterator.next().toString();
-            //System.out.println(currentWindowId);
-
-            if(!currentWindowId.equals(homePage)){
-                driver.switchTo().window(currentWindowId);
-                try{
-                    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("spinner")));
-                    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("spinner")));
-
-                }catch (TimeoutException e) {
-                    System.out.println(5);
-                }
-                driver.switchTo().frame(driver.findElement(By.name("injectedUl")));
-                driver.findElement(By.id("email")).sendKeys("max-buyer@iwdagency.com");
-                driver.findElement(By.id("password")).sendKeys("123321qazwsx");
-                driver.findElement(By.id("btnLogin")).click();
-                driver.switchTo().defaultContent();
-                try{
-                    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("spinner")));
-                    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("spinner")));
-
-                }catch (TimeoutException e) {
-                    System.out.println(6);
-                }
-                driver.findElement(By.id("confirmButtonTop")).click();
-
-
-                driver.switchTo().window(homePage);
-
-                wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
-                String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
-                System.out.println(order);
-    }}}
-
+        String element6 = (String) (((JavascriptExecutor) driver).executeScript("return jQuery('[name=\"shippingAddress.telephone\"] input').css('border-bottom-color')"));
+        System.out.println(element6);
+        assertEquals("rgb(237, 131, 128)", element6);
+        System.out.println("Test done6");
+    }
 
     @AfterMethod
 
