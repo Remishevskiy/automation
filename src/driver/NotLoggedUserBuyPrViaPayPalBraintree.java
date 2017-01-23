@@ -110,6 +110,8 @@ package driver;
         import java.util.Iterator;
         import java.util.Set;
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -172,7 +174,7 @@ public class NotLoggedUserBuyPrViaPayPalBraintree {
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");
 
-        driver.findElement(By.id("s_method_flatrate_flatrate")).click();
+        CheckoutPage.Flat_Rate(driver).click();
 
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

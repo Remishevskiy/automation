@@ -1,7 +1,9 @@
 package driver;
 
 import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
+
+import driver.pageObjectsCheckout.CheckoutPage;
+import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
@@ -51,7 +53,8 @@ public class LoggedUserBuyPrViaAmountDiscount {
         }catch (TimeoutException e) {
             System.out.println(1);
         }
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        CheckoutPage.Freeshipping(driver).click();
+        //driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
 
         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
         driver.findElement(By.id("block-discount-heading")).click();

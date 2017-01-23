@@ -1,6 +1,7 @@
 package driver;
 
         import java.util.concurrent.TimeUnit;
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -11,6 +12,8 @@ package driver;
         import org.testng.annotations.Test;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
+
+
 
 public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
 
@@ -29,7 +32,7 @@ public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -39,6 +42,7 @@ public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
         driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
+
         driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
         driver.findElement(By.id("product-addtocart-button")).click();
 
@@ -53,7 +57,7 @@ public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
             System.out.println(1);
         }
 
-        driver.findElement(By.id("label_method_2DA_ups")).click();
+        CheckoutPage.UPS_2ndDayAir(driver).click();
 
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

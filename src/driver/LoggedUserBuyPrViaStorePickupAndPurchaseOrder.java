@@ -1,7 +1,9 @@
 package driver;
 
 import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
+
+import driver.pageObjectsCheckout.CheckoutPage;
+import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
@@ -55,7 +57,7 @@ public class LoggedUserBuyPrViaStorePickupAndPurchaseOrder {
             System.out.println(1);
         }
 
-        Select oSelect = new Select(driver.findElement(By.id("iwd_storepickup_store_select")));
+        Select oSelect = new Select(CheckoutPage.Store_Pickup(driver));
         oSelect.selectByValue("1");
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

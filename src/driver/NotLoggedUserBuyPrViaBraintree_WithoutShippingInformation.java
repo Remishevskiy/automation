@@ -1,6 +1,7 @@
 package driver;
 
 
+import driver.pageObjectsCheckout.CheckoutPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -66,7 +67,7 @@ public class NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation {
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
         /*driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");*/
 
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        CheckoutPage.Tablerate_Bestway(driver).click();
 
         try {
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

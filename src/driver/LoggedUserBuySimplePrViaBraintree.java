@@ -2,6 +2,8 @@ package driver;
 
 
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -52,8 +54,7 @@ public class LoggedUserBuySimplePrViaBraintree {
         } catch (TimeoutException e) {
             System.out.println(1);
         }
-
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        CheckoutPage.Tablerate_Bestway(driver).click();
         wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
         //Braintree payment

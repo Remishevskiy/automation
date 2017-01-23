@@ -2,6 +2,8 @@ package driver;
 
 
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -57,7 +59,8 @@ public class LoggedUserBuyGroupedPrViaBraintree {
         }
 
         //Braintree payment
-        driver.findElement(By.id("label_method_1DM_ups")).click();
+        CheckoutPage.UPS_NextDayAirEarlyAM(driver).click();
+        //driver.findElement(By.id("label_method_1DM_ups")).click();
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
             wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));

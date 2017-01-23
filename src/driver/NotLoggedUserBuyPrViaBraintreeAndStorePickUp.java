@@ -2,6 +2,8 @@ package driver;
 
 
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -65,7 +67,7 @@ public class NotLoggedUserBuyPrViaBraintreeAndStorePickUp {
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");
 
-        Select StorePickUp = new Select(driver.findElement(By.id("iwd_storepickup_store_select")));
+        Select StorePickUp = new Select(CheckoutPage.Store_Pickup(driver));
         StorePickUp.selectByValue("1");
 
         try{

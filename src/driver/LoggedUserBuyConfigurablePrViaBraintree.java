@@ -42,14 +42,10 @@ public class LoggedUserBuyConfigurablePrViaBraintree {
         driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
         driver.findElement(By.id("send2")).click();
         driver.get("https://dev.m2ce.deviwd.com/ana-running-short.html");
-        try{
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".swatch-option")));
-        }catch (TimeoutException e) {
-            System.out.println("swatch-option");
-        }
-        Select CustomOption1 = new Select(driver.findElement(By.cssSelector(".swatch-option.color")));
-        CustomOption1.selectByValue("59");
+
+        driver.findElement(By.cssSelector(".swatch-option.color[option-id='59']")).click();
         driver.findElement(By.cssSelector(".swatch-option.text[option-id='172']")).click();
+
 
 
             /*ProductDesigner*/

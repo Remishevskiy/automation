@@ -1,6 +1,7 @@
 package driver;
 
 
+import driver.pageObjectsCheckout.CheckoutPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -57,7 +58,8 @@ public class LoggedUserBuySimplePrViaPayPalExpress {
 		} catch (TimeoutException e) {
 			System.out.println(1);
 		}
-		driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+
+		CheckoutPage.UPS_Ground(driver).click();
 
 		try {
 			wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

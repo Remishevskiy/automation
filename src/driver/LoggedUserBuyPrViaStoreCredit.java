@@ -1,7 +1,9 @@
 package driver;
 
 import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
+
+import driver.pageObjectsCheckout.CheckoutPage;
+import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
@@ -51,7 +53,8 @@ public class LoggedUserBuyPrViaStoreCredit {
         }catch (TimeoutException e) {
             System.out.println(1);
         }
-        driver.findElement(By.id("label_method_1DM_ups")).click();
+
+        CheckoutPage.UPS_NextDayAirEarlyAM(driver).click();
 
         try{
             wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

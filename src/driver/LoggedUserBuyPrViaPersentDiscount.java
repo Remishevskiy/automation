@@ -1,7 +1,9 @@
 package driver;
 
 import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.By;
+
+import driver.pageObjectsCheckout.CheckoutPage;
+import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
@@ -49,7 +51,7 @@ public class LoggedUserBuyPrViaPersentDiscount {
         }catch (TimeoutException e1) {
             System.out.println(2);
         }
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        CheckoutPage.Freeshipping(driver).click();
 
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));

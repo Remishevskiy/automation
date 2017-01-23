@@ -107,6 +107,7 @@ public class NonLogedUserBuyPrViaPayPalBraintree {
 package driver;
 
 
+import driver.pageObjectsCheckout.CheckoutPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
@@ -174,7 +175,8 @@ public class NotLoggedUserBuySimplePrViaPayPalExpress {
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control'] .input-text[name='postcode']")).sendKeys("94108");
         driver.findElement(By.cssSelector("div[id='shipping-new-address-form'] div[class='control _with-tooltip'] .input-text[name='telephone']")).sendKeys("+1-202-555-0100");
 
-        driver.findElement(By.id("s_method_tablerate_bestway")).click();
+        CheckoutPage.Freeshipping(driver).click();
+
 
         try{
             wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
@@ -215,9 +217,10 @@ public class NotLoggedUserBuySimplePrViaPayPalExpress {
 
             if(!currentWindowId.equals(homePage)){
                 driver.switchTo().window(currentWindowId);
+                WebDriverWait wait2 = new WebDriverWait(driver, 20);
                 try{
-                    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("spinner")));
-                    wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("spinner")));
+                    wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("spinner")));
+                    wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("spinner")));
 
                 }catch (TimeoutException e) {
                     System.out.println(5);
@@ -239,7 +242,8 @@ public class NotLoggedUserBuySimplePrViaPayPalExpress {
 
                 driver.switchTo().window(homePage);
 
-                wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
+
+                wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-success>p>span")));
                 String order = driver.findElement(By.cssSelector(".checkout-success>p>span")).getText();
                 System.out.println(order);
     }}}

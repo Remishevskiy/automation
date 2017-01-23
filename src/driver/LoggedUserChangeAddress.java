@@ -2,6 +2,8 @@ package driver;
 
 
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -53,9 +55,14 @@ public class LoggedUserChangeAddress {
         }
         driver.findElement(By.cssSelector(".iwd-not-selected-item:nth-of-type(2)")).click();
 
-        WebDriverWait wait3 = new WebDriverWait(driver, 10);
-        wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-        driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
+        try{
+            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
+            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+
+        }catch (TimeoutException e) {
+            System.out.println(1);
+        }
+        CheckoutPage.UPS_2ndDayAir(driver).click();
 
         WebDriverWait wait4 = new WebDriverWait(driver, 10);
         wait4.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));

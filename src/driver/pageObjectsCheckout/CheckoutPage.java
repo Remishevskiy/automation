@@ -14,6 +14,14 @@ public class CheckoutPage {
 
     private static WebElement element = null;
 
+    public static WebElement Store_Pickup(WebDriver driver){
+
+        element = driver.findElement(By.id("iwd_storepickup_store_select"));
+
+        return element;
+
+    }
+
     public static WebElement Flat_Rate(WebDriver driver){
 
         element = driver.findElement(By.id("s_method_flatrate_flatrate"));
