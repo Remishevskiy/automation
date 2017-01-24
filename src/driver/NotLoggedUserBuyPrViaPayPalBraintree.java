@@ -139,7 +139,7 @@ public class NotLoggedUserBuyPrViaPayPalBraintree {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -148,20 +148,28 @@ public class NotLoggedUserBuyPrViaPayPalBraintree {
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
         driver.findElement(By.id("customer-email")).sendKeys("test666test@mail.com");
 
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(2);
         }
 
@@ -176,21 +184,29 @@ public class NotLoggedUserBuyPrViaPayPalBraintree {
 
         CheckoutPage.Flat_Rate(driver).click();
 
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(3);
         }
 
         driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
-            System.out.println(3);
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println(4);
         }
         driver.findElement(By.cssSelector("#agreement_1")).click();
 

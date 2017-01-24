@@ -49,21 +49,29 @@ public class LoggedUserBuySimplePrViaBraintreeAndChangeBilling {
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 15);
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
 
         CheckoutPage.UPS_2ndDayAir(driver).click();
 
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(2);
         }
 

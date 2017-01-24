@@ -146,20 +146,28 @@ public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformat
         driver.findElement(By.id("product-addtocart-button")).click();
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
         driver.findElement(By.id("customer-email")).sendKeys("test666test@mail.com");
 
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(2);
         }
 
@@ -175,11 +183,15 @@ public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformat
 
         CheckoutPage.Freeshipping(driver).click();
 
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(3);
         }
         try{
@@ -187,11 +199,15 @@ public class NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformat
         }catch (NoSuchElementException e) {
             System.out.println(4);
         }
-        try{
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(5);
         }
         try{

@@ -30,7 +30,7 @@ public class LoggedUserBuyPrViaAmountDiscount {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -46,26 +46,49 @@ public class LoggedUserBuyPrViaAmountDiscount {
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 10);
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
         CheckoutPage.Freeshipping(driver).click();
-        //driver.findElement(By.id("s_method_freeshipping_freeshipping")).click();
-
-        wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println(2);
+        }
         driver.findElement(By.id("block-discount-heading")).click();
         driver.findElement(By.id("discount-code")).sendKeys("test10");
         driver.findElement(By.cssSelector(".action.iwd-action-code-button.iwd-action-apply.action-apply")).click();
         try {
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".message.message-success.success")));
+            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".message.message-success.success")));
             String Diskount = driver.findElement(By.cssSelector(".message.message-success.success")).getText();
-            System.out.println(Diskount + " amount 50 discount add");
+            System.out.println(Diskount + " amount discount add");
         }catch (TimeoutException e) {
             System.out.println("Test failed, amount discount wasn't added");
+        }
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println(3);
         }
         //Braintree payment
         driver.findElement(By.xpath("//span[contains(.,'Check / Money order')]")).click();
@@ -75,16 +98,11 @@ public class LoggedUserBuyPrViaAmountDiscount {
         wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
         System.out.println(order + "order was created with discount 10$");
-
     }
-
 
     @AfterMethod
 
     public void afterMethod() {
-
         driver.quit();
-
     }
-
 }

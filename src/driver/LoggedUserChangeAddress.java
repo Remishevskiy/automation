@@ -30,7 +30,7 @@ public class LoggedUserChangeAddress {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -46,26 +46,44 @@ public class LoggedUserChangeAddress {
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 10);
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
         driver.findElement(By.cssSelector(".iwd-not-selected-item:nth-of-type(2)")).click();
 
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-
-        }catch (TimeoutException e) {
-            System.out.println(1);
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println(2);
         }
+
         CheckoutPage.UPS_2ndDayAir(driver).click();
 
-        WebDriverWait wait4 = new WebDriverWait(driver, 10);
-        wait4.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println(3);
+        }
         driver.findElement(By.xpath("//span[contains(.,'Check / Money order')]")).click();
         driver.findElement(By.cssSelector("#agreement_1")).click();
         driver.findElement(By.cssSelector(".iwd-place-order-button")).click();

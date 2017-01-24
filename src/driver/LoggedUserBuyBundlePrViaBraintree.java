@@ -2,7 +2,6 @@ package driver;
 
 
         import java.util.concurrent.TimeUnit;
-
         import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
@@ -32,7 +31,7 @@ public class LoggedUserBuyBundlePrViaBraintree {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 15);
@@ -58,24 +57,33 @@ public class LoggedUserBuyBundlePrViaBraintree {
         driver.get("http://dev.m2ce.deviwd.com//checkout");
 
         WebDriverWait wait2 = new WebDriverWait(driver, 15);
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try {
+            wait2.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
 
-        }catch (TimeoutException e) {
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
-
         //Braintree payment
         CheckoutPage.UPS_NextDayAirSaver(driver).click();
 
-        //driver.findElement(By.id("label_method_1DP_ups")).click();
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
+        try {
+            wait2.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
 
-        }catch (TimeoutException e) {
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(2);
+        }
             driver.findElement(By.xpath("//span[contains(.,'Credit Card (Braintree)')]")).click();
 
             driver.switchTo().frame(driver.findElement(By.id("braintree-hosted-field-number")));
@@ -101,7 +109,7 @@ public class LoggedUserBuyBundlePrViaBraintree {
             String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
             System.out.println(order);
 
-    }}
+    }
 
 
     @AfterMethod

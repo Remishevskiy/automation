@@ -4,6 +4,8 @@ package driver;
         import java.util.Iterator;
         import java.util.Set;
         import java.util.concurrent.TimeUnit;
+
+        import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -31,7 +33,7 @@ public class LoggedUserBuyVirtualPrViaPayBraintree {
     }
     @Test
 
-    public void main() {
+    public void main() throws InterruptedException {
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 15);
@@ -46,24 +48,32 @@ public class LoggedUserBuyVirtualPrViaPayBraintree {
 
         driver.get("http://dev.m2ce.deviwd.com/checkout");
 
-        WebDriverWait wait2 = new WebDriverWait(driver, 15);
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout-loader")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
 
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(1);
         }
 
         String homePage = driver.getWindowHandle();
         //PayPal Braintree payment
         driver.findElement(By.xpath("//label[@for='braintree_paypal']")).click();
-        
-        try{
-            wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".loading-mask")));
-            wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loading-mask")));
 
-        }catch (TimeoutException e) {
+        try {
+            wait1.until(ExpectedConditions.visibilityOf(CheckoutPage.Checkout_loader(driver)));
+            int k = 0;
+            while (CheckoutPage.Checkout_loader(driver).isDisplayed() && k < 30){
+                System.out.println(CheckoutPage.Checkout_loader(driver).isDisplayed());
+                Thread.sleep(500);
+                k = k + 1;
+            }
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println(2);
         }
 
@@ -85,6 +95,7 @@ public class LoggedUserBuyVirtualPrViaPayBraintree {
                 driver.findElement(By.id("return_url")).click();
                 driver.switchTo().window(homePage);
 
+                WebDriverWait wait2 = new WebDriverWait(driver, 15);
                 wait2.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".order-number>strong")));
                 String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
                 System.out.println(order);

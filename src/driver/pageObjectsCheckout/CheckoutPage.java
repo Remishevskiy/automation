@@ -87,5 +87,14 @@ public class CheckoutPage {
 
     }
 
+    //loader
+    public static WebElement Checkout_loader(WebDriver driver) {
+
+        element = driver.findElement(By.id("checkout-loader"));
+
+        return element;
+    }
+
+
 }
 
