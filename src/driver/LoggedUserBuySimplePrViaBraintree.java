@@ -3,6 +3,7 @@ package driver;
 
         import java.util.concurrent.TimeUnit;
         import driver.pageObjectsCheckout.CheckoutPage;
+        import driver.pageObjectsCheckout.Global_var;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
@@ -21,10 +22,9 @@ public class LoggedUserBuySimplePrViaBraintree {
 
     public void beforeMethod() {
 
-
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://dev.m2ce.deviwd.com/");
+        driver.get(Global_var.URL_MainWebSite);
         driver.manage().window().maximize();
 
     }
@@ -37,13 +37,13 @@ public class LoggedUserBuySimplePrViaBraintree {
         wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("iwd-newsletterpopup-wrapper")));
 
         driver.findElement(By.cssSelector(".authorization-link>a")).click();
-        driver.findElement(By.id("email")).sendKeys("remishevskiy@ex.ua");
-        driver.findElement(By.id("pass")).sendKeys("gold89_18745120");
+        driver.findElement(By.id("email")).sendKeys(Global_var.Login);
+        driver.findElement(By.id("pass")).sendKeys(Global_var.Password);
         driver.findElement(By.id("send2")).click();
         driver.get("http://dev.m2ce.deviwd.com/impulse-duffle.html");
         driver.findElement(By.id("product-addtocart-button")).click();
 
-        driver.get("http://dev.m2ce.deviwd.com/checkout");
+        driver.get(Global_var.URL_Checkout);
 
         WebDriverWait wait2 = new WebDriverWait(driver, 15);
 

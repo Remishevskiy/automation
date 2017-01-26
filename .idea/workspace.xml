@@ -2,61 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyBundlePrViaBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyBundlePrViaBraintree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyGroupedPrViaBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyGroupedPrViaBraintree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaAmountDiscount.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaAmountDiscount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaPersentDiscount.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaPersentDiscount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStoreCredit.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStoreCredit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaBraintree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaCheckMoneyorder.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaCheckMoneyorder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaPayPalCredit.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaPayPalCredit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaPayPalExpress.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaPayPalExpress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserChangeAddress.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserChangeAddress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserCreateNewAdress.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserCreateNewAdress.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeAndStorePickUp.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeAndStorePickUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaPayPalBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuyPrViaPayPalBraintree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuySimplePrViaPayPalExpress.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/NotLoggedUserBuySimplePrViaPayPalExpress.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyConfigurablePrViaBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyConfigurablePrViaBraintree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyDownloadablePrViaBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyDownloadablePrViaBraintree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaAuthorizeDirectPost.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuySimplePrViaAuthorizeDirectPost.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyVirtualPrViaPayBraintree.class" afterPath="$PROJECT_DIR$/out/production/untitled1/driver/LoggedUserBuyVirtualPrViaPayBraintree.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyBundlePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyBundlePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyConfigurablePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyConfigurablePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyDownloadablePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyDownloadablePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyGroupedPrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyGroupedPrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaAmountDiscount.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaAmountDiscount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaPersentDiscount.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaPersentDiscount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStoreCredit.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStoreCredit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPost.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaCheckMoneyorder.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaCheckMoneyorder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalCredit.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalCredit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalExpress.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalExpress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserBuyVirtualPrViaPayBraintree.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserBuyVirtualPrViaPayBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserChangeAddress.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserChangeAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/LoggedUserCreateNewAdress.java" afterPath="$PROJECT_DIR$/src/driver/LoggedUserCreateNewAdress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndStorePickUp.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndStorePickUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaPayPalBraintree.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaPayPalBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformation.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformationNew.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformationNew.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrPayPalCredit.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrPayPalCredit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpress.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation.java" afterPath="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java" afterPath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +34,42 @@
     <favorites_list name="untitled1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="CheckoutPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Global_var.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoggedUserBuySimplePrViaBraintree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/driver/LogedUserBuyVirtualPrViaPayBraintree.java" />
         <option value="$PROJECT_DIR$/src/driver/LogedUserChangeAddress.java" />
         <option value="$PROJECT_DIR$/src/driver/LogedUserCreateNewAdress.java" />
         <option value="$PROJECT_DIR$/src/driver/NonLogedUserBuyPrViaBraintreeAndChangeBilling.java" />
@@ -129,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/practiceTestCases/testng1.xml" />
         <option value="$PROJECT_DIR$/src/practiceTestCases/TestngDataProviders.java" />
         <option value="$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java" />
         <option value="$PROJECT_DIR$/src/driver/LoggedUserBuyBundlePrViaBraintree.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation.java" />
         <option value="$PROJECT_DIR$/src/driver/LoggedUserBuyConfigurablePrViaBraintree.java" />
@@ -160,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformationNew.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrPayPalCredit.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpress.java" />
+        <option value="$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java" />
+        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java" />
       </list>
     </option>
   </component>
@@ -187,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,7 +349,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,7 +380,7 @@
       <recent name="D:\Testing\untitled1\src\" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation">
+  <component name="RunManager" selected="TestNG.LoggedUserBuySimplePrViaBraintree">
     <configuration default="false" name="LoggedUserBuyBundlePrViaBraintree" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -834,11 +821,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.LoggedUserBuyPrViaAmountDiscount" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.LoggedUserBuyBundlePrViaBraintree" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintree" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintree" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.LoggedUserBuyPrViaAmountDiscount" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.LoggedUserBuyBundlePrViaBraintree" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -912,33 +899,40 @@
       <option name="project" value="LOCAL" />
       <updated>1485208353235</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Shipping PageObject add Loader.">
+      <created>1485298269395</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1485298269395</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoggedUserBuyBundlePrViaBraintree - 2017.01.24 at 23h 54m 00s.xml">
-      <configuration name="LoggedUserBuyBundlePrViaBraintree" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoggedUserBuyPrViaAmountDiscount - 2017.01.25 at 00h 05m 56s.xml">
-      <configuration name="LoggedUserBuyPrViaAmountDiscount" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoggedUserBuyPrViaAmountDiscount - 2017.01.25 at 00h 07m 22s.xml">
-      <configuration name="LoggedUserBuyPrViaAmountDiscount" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoggedUserBuyPrViaAmountDiscount - 2017.01.25 at 00h 13m 15s.xml">
-      <configuration name="LoggedUserBuyPrViaAmountDiscount" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.24 at 23h 40m 38s.xml">
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 01m 26s.xml">
       <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation - 2017.01.25 at 00h 40m 54s.xml">
-      <configuration name="NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation" configurationId="TestNG" />
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 03m 26s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="NotLoggedUserBuySimplePrViaPayPalExpress - 2017.01.23 at 23h 21m 17s.xml">
-      <configuration name="NotLoggedUserBuySimplePrViaPayPalExpress" configurationId="TestNG" />
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 10m 12s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="NotLoggedUserBuySimplePrViaPayPalExpress - 2017.01.23 at 23h 24m 06s.xml">
-      <configuration name="NotLoggedUserBuySimplePrViaPayPalExpress" configurationId="TestNG" />
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 11m 36s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 14m 38s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 16m 37s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 17m 20s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.01.27 at 01h 18m 39s.xml">
+      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
     </history-entry>
     <history-entry file="NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation - 2017.01.24 at 01h 16m 26s.xml">
       <configuration name="NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation" configurationId="TestNG" />
@@ -958,7 +952,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -975,7 +969,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23400854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23667377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1025,7 +1019,8 @@
     <MESSAGE value="Page Object, Assert for Negative test" />
     <MESSAGE value="Negative test for Braintree, PayPalExpress. Start PageObject for checkout." />
     <MESSAGE value="Shipping PageObject added to all tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Shipping PageObject added to all tests." />
+    <MESSAGE value="Shipping PageObject add Loader." />
+    <option name="LAST_COMMIT_MESSAGE" value="Shipping PageObject add Loader." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1036,20 +1031,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/MultipleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/FindAllLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/practiceTestCases/Log4j.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1126,22 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/pageObjects/Home_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/pageObjects/LogIn_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/practiceTestCases/TestCaseforpageObject/PageObjectModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1158,16 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/LoggedUserBuyBundlePrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpressWithoutShippingInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
@@ -1181,16 +1136,6 @@
         <state relative-caret-position="-918">
           <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1255,16 +1200,6 @@
         <state relative-caret-position="22">
           <caret line="72" column="32" lean-forward="false" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="59" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1419,6 +1354,66 @@
         <state relative-caret-position="391">
           <caret line="59" column="9" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/LoggedUserBuyBundlePrViaBraintree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/pageObjects/LogIn_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/pageObjects/Home_Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
