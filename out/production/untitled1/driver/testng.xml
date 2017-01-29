@@ -1,33 +1,38 @@
 <suite name="Test - Suite">
+
+    <listeners>
+        <listener class-name="driver.ScreenShot.ListenerTest"></listener>
+    </listeners>
         <test name="checkout">
         <classes>
-            <class name="driver.LoggedUserBuyDownloadablePrViaBraintree" />
-            <class name="driver.LoggedUserBuySimplePrViaCheckMoneyorder" />
-            <class name="driver.LoggedUserBuySimplePrViaBraintree" />
-            <class name="driver.LoggedUserBuyBundlePrViaBraintree" />
-            <class name="driver.LoggedUserBuyConfigurablePrViaBraintree" />
-            <class name="driver.LoggedUserBuyGroupedPrViaBraintree" />
-            <class name="driver.LoggedUserBuyPrViaAmountDiscount" />
-            <class name="driver.LoggedUserBuyPrViaPersentDiscount" />
-            <class name="driver.LoggedUserBuyPrViaStorePickupAndPurchaseOrder" />
-            <class name="driver.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
-            <class name="driver.LoggedUserBuyVirtualPrViaPayBraintree" />
-            <class name="driver.LoggedUserChangeAddress" />
-            <class name="driver.LoggedUserCreateNewAdress" />
-            <class name="driver.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
-            <class name="driver.NotLoggedUserBuyPrViaBraintreeAndStorePickUp" />
-            <class name="driver.NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork" />
-            <class name="driver.NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork" />
-            <class name="driver.NotLoggedUserBuyPrViaPayPalBraintree" />
-            <class name="driver.LoggedUserBuySimplePrViaAuthorizeDirectPost" />
-            <class name="driver.LoggedUserBuySimplePrViaPayPalCredit" />
-            <class name="driver.LoggedUserBuySimplePrViaPayPalExpress" />
-            <class name="driver.NotLoggedUserBuySimplePrAuthorizeDirectPost" />
-            <class name="driver.NotLoggedUserBuySimplePrPayPalCredit" />
-            <class name="driver.NotLoggedUserBuySimplePrViaPayPalExpress" />
-            <class name="driver.LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling" />
-            <class name="driver.NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling" />
-            <class name="driver.LoggedUserBuyPrViaStoreCredit" />
+           <!-- <class name="driver.TestCases.Test1" />-->
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaBraintree" />
+            <class name="driver.TestCases.LoggedUserBuyDownloadablePrViaBraintree" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaCheckMoneyorder" />
+            <class name="driver.TestCases.LoggedUserBuyBundlePrViaBraintree" />
+            <class name="driver.TestCases.LoggedUserBuyConfigurablePrViaBraintree" />
+            <class name="driver.TestCases.LoggedUserBuyGroupedPrViaBraintree" />
+            <class name="driver.TestCases.LoggedUserBuyPrViaAmountDiscount" />
+            <class name="driver.TestCases.LoggedUserBuyPrViaPersentDiscount" />
+            <class name="driver.TestCases.LoggedUserBuyPrViaStorePickupAndPurchaseOrder" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
+            <class name="driver.TestCases.LoggedUserBuyVirtualPrViaPayBraintree" />
+            <class name="driver.TestCases.LoggedUserChangeAddress" />
+            <class name="driver.TestCases.LoggedUserCreateNewAdress" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaBraintreeAndStorePickUp" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaPayPalBraintree" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaAuthorizeDirectPost" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaPayPalCredit" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaPayPalExpress" />
+            <class name="driver.TestCases.NotLoggedUserBuySimplePrAuthorizeDirectPost" />
+            <class name="driver.TestCases.NotLoggedUserBuySimplePrPayPalCredit" />
+            <class name="driver.TestCases.NotLoggedUserBuySimplePrViaPayPalExpress" />
+            <class name="driver.TestCases.LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling" />
+            <class name="driver.TestCases.NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling" />
+            <class name="driver.TestCases.LoggedUserBuyPrViaStoreCredit" />
 
 
 
