@@ -5,7 +5,7 @@
     </listeners>
         <test name="checkout">
         <classes>
-           <!-- <class name="driver.TestCases.Test1" />-->
+           <!--<class name="driver.TestCases.Test1" />-->
             <class name="driver.TestCases.LoggedUserBuySimplePrViaBraintree" />
             <class name="driver.TestCases.LoggedUserBuyDownloadablePrViaBraintree" />
             <class name="driver.TestCases.LoggedUserBuySimplePrViaCheckMoneyorder" />

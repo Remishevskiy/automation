@@ -5,6 +5,8 @@ package driver.TestCases;
         import java.io.IOException;
         import java.util.concurrent.TimeUnit;
 
+        /*import driver.ScreenShot.CaptureScreenshot;*/
+        import driver.ScreenShot.CaptureScreenshot;
         import driver.ScreenShot.MainTest;
         import driver.appModules.Actions;
         import driver.pageObjectsCheckout.CheckoutPage;
@@ -17,6 +19,7 @@ package driver.TestCases;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.WebDriverWait;
+        import org.testng.ITestResult;
         import org.testng.annotations.Test;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
@@ -48,12 +51,15 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
         Actions.CloseNewsletterpopup_Action(driver);
         Actions.SignIn_Action(driver);
 
-        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(),"PNG",new File(System.getProperty("user.dir") +"/ErrorScreenshots/FullPageScreenshot.png"));
+        /*File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("D:\\Testing\\image\\filename.png"));*/
+
+        /*Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+        ImageIO.write(screenshot.getImage(),"PNG",new File(System.getProperty("user.dir") +"/ErrorScreenshots/FullPageScreenshot.png"));*/
 
         /*TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String dest = System.getProperty("user.dir") + "/ErrorScreenshot/Screenshotname.png";
+        String dest = System.getProperty("D:\\Testing\\") + "image\\filename.png";
         File destination = new File(dest);
         FileUtils.copyFile(source, destination);*/
 
@@ -107,7 +113,21 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
 
     @AfterMethod
 
-    public void afterMethod() {
+    public void afterMethod(ITestResult result) throws IOException {
+
+        System.out.println("Testcase status is"+result.getStatus());
+        System.out.println("Iresult status is"+result.FAILURE);
+
+        if(result.FAILURE == result.getStatus())
+        {
+            //Now we need to capture Screenshot
+            //use CaptureScreenshot Class to Take Screenshot
+
+            String ClassName = getClass().getName();
+            CaptureScreenshot.takescreenshot(driver, ClassName);
+
+        }
+
 
         driver.quit();
 
