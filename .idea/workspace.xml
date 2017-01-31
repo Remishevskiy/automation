@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/ScreenShot/ListenerTest.java" afterPath="$PROJECT_DIR$/src/driver/ScreenShot/ListenerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/appModules/Actions.java" afterPath="$PROJECT_DIR$/src/driver/appModules/Actions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java" afterPath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -996,7 +992,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485819141566</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" ScreenShots feature done">
+      <created>1485905880117</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1485905880117</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
