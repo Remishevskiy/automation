@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
 
 public class ListenerTest extends MainTest implements ITestListener {
 
@@ -63,4 +64,23 @@ public class ListenerTest extends MainTest implements ITestListener {
         // TODO Auto-generated method stub
 
     }
+    public class MyTestResultListener extends TestListenerAdapter {
+
+        @Override
+        public void onTestFailure(ITestResult result) {
+            // do what you want to do
+        }
+
+        @Override
+        public void onTestSuccess(ITestResult result) {
+            // do what you want to do
+        }
+
+        @Override
+        public void onTestSkipped(ITestResult result) {
+            // do what you want to do
+        }
+    }
+
+
 }

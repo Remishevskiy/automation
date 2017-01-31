@@ -1,5 +1,6 @@
 package driver.appModules;
 
+
 import driver.ScreenShot.MainTest;
 import driver.pageObjectsCheckout.CheckoutPage;
 import driver.pageObjectsCheckout.Global_var;
@@ -7,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 /**
  * Created by Император on 28.01.2017.
@@ -59,5 +61,7 @@ public class Actions extends MainTest {
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
         System.out.println(order);
     }
+
+
 }
 

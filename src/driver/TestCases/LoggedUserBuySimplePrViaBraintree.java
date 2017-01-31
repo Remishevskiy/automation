@@ -1,33 +1,26 @@
 package driver.TestCases;
 
 
-        import java.io.File;
+
         import java.io.IOException;
         import java.util.concurrent.TimeUnit;
-
-        /*import driver.ScreenShot.CaptureScreenshot;*/
         import driver.ScreenShot.CaptureScreenshot;
         import driver.ScreenShot.MainTest;
         import driver.appModules.Actions;
         import driver.pageObjectsCheckout.CheckoutPage;
         import driver.pageObjectsCheckout.Global_var;
-        import org.apache.commons.io.FileUtils;
-        import org.openqa.selenium.OutputType;
-        import org.openqa.selenium.TakesScreenshot;
         import org.openqa.selenium.TimeoutException;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.WebDriverWait;
         import org.testng.ITestResult;
+        import org.testng.Reporter;
         import org.testng.annotations.Test;
         import org.testng.annotations.BeforeMethod;
         import org.testng.annotations.AfterMethod;
-        import ru.yandex.qatools.ashot.AShot;
-        import ru.yandex.qatools.ashot.Screenshot;
-        import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
-        import javax.imageio.ImageIO;
+        import static driver.pageObjectsCheckout.Global_var.Path_to_Screenshots;
 
 
 public class LoggedUserBuySimplePrViaBraintree extends MainTest {
@@ -113,7 +106,9 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
 
     @AfterMethod
 
-    public void afterMethod(ITestResult result) throws IOException {
+    public void  afterMethod(ITestResult result) throws IOException {
+
+
 
         System.out.println("Testcase status is"+result.getStatus());
         System.out.println("Iresult status is"+result.FAILURE);
@@ -123,11 +118,15 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
             //Now we need to capture Screenshot
             //use CaptureScreenshot Class to Take Screenshot
 
+            //https://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example
+            //http://automationtesting.in/capture-screenshot-in-extent-reports-java/
+            //
+
             String ClassName = getClass().getName();
             CaptureScreenshot.takescreenshot(driver, ClassName);
-
+            System.out.println("Failed SCR_located:"+Path_to_Screenshots+ClassName+".png");
+            Reporter.log("Failed SCR_located:"+Path_to_Screenshots+ClassName+".png");
         }
-
 
         driver.quit();
 
