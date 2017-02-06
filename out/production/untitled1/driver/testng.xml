@@ -3,12 +3,13 @@
     <listeners>
         <listener class-name="driver.ScreenShot.ListenerTest"></listener>
     </listeners>
+    <parameter name="report.config" value="\src\driver\extent-config.xml" />
         <test name="checkout">
         <classes>
            <!--<class name="driver.TestCases.Test1" />-->
             <class name="driver.TestCases.LoggedUserBuySimplePrViaBraintree" />
             <class name="driver.TestCases.LoggedUserBuyDownloadablePrViaBraintree" />
-            <class name="driver.TestCases.LoggedUserBuySimplePrViaCheckMoneyorder" />
+           <!-- <class name="driver.TestCases.LoggedUserBuySimplePrViaCheckMoneyorder" />
             <class name="driver.TestCases.LoggedUserBuyBundlePrViaBraintree" />
             <class name="driver.TestCases.LoggedUserBuyConfigurablePrViaBraintree" />
             <class name="driver.TestCases.LoggedUserBuyGroupedPrViaBraintree" />
@@ -32,7 +33,7 @@
             <class name="driver.TestCases.NotLoggedUserBuySimplePrViaPayPalExpress" />
             <class name="driver.TestCases.LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling" />
             <class name="driver.TestCases.NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling" />
-            <class name="driver.TestCases.LoggedUserBuyPrViaStoreCredit" />
+            <class name="driver.TestCases.LoggedUserBuyPrViaStoreCredit" />-->
 
 
 
