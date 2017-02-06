@@ -4,28 +4,36 @@ package driver.TestCases;
 
         import java.io.IOException;
         import java.util.concurrent.TimeUnit;
-        import driver.ScreenShot.CaptureScreenshot;
+        import com.relevantcodes.extentreports.ExtentReports;
+        import com.relevantcodes.extentreports.ExtentTest;
+        import com.relevantcodes.extentreports.LogStatus;
         import driver.ScreenShot.MainTest;
         import driver.appModules.Actions;
+        import driver.appModules.GetScreenShot;
         import driver.pageObjectsCheckout.CheckoutPage;
         import driver.pageObjectsCheckout.Global_var;
         import org.openqa.selenium.TimeoutException;
-        import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.WebDriverWait;
         import org.testng.ITestResult;
-        import org.testng.Reporter;
-        import org.testng.annotations.Test;
-        import org.testng.annotations.BeforeMethod;
-        import org.testng.annotations.AfterMethod;
+        import org.testng.annotations.*;
 
-        import static driver.pageObjectsCheckout.Global_var.Path_to_Screenshots;
+
 
 
 public class LoggedUserBuySimplePrViaBraintree extends MainTest {
 
-    public WebDriver driver;
+    ExtentReports extent;
+    ExtentTest test;
+    /*public WebDriver driver;*/
+
+    @BeforeTest
+    public void init()
+    {
+        extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentScreenshot.html", true);
+    }
+
 
     @BeforeMethod
 
@@ -41,8 +49,10 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
 
     public void main() throws InterruptedException, IOException {
 
+        test = extent.startTest("captureScreenshot");
         Actions.CloseNewsletterpopup_Action(driver);
         Actions.SignIn_Action(driver);
+
 
         /*File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("D:\\Testing\\image\\filename.png"));*/
@@ -100,11 +110,37 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
         Actions.PrintOrderNumber_Action_NotLoggedUser(driver);
 
 
-
+        test.log(LogStatus.PASS, "Test Passed");
 
     }
 
     @AfterMethod
+    public void getResult(ITestResult result) throws IOException
+    {
+        if(result.getStatus() == ITestResult.FAILURE)
+        {
+
+            String ClassName = getClass().getName();
+            String screenShotPath = GetScreenShot.capture(driver, ClassName);
+            test.log(LogStatus.FAIL, result.getThrowable());
+            test.log(LogStatus.FAIL, "Screenshot Below: " + test.addScreenCapture(screenShotPath));
+
+        }
+        extent.endTest(test);
+    }
+
+
+    @AfterTest
+    public void endreport()
+    {
+        driver.close();
+        extent.flush();
+        extent.close();
+    }
+
+
+
+   /* @AfterMethod
 
     public void  afterMethod(ITestResult result) throws IOException {
 
@@ -125,11 +161,11 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
             String ClassName = getClass().getName();
             CaptureScreenshot.takescreenshot(driver, ClassName);
             System.out.println("Failed SCR_located:"+Path_to_Screenshots+ClassName+".png");
-            Reporter.log("Failed SCR_located:"+Path_to_Screenshots+ClassName+".png");
+            Reporter.log("Test log_Failed SCR_located:"+Path_to_Screenshots+ClassName+".png");
         }
 
         driver.quit();
 
-    }
+    }*/
 
 }

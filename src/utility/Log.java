@@ -1,8 +1,8 @@
+/*
+
 package utility;
 
-/**
- * Created by Император on 07.12.2016.
- */
+
 import org.apache.log4j.Logger;
 
 public class Log {
@@ -76,3 +76,5 @@ public class Log {
     }
 
 }
+
+*/

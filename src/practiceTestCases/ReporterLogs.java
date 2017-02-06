@@ -1,3 +1,4 @@
+/*
 package practiceTestCases;
 
 
@@ -47,7 +48,8 @@ public class ReporterLogs {
 
         Reporter.log("Application Lauched successfully | ");
 
-        driver.findElement(By.xpath(".//*[@id='account']/a")).click();
+        driver.findElement(By.xpath("./*/
+/*[@id='account']/a")).click();
 
         Log.info("Click action performed on My Account link");
 
@@ -82,3 +84,4 @@ public class ReporterLogs {
     }
 
 }
+*/

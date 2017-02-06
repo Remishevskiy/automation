@@ -7,9 +7,12 @@ package driver.pageObjectsCheckout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage {
 
+
+    public WebDriver driver;
     //Shipping
 
     private static WebElement element = null;
@@ -22,6 +25,7 @@ public class CheckoutPage {
 
     }
 
+
     public static WebElement Flat_Rate(WebDriver driver) {
 
         element = driver.findElement(By.id("s_method_flatrate_flatrate"));
@@ -29,6 +33,7 @@ public class CheckoutPage {
         return element;
 
     }
+
 
     public static WebElement Tablerate_Bestway(WebDriver driver) {
 

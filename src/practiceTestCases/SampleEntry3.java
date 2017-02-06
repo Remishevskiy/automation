@@ -1,8 +1,11 @@
+/*
 package practiceTestCases;
 
+*/
 /**
  * Created by Император on 07.12.2016.
- */
+ *//*
+
 import org.apache.log4j.*;
 
 public class SampleEntry3 {
@@ -34,3 +37,4 @@ public class SampleEntry3 {
     }
 }
 
+*/

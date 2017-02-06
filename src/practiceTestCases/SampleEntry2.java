@@ -3,7 +3,7 @@ package practiceTestCases;
 /**
  * Created by Император on 07.12.2016.
  */
-import org.apache.log4j.BasicConfigurator;
+/*import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -34,4 +34,4 @@ public class SampleEntry2 {
         Mylogger.error("This is error log - WARN");
         Mylogger.fatal("This is Fatal log - WARN");
     }
-}
+}*/
