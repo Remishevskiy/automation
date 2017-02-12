@@ -1,0 +1,16 @@
+<suite name="Test - IWDAgency" parallel="none">
+    <parameter name="report.config" value="\src\driver\extent-config.xml" />
+        <test name="checkout">
+        <classes>
+           <!-- <class name="IWDmainsiteProject.TestCases.WordPress_header1_bulidastore_doitYourself" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header1_Work_with_a_team" />-->
+            <class name="IWDmainsiteProject.TestCases.WordPress_header2_Store_Optimization_Support" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header2_Extension_Support" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header2_Health_Check" />
+        </classes>
+        </test>
+        </suite>
+
+
+
+

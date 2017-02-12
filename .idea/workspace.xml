@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment=" ScreenShots feature done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/GenerateExtentReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/appModules/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/extent-config.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test Results - MultipleTest_One.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test Results - ReporterLogs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test Results - TestNG_main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestResults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestResultsCheckout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/practiceTestCases/Log4j.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/practiceTestCases/ReporterLogs.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/practiceTestCases/SampleEntry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/practiceTestCases/SampleEntry2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/practiceTestCases/SampleEntry3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/untitled1/utility/Log.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/driver/ScreenShot/CaptureScreenshot.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/practiceTestCases/SampleEntry.java" afterPath="" />
+    <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestngIWDAgency.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/driver/TestCases/IwdAgencyHeader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyDownloadablePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyDownloadablePrViaBraintree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java" afterPath="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/TestCases/Test1.java" afterPath="$PROJECT_DIR$/src/driver/TestCases/Test1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java" afterPath="$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/testng.xml" afterPath="$PROJECT_DIR$/src/driver/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/practiceTestCases/Log4j.java" afterPath="$PROJECT_DIR$/src/practiceTestCases/Log4j.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/practiceTestCases/ReporterLogs.java" afterPath="$PROJECT_DIR$/src/practiceTestCases/ReporterLogs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/practiceTestCases/SampleEntry2.java" afterPath="$PROJECT_DIR$/src/practiceTestCases/SampleEntry2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/practiceTestCases/SampleEntry3.java" afterPath="$PROJECT_DIR$/src/practiceTestCases/SampleEntry3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utility/Log.java" afterPath="$PROJECT_DIR$/src/utility/Log.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java" afterPath="$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,88 +38,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GenerateExtentReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/GenerateExtentReport.java">
+      <file leaf-file-name="TestngIWDAgency.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestngIWDAgency.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/driver/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListenerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/ScreenShot/ListenerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="extent-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/extent-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggedUserBuySimplePrViaBraintree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/appModules/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/TestCases/Test1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetScreenShot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XSLT Stylesheet" />
         <option value="Class" />
       </list>
     </option>
@@ -170,24 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPost.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalExpress.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaCheckMoneyorder.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaPayPalCredit.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserBuyVirtualPrViaPayBraintree.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserChangeAddress.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintree_WithoutShippingInformation.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeAndStorePickUp.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithAmountDiscountNotWork.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaBraintreeWithPersentDiscountNotWork.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuyPrViaPayPalBraintree.java" />
-        <option value="$PROJECT_DIR$/src/driver/LoggedUserCreateNewAdress.java" />
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformation.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrAuthorizeDirectPost_WithoutShippingInformationNew.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrPayPalCredit.java" />
@@ -213,14 +103,32 @@
         <option value="$PROJECT_DIR$/src/practiceTestCases/SampleEntry3.java" />
         <option value="$PROJECT_DIR$/src/practiceTestCases/Log4j.java" />
         <option value="$PROJECT_DIR$/src/utility/Log.java" />
-        <option value="$PROJECT_DIR$/test-output/ExtentScreenshot.html" />
         <option value="$PROJECT_DIR$/src/driver/TestCases/Test1.java" />
         <option value="$PROJECT_DIR$/src/driver/testng.xml" />
         <option value="$PROJECT_DIR$/src/driver/extent-config.xml" />
         <option value="$PROJECT_DIR$/src/MySystemInfo.java" />
         <option value="$PROJECT_DIR$/src/driver/appModules/test.java" />
-        <option value="$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java" />
+        <option value="$PROJECT_DIR$/test-output/ExtentScreenshot.html" />
+        <option value="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyDownloadablePrViaBraintree.java" />
         <option value="$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java" />
+        <option value="$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/GetScreenShotIWDsite.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/CreateReportanfGetScreenShotIWDsite.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Global_Var_Agency.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java" />
+        <option value="$PROJECT_DIR$/src/driver/TestCases/IwdAgencyHeader.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages_in_Header.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header_Store_Optimization_Support.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header_Health_Check.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header_Extension_Support.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header_Work_with_a_team.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header_bulidastore_doitYourself.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestngIWDAgency.xml" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Store_Optimization_Support.java" />
       </list>
     </option>
   </component>
@@ -249,6 +157,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,176 +205,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test-output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScreenShot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pageObjectsCheckout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appModules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ErrorScreenshots" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ErrorScreenshot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,26 +227,27 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Testing\untitled1\src\IWDmainsiteProject" />
       <recent name="D:\Testing\untitled1\src\practiceTestCases" />
       <recent name="D:\Testing\untitled1\src\driver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="IWDmainsiteProject.TestCases" />
+      <recent name="IWDmainsiteProject.AppModule" />
       <recent name="driver.pageObjectsCheckout" />
       <recent name="driver" />
       <recent name="practiceTestCases" />
-      <recent name="utility" />
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Testing\untitled1\src\driver" />
       <recent name="D:\Testing\untitled1\src\" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Testing/untitled1/src/driver/testng.xml">
-    <configuration default="false" name="LoggedUserBuySimplePrViaBraintree" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.WordPress_header2_Store_Optimization_Support">
+    <configuration default="false" name="WordPress_header_Work_with_a_team" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="driver.TestCases.*" />
+          <option name="PATTERN" value="IWDmainsiteProject.TestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -508,8 +255,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="driver" />
-      <option name="MAIN_CLASS_NAME" value="driver.TestCases.LoggedUserBuySimplePrViaBraintree" />
+      <option name="PACKAGE_NAME" value="IWDmainsiteProject.TestCases" />
+      <option name="MAIN_CLASS_NAME" value="IWDmainsiteProject.TestCases.WordPress_header_Work_with_a_team" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -530,45 +277,12 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="LoggedUserBuySimplePrViaBraintreeAndChangeBilling" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="driver.TestCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="untitled1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="driver" />
-      <option name="MAIN_CLASS_NAME" value="driver.TestCases.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="D:/Testing/untitled1/src/driver/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="D:/Testing/untitled1/src/IWDmainsiteProject/TestngIWDAgency.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="untitled1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/driver/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/IWDmainsiteProject/TestngIWDAgency.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -591,10 +305,10 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="Test1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="WordPress_header_bulidastore_doitYourself" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="driver.TestCases.*" />
+          <option name="PATTERN" value="IWDmainsiteProject.TestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -602,8 +316,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="driver.TestCases" />
-      <option name="MAIN_CLASS_NAME" value="driver.TestCases.Test1" />
+      <option name="PACKAGE_NAME" value="IWDmainsiteProject.TestCases" />
+      <option name="MAIN_CLASS_NAME" value="IWDmainsiteProject.TestCases.WordPress_header_bulidastore_doitYourself" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -624,10 +338,10 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="GenerateExtentReport" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NotLoggedUserBuyPrViaBraintreeAndChangeBilling" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="driver.*" />
+          <option name="PATTERN" value="driver.TestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -635,8 +349,41 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="driver" />
-      <option name="MAIN_CLASS_NAME" value="driver.GenerateExtentReport" />
+      <option name="PACKAGE_NAME" value="driver.TestCases" />
+      <option name="MAIN_CLASS_NAME" value="driver.TestCases.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="WordPress_header2_Store_Optimization_Support" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="IWDmainsiteProject.TestCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="untitled1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="IWDmainsiteProject.TestCases" />
+      <option name="MAIN_CLASS_NAME" value="IWDmainsiteProject.TestCases.WordPress_header2_Store_Optimization_Support" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -924,19 +671,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.driver in untitled1" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.TestNG." />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintree" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintreeAndChangeBilling" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.D:/Testing/untitled1/src/driver/testng.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.Test1" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.GenerateExtentReport" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.WordPress_header_Work_with_a_team" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.D:/Testing/untitled1/src/IWDmainsiteProject/TestngIWDAgency.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.WordPress_header_bulidastore_doitYourself" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.WordPress_header2_Store_Optimization_Support" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.D:/Testing/untitled1/src/driver/testng.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintree" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.GenerateExtentReport" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Test1" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.LoggedUserBuySimplePrViaBraintree" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.WordPress_header2_Store_Optimization_Support" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.D:/Testing/untitled1/src/IWDmainsiteProject/TestngIWDAgency.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.WordPress_header_Work_with_a_team" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.WordPress_header_bulidastore_doitYourself" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.NotLoggedUserBuyPrViaBraintreeAndChangeBilling" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1052,39 +799,53 @@
       <option name="project" value="LOCAL" />
       <updated>1485905887462</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Extent report">
+      <created>1486424399484</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1486424399484</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Extent report">
+      <created>1486424435393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1486424435393</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__Testing_untitled1_src_driver_testng_xml - 2017.02.07 at 01h 36m 46s.xml">
-      <configuration name="D:/Testing/untitled1/src/driver/testng.xml" configurationId="TestNG" />
+    <history-entry file="D__Testing_untitled1_src_IWDmainsiteProject_TestngIWDAgency_xml - 2017.02.12 at 22h 19m 51s.xml">
+      <configuration name="D:/Testing/untitled1/src/IWDmainsiteProject/TestngIWDAgency.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.06 at 23h 12m 20s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.12 at 22h 34m 11s.xml">
+      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.06 at 23h 18m 36s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.12 at 23h 02m 35s.xml">
+      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.06 at 23h 22m 06s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 13m 12s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.06 at 23h 42m 42s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 23m 57s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.06 at 23h 49m 53s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 27m 04s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoggedUserBuySimplePrViaBraintree - 2017.02.07 at 01h 30m 58s.xml">
-      <configuration name="LoggedUserBuySimplePrViaBraintree" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 27m 50s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test1 - 2017.02.05 at 00h 26m 57s.xml">
-      <configuration name="Test1" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 29m 24s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test1 - 2017.02.05 at 00h 42m 55s.xml">
-      <configuration name="Test1" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 32m 36s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test1 - 2017.02.06 at 23h 58m 31s.xml">
-      <configuration name="Test1" configurationId="TestNG" />
+    <history-entry file="WordPress_header_Work_with_a_team - 2017.02.12 at 20h 36m 24s.xml">
+      <configuration name="WordPress_header_Work_with_a_team" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
@@ -1098,37 +859,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19006479" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11555076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33045357" sideWeight="0.5063966" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630669" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34557235" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2775378" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28725702" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34557235" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26349893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384449" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26349893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1169,7 +930,8 @@
     <MESSAGE value="PageObject, Global var" />
     <MESSAGE value="PageObject, Actions, ScreenShots" />
     <MESSAGE value=" ScreenShots feature done" />
-    <option name="LAST_COMMIT_MESSAGE" value=" ScreenShots feature done" />
+    <MESSAGE value="Extent report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extent report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1180,166 +942,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/pageObjects/BaseClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/appModules/CheckOut_Action.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/pageObjects/CheckOut_Page.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/testCases/Framework_001.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/appModules/Verification_Action.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/OnlineStore/OnlineStore/src/pageObjects/Confirmation_Page.java" />
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintreeAndChangeBilling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaPayPalCredit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="99" column="43" lean-forward="false" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/SignIn_Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyPrViaStoreCredit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyPrViaPersentDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyPrViaAmountDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyGroupedPrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyDownloadablePrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyConfigurablePrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyPrViaStorePickupAndPurchaseOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1011">
-          <caret line="1529" column="0" lean-forward="false" selection-start-line="1529" selection-start-column="0" selection-end-line="1529" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/base/TestBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyBundlePrViaBraintree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaAuthorizeDirectPostAndChangeBilling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test Results - D__Testing_untitled1_src_driver_testng_xml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaAuthorizeDirectPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/driver.TestCases.LoggedUserBuySimplePrViaBraintree.png" />
-    <entry file="file://$PROJECT_DIR$/src/driver/ScreenShot/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/Global_var.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/pageObjectsCheckout/CheckoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="71" column="64" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ErrorScreenshots/driver.TestCases.LoggedUserBuySimplePrViaBraintree.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/MyOwnReport.html" />
     <entry file="file://$PROJECT_DIR$/ErrorScreenshots/screenShotName.png" />
     <entry file="file://$PROJECT_DIR$/nullimage/filename.png" />
     <entry file="file://$PROJECT_DIR$/src/driver/appModules/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="36" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1373,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="8" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,33 +993,107 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySystemInfo.java" />
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentReports.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/model/Screencast.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/appModules/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/model/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1237">
+          <caret line="194" column="16" lean-forward="false" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/extent-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/driver.TestCases.LoggedUserBuyDownloadablePrViaBraintree.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/driver.TestCases.LoggedUserBuySimplePrViaBraintree.jpg" />
     <entry file="file://$PROJECT_DIR$/test-output/ExtentScreenshot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="371" column="27" lean-forward="true" selection-start-line="371" selection-start-column="27" selection-end-line="371" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="330" column="69" lean-forward="false" selection-start-line="330" selection-start-column="69" selection-end-line="330" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySystemInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/report/imagedriver.TestCases.LoggedUserBuySimplePrViaBraintree.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/report/ExtentScreenshot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/GenerateExtentReport.java">
+    <entry file="file://$PROJECT_DIR$/src/report/image/driver.TestCases.LoggedUserBuySimplePrViaBraintree.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuyDownloadablePrViaBraintree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="91" lean-forward="false" selection-start-line="78" selection-start-column="91" selection-end-line="78" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="111" />
         </state>
       </provider>
     </entry>
@@ -1423,58 +1101,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/appModules/GetScreenShot.java">
+    <entry file="file://$PROJECT_DIR$/src/driver/GenerateExtentReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/appModules/test.java">
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestgnSuiteforAgency.xsl" />
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/Report/RepotIWDAgency.html" />
+    <entry file="file://$PROJECT_DIR$/src/driver/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/Test1.java">
+    <entry file="file://$PROJECT_DIR$/src/FirstTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindElementCommands1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/LoggedUserBuySimplePrViaBraintree.java">
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="96" lean-forward="false" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/IwdAgencyHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="120" column="8" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/Report/image/IWDmainsiteProject.TestCases.WordPress_header_bulidastore_doitYourself.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/Report/image/IWDmainsiteProject.TestCases.WordPress_header_Work_with_a_team.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header1_Work_with_a_team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header1_bulidastore_doitYourself.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Global_Var_Agency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Store_Optimization_Support.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="113" column="5" lean-forward="false" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/extent-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestngIWDAgency.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>

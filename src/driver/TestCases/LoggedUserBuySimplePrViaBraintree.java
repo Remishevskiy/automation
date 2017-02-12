@@ -31,7 +31,7 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
     @BeforeTest
     public void init()
     {
-        extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentScreenshot.html", true);
+        extent = new ExtentReports(System.getProperty("user.dir") + "/src/report/ExtentScreenshot.html", true);
     }
 
 
@@ -108,7 +108,6 @@ public class LoggedUserBuySimplePrViaBraintree extends MainTest {
         Actions.PlaceOrder_Action(driver);
 
         Actions.PrintOrderNumber_Action_NotLoggedUser(driver);
-
 
         test.log(LogStatus.PASS, "Test Passed");
 

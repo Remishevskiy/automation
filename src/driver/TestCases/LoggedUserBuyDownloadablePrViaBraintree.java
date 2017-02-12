@@ -1,8 +1,13 @@
 package driver.TestCases;
 
 
+        import java.io.IOException;
         import java.util.concurrent.TimeUnit;
 
+        import com.relevantcodes.extentreports.ExtentReports;
+        import com.relevantcodes.extentreports.ExtentTest;
+        import com.relevantcodes.extentreports.LogStatus;
+        import driver.appModules.GetScreenShot;
         import driver.pageObjectsCheckout.CheckoutPage;
         import org.openqa.selenium.By;
         import org.openqa.selenium.TimeoutException;
@@ -10,13 +15,20 @@ package driver.TestCases;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.support.ui.ExpectedConditions;
         import org.openqa.selenium.support.ui.WebDriverWait;
-        import org.testng.annotations.Test;
-        import org.testng.annotations.BeforeMethod;
-        import org.testng.annotations.AfterMethod;
+        import org.testng.ITestResult;
+        import org.testng.annotations.*;
 
 public class LoggedUserBuyDownloadablePrViaBraintree {
+    ExtentReports extent;
+    ExtentTest test;
 
     public WebDriver driver;
+
+    @BeforeTest
+    public void init()
+    {
+        extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentScreenshot.html", true);
+    }
 
     @BeforeMethod
 
@@ -32,6 +44,7 @@ public class LoggedUserBuyDownloadablePrViaBraintree {
     @Test
 
     public void main() throws InterruptedException {
+        test = extent.startTest("captureScreenshot2");
 
         driver.findElement(By.cssSelector(".action-close")).click();
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
@@ -86,15 +99,32 @@ public class LoggedUserBuyDownloadablePrViaBraintree {
         String order = driver.findElement(By.cssSelector(".order-number>strong")).getText();
         System.out.println(order);
 
+        test.log(LogStatus.PASS, "Test Passed");
         }
 
 
+
+
     @AfterMethod
+    public void getResult(ITestResult result) throws IOException
+    {
+        if(result.getStatus() == ITestResult.FAILURE)
+        {
 
-    public void afterMethod() {
+            String ClassName = getClass().getName();
+            String screenShotPath = GetScreenShot.capture(driver, ClassName);
+            test.log(LogStatus.FAIL, result.getThrowable());
+            test.log(LogStatus.FAIL, "Screenshot Below: " + test.addScreenCapture(screenShotPath));
 
-        driver.quit();
-
+        }
+        extent.endTest(test);
     }
 
-}
+
+    @AfterTest
+    public void endreport()
+    {
+        driver.close();
+        extent.flush();
+        extent.close();
+    }}
