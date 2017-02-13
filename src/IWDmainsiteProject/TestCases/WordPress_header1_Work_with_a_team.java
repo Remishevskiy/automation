@@ -57,6 +57,9 @@ public class WordPress_header1_Work_with_a_team {
         Verify_Pages.Verify_Title_Work_With_A_Team(driver);
         test.log(LogStatus.INFO, "Title is correct");
 
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "Header displayed correct");
+
         Verify_Pages.Verify_Button_SEETHEIRPROJECT_Work_With_A_Team(driver);
         test.log(LogStatus.INFO, "Button SEE THEIR PROJECT is working");
 

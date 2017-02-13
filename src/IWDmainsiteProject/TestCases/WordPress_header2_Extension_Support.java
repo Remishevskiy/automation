@@ -48,6 +48,11 @@ public class WordPress_header2_Extension_Support {
         Header.Move_to_Extension_Support(driver);
         test.log(LogStatus.INFO, "Extension_Support was opened");
 
+        Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
+
+
+
+
         test.log(LogStatus.PASS, "Test Passed");
     }
 

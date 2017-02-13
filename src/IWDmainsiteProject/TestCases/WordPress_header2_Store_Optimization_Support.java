@@ -54,6 +54,11 @@ public class WordPress_header2_Store_Optimization_Support {
         Header.Verify_all_elements_in_header(driver);
         test.log(LogStatus.INFO, "Header displayed correct");
 
+        Verify_Pages.Verify_ALL_Links_START_NOW_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Links START_NOW are correct");
+
+        Verify_Pages.Verify_Button_WATCH_A_VIDEO_ABOUT_US_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Video works correct");
 
         test.log(LogStatus.PASS, "Test Passed");
     }
