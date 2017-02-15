@@ -2,10 +2,7 @@ package IWDmainsiteProject.PageObjects;
 
 import com.relevantcodes.extentreports.LogStatus;
 import driver.pageObjectsCheckout.CheckoutPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -153,21 +150,39 @@ public class Verify_Pages {
 
     public static void Verify_Extension_Support_Contact_us_form(WebDriver driver) throws InterruptedException {
 
-        WebDriverWait wait1 = new WebDriverWait(driver, 10);
-        try {
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("loader")));
-        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loader")));
-        }
-        catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
-        System.out.println(1);
-
-            driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
+        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
 
         driver.findElement(By.cssSelector("div[class='content'] div[class='button general full enabled hover-effect']")).click();
-            //driver.findElement(By.cssSelector(".button.general.full.enabled.hover-effect")).click();
+        driver.findElement(By.id("45706099")).click();
+
+        driver.findElement(By.cssSelector("li[id='36032111'] input[type='text']")).click();
+        driver.findElement(By.cssSelector("li[id='36032111'] input[type='text']")).sendKeys("test");
+        driver.findElement(By.cssSelector("li[id='36032111'] span[class='confirm']")).click();
+        driver.findElement(By.cssSelector("li[id='36032182'] input[type='text']")).click();
+        driver.findElement(By.cssSelector("li[id='36032182'] input[type='text']")).sendKeys("1222333444555");
+        driver.findElement(By.cssSelector("li[id='36032182'] span[class='confirm']")).click();
+        driver.findElement(By.cssSelector("li[id='36032179'] input[type='text']")).click();
+        driver.findElement(By.cssSelector("li[id='36032179'] input[type='text']")).sendKeys("testiwd@gmail.com");
+        driver.findElement(By.cssSelector("li[id='36032179'] span[class='confirm']")).click();
+        driver.findElement(By.cssSelector("li[id='36032232'] .textarea-wrapper>textarea")).click();
+        driver.findElement(By.cssSelector("li[id='36032232'] .textarea-wrapper>textarea")).sendKeys("IWD-test");
+        driver.findElement(By.cssSelector("li[id='36032232'] span[class='confirm']")).click();
+        driver.findElement(By.cssSelector("li[id='36033432'] .textarea-wrapper>textarea")).click();
+        driver.findElement(By.cssSelector("li[id='36033432'] .textarea-wrapper>textarea")).sendKeys("IWD-test-comment");
+        driver.findElement(By.cssSelector("li[id='36033432'] span[class='confirm']")).click();
+        driver.findElement(By.cssSelector("div[class='button-wrapper submit'] div[class='button general hover-effect enabled']"));
+        System.out.println("Submit button was found");
+        driver.switchTo().defaultContent();
+        driver.findElement(By.cssSelector("#typeform-wrapper>img")).click();
+        System.out.println("Test Contact us form passed");
+
+
+
+
+
 
 
 
     }
-}}
+}
 
