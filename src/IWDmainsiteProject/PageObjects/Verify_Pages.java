@@ -2,7 +2,6 @@ package IWDmainsiteProject.PageObjects;
 
 import com.relevantcodes.extentreports.LogStatus;
 import driver.pageObjectsCheckout.CheckoutPage;
-import org.apache.bcel.generic.NEW;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;

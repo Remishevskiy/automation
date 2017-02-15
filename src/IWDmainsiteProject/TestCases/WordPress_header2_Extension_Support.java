@@ -53,7 +53,7 @@ public class WordPress_header2_Extension_Support {
 
 
 
-        test.log(LogStatus.PASS, "Test Passed");
+        test.log(LogStatus.PASS, "Test Passed456");
     }
 
     @AfterMethod
