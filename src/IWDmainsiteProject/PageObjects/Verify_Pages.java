@@ -148,7 +148,6 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector(".fa.fa-times-circle-o")).click();
         System.out.println("video was closed");
 
-
     }
     //Extension_Support (Contact us form)  https://www.iwdagency.com/
 
@@ -156,15 +155,16 @@ public class Verify_Pages {
 
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
         try {
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("typeform-overlay")));
-        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("typeform-overlay")));
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("loader")));
+        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loader")));
         }
         catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
         System.out.println(1);
 
-            driver.switchTo().frame(driver.findElement(By.id("rufous-sandbox")));
+            driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
 
         driver.findElement(By.cssSelector("div[class='content'] div[class='button general full enabled hover-effect']")).click();
+            //driver.findElement(By.cssSelector(".button.general.full.enabled.hover-effect")).click();
 
 
 

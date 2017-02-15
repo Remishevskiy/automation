@@ -1,3 +1,4 @@
+/*
 package practiceTestCases;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
@@ -24,4 +25,4 @@ public class HeadlessBrowser {
                 .executeScript("return document.domain");
         System.out.println("Domain name is " + domainName);
 
-    }}
+    }}*/
