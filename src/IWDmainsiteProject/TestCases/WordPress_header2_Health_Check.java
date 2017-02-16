@@ -48,6 +48,9 @@ public class WordPress_header2_Health_Check {
         Header.Move_to_Health_Check(driver);
         test.log(LogStatus.INFO, "Health_Check was opened");
 
+        Verify_Pages.Verify_Title_Health_Check(driver);
+        test.log(LogStatus.INFO, "Title is correct");
+
 
         test.log(LogStatus.PASS, "Test Passed");
     }

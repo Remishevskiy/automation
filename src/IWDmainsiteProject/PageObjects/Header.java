@@ -46,6 +46,7 @@ public class Header {
         driver.findElement(Shopping_Cart);
         driver.findElement(User_Account);
         driver.findElement(Magento_Extensions);
+        System.out.println("Verify_all_elements_in_header is done");
 
     }
 

@@ -51,6 +51,9 @@ public class WordPress_header2_Extension_Support {
         Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
         test.log(LogStatus.INFO, "Contact_us_form was displayed correctly");
 
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "Verify_all_elements_in_header is done");
+
 
 
 

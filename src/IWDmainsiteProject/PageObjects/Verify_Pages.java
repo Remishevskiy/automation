@@ -5,6 +5,7 @@ import driver.pageObjectsCheckout.CheckoutPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.testng.Assert.assertEquals;
@@ -176,13 +177,42 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector("#typeform-wrapper>img")).click();
         System.out.println("Test Contact us form passed");
 
+    }
 
+    //Health Check https://www.iwdagency.com/health-check/
 
+    public static void Verify_Title_Health_Check(WebDriver driver) {
 
-
-
-
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Free Magento Security Audit & Health Check";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
 
     }
+
+    public static void Verify_Start_Scan_Health_Check(WebDriver driver) {
+
+        driver.findElement(By.cssSelector("form[id='health_check__scan_store'] input[name='site_url']")).sendKeys("https://www.iwdagency.com/extensions/");
+        driver.findElement(By.cssSelector("#health_check__scan_store>button")).click();
+
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        try {
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println();
+
+//.health_cheack__cancel
+
+        }
+
+        String TextLink = driver.findElement(By.cssSelector(".site_url")).getText();
+        System.out.println(TextLink);
+        String expectedlink = "https://www.iwdagency.com/extensions/";
+        assertEquals(TextLink, TextLink);
+
+
+
 }
 
