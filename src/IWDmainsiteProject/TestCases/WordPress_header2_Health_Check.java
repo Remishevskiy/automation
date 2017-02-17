@@ -51,6 +51,12 @@ public class WordPress_header2_Health_Check {
         Verify_Pages.Verify_Title_Health_Check(driver);
         test.log(LogStatus.INFO, "Title is correct");
 
+        Verify_Pages.Verify_Start_Scan_Health_Check(driver);
+        test.log(LogStatus.INFO, "Start_Scan is working");
+
+        Verify_Pages.Verify_Link_Health_Check(driver);
+        test.log(LogStatus.INFO, "Link is correct");
+
 
         test.log(LogStatus.PASS, "Test Passed");
     }

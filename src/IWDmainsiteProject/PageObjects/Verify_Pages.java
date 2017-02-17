@@ -201,18 +201,19 @@ public class Verify_Pages {
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
         wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
         } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
-            System.out.println();
+            System.out.println("#healthcheck__overlay not visible");
 
 //.health_cheack__cancel
 
-        }
+        }}
+
+        public static void Verify_Link_Health_Check(WebDriver driver){
 
         String TextLink = driver.findElement(By.cssSelector(".site_url")).getText();
         System.out.println(TextLink);
         String expectedlink = "https://www.iwdagency.com/extensions/";
-        assertEquals(TextLink, TextLink);
+        assertEquals(TextLink, expectedlink);
+        System.out.println("Link is correct");
 
-
-
-}
+}}
 

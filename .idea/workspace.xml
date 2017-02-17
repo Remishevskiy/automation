@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log4j.xml" afterPath="$PROJECT_DIR$/log4j.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
     </list>
     <ignored path="untitled1.iws" />
@@ -34,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Verify_Pages.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Verify_Pages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="212" column="39" lean-forward="false" selection-start-line="212" selection-start-column="39" selection-end-line="212" selection-end-column="39" />
+            <state relative-caret-position="366">
+              <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="51" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordPress_header2_Extension_Support.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java">
+      <file leaf-file-name="NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="54" column="74" lean-forward="true" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+            <state relative-caret-position="-289">
+              <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="51" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -69,19 +68,21 @@
       <file leaf-file-name="WordPress_header2_Health_Check.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
+            <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
+      <file leaf-file-name="SignIn_Action.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/driver/SignIn_Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="65" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#799#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrPayPalCredit.java" />
         <option value="$PROJECT_DIR$/src/driver/NotLoggedUserBuySimplePrViaPayPalExpress.java" />
         <option value="$PROJECT_DIR$/src/driver/appModules/SignIn_Action.java" />
         <option value="$PROJECT_DIR$/src/driver/LoggedUserBuySimplePrViaBraintree.java" />
@@ -163,10 +163,11 @@
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header1_Work_with_a_team.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Store_Optimization_Support.java" />
         <option value="$PROJECT_DIR$/src/practiceTestCases/HeadlessBrowser.java" />
-        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" />
+        <option value="$PROJECT_DIR$/log4j.xml" />
       </list>
     </option>
   </component>
@@ -194,7 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,6 +220,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -371,7 +376,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -380,8 +385,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/lib/testng-6.9.9.jar!/" />
+    <property name="last_opened_file_path" value="D:/Automation/download/apache/poi-bin-3.15-20160924/poi-3.15/lib/log4j-1.2.17.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1003,33 +1007,40 @@
       <option name="project" value="LOCAL" />
       <updated>1487160712997</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Main_site_HealthCheck">
+      <created>1487264064103</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1487264064103</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordPress_header2_Extension_Support - 2017.02.15 at 15h 28m 01s.xml">
-      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WordPress_header2_Extension_Support - 2017.02.15 at 17h 44m 54s.xml">
-      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.16 at 18h 18m 24s.xml">
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 12h 54m 11s.xml">
       <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.16 at 18h 21m 14s.xml">
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 04m 23s.xml">
       <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.14 at 00h 28m 24s.xml">
-      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 08m 56s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.14 at 00h 29m 29s.xml">
-      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 22m 24s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.14 at 00h 44m 19s.xml">
-      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 24m 02s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.14 at 00h 53m 02s.xml">
-      <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 25m 16s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 27m 35s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WordPress_header2_Health_Check - 2017.02.17 at 13h 28m 47s.xml">
+      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
     </history-entry>
     <history-entry file="WordPress_header2_Store_Optimization_Support - 2017.02.14 at 00h 58m 59s.xml">
       <configuration name="WordPress_header2_Store_Optimization_Support" configurationId="TestNG" />
@@ -1049,7 +1060,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1077,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1123,7 +1134,8 @@
     <MESSAGE value="Extent report" />
     <MESSAGE value="Main_site" />
     <MESSAGE value="Main_site_TestCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main_site_TestCommit" />
+    <MESSAGE value="Main_site_HealthCheck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main_site_HealthCheck" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1134,15 +1146,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ErrorScreenshots/driver.TestCases.LoggedUserBuySimplePrViaBraintree.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/SampleEntry.java" />
-    <entry file="file://$PROJECT_DIR$/src/practiceTestCases/SampleEntry2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="36" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/practiceTestCases/ReporterLogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1174,13 +1177,6 @@
     <entry file="file://$PROJECT_DIR$/src/MySystemInfo.java" />
     <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentReports.class" />
     <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/model/Screencast.class" />
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/driver/appModules/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1261,14 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="96" lean-forward="false" selection-start-line="36" selection-start-column="96" selection-end-line="36" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaAuthorizeDirectPostAndChangeBilling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1298,7 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,31 +1356,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="54" column="74" lean-forward="true" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
+        <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
+    <entry file="jar://D:/Automation/download/apache/apache-log4j-extras-1.2.17-bin/apache-log4j-extras-1.2.17/apache-log4j-extras-1.2.17.jar!/org/apache/log4j/Hierarchy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="65" />
+        <state relative-caret-position="85">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="-289">
           <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="51" selection-end-column="34" />
           <folding />
         </state>
@@ -1401,10 +1388,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="212" column="39" lean-forward="false" selection-start-line="212" selection-start-column="39" selection-end-line="212" selection-end-column="39" />
+        <state relative-caret-position="366">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/SignIn_Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#799#0" expanded="true" />
           </folding>
         </state>
       </provider>
