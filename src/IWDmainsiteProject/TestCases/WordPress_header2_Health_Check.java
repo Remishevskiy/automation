@@ -51,11 +51,24 @@ public class WordPress_header2_Health_Check {
         Verify_Pages.Verify_Title_Health_Check(driver);
         test.log(LogStatus.INFO, "Title is correct");
 
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "Verify_all_elements_in_header is done = Pass");
+
+        Verify_Pages.Verify_All_Buttons_on_page_Health_Check(driver);
+        test.log(LogStatus.INFO, "Verify_All_Buttons_on_page_Health_Check = Pass");
+
+        //Try to scan with button Start_Scan
         Verify_Pages.Verify_Start_Scan_Health_Check(driver);
         test.log(LogStatus.INFO, "Start_Scan is working");
 
         Verify_Pages.Verify_Link_Health_Check(driver);
         test.log(LogStatus.INFO, "Link is correct");
+
+        //Try to scan with button Scan_My_Store
+        Header.Move_to_Health_Check(driver);
+        Verify_Pages.Verify_Scan_My_Store_Health_Check(driver);
+        Verify_Pages.Verify_Link_Health_Check(driver);
+        test.log(LogStatus.INFO, "Test scan with button Scan_My_Store = Pass");
 
 
         test.log(LogStatus.PASS, "Test Passed");

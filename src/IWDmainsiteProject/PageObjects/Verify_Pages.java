@@ -1,13 +1,9 @@
 package IWDmainsiteProject.PageObjects;
 
-import com.relevantcodes.extentreports.LogStatus;
-import driver.pageObjectsCheckout.CheckoutPage;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.assertEquals;
 
 /**
@@ -203,7 +199,7 @@ public class Verify_Pages {
         } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println("#healthcheck__overlay not visible");
 
-//.health_cheack__cancel
+    //.health_cheack__cancel
 
         }}
 
@@ -214,6 +210,55 @@ public class Verify_Pages {
         String expectedlink = "https://www.iwdagency.com/extensions/";
         assertEquals(TextLink, expectedlink);
         System.out.println("Link is correct");
+
+        }
+
+    public static void Verify_All_Buttons_on_page_Health_Check(WebDriver driver){
+
+        String Button_learn_more_Link = driver.findElement(By.cssSelector(".button")).getAttribute("href");
+        System.out.println(Button_learn_more_Link);
+        String expectedlink = "https://www.iwdagency.com/magento-support";
+        assertEquals(Button_learn_more_Link, expectedlink);
+        System.out.println("Link is correct");
+
+        String Help_center = driver.findElement(By.cssSelector(".health_check__scan_button>a")).getAttribute("href");
+        System.out.println(Help_center);
+        String expectedlink2 = "https://www.iwdagency.com/help/health-check";
+        assertEquals(Help_center, expectedlink2);
+        System.out.println("Link is correct");
+
+
+    }
+
+    public static void Verify_Scan_My_Store_Health_Check(WebDriver driver) {
+
+        driver.findElement(By.cssSelector("form[id='health_check__site_url'] input[name='site_url']")).sendKeys("https://www.iwdagency.com/extensions/");
+        driver.findElement(By.cssSelector("#health_check__site_url>button")).click();
+
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        try {
+            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println("#healthcheck__overlay not visible");
+        }
+
+        driver.findElement(By.cssSelector("form[id='health_check__scan_url'] input[name='site_url']")).sendKeys("http://dev.m2ce.deviwd.com/");
+        driver.findElement(By.cssSelector("#health_check__scan_url>button")).click();
+
+        try {
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#healthcheck__overlay")));
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+        System.out.println("#healthcheck__overlay not visible");
+        }
+
+        String TextLink = driver.findElement(By.cssSelector(".site_url")).getText();
+        System.out.println(TextLink);
+        String expectedlink = "http://dev.m2ce.deviwd.com/";
+        assertEquals(TextLink, expectedlink);
+        System.out.println("Link is correct dev.m2ce.deviwd.com");
+
 
 }}
 
