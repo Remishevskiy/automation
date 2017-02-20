@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_header2_Health_Check {
+public class WordPress_header3_Contact_Us {
 
     ExtentReports extent;
     ExtentTest test;
@@ -45,29 +45,14 @@ public class WordPress_header2_Health_Check {
         String ClassName = getClass().getName();
         test = extent.startTest("Report-"+ClassName);
 
-        Header.Move_to_Health_Check(driver);
-        test.log(LogStatus.INFO, "Health_Check was opened");
+        Header.Move_to_Contact_Us(driver);
+        test.log(LogStatus.INFO, "Contact_Us was opened");
 
-        Verify_Pages.Verify_Title_Health_Check(driver);
-        test.log(LogStatus.INFO, "Title is correct");
+        Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
+        test.log(LogStatus.INFO, "Contact_us_form was displayed correctly");
 
-        Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "Verify_all_elements_in_header is done = Pass");
 
-        Verify_Pages.Verify_All_Buttons_on_page_Health_Check(driver);
-        test.log(LogStatus.INFO, "Verify_All_Buttons_on_page_Health_Check = Pass");
 
-        //Try to scan with button Start_Scan
-        Verify_Pages.Verify_Start_Scan_Health_Check(driver);
-        test.log(LogStatus.INFO, "Start_Scan is working");
-
-        Verify_Pages.Verify_Link_Health_Check(driver);
-        test.log(LogStatus.INFO, "Link is correct");
-
-        //Try to scan with button Scan_My_Store
-        Header.Move_to_Health_Check(driver);
-        Verify_Pages.Verify_Scan_My_Store_Health_Check(driver);
-        test.log(LogStatus.INFO, "Test scan with button Scan_My_Store = Pass");
 
 
         test.log(LogStatus.PASS, "Test Passed");

@@ -29,7 +29,7 @@ public class Header {
     static By Portfolio = By.cssSelector("a[href*='/portfolio']");
     static By Meet_the_team = By.cssSelector("a[href*='/#meet-the-team']");
     static By Blog = By.cssSelector("a[href*='/blog']");
-    static By Contact_Us = By.cssSelector("a[href*='https://joe568.typeform.com/to/ecFKHU']");
+    static By Contact_Us = By.cssSelector("li[class='last abount-menu sub-level'] a[href*='https://joe568.typeform.com/to/ecFKHU']");
 
     //Else
     static By Shopping_Cart = By.cssSelector(".fa.fa-shopping-cart");
@@ -102,4 +102,47 @@ public class Header {
         actions.click().build().perform();
 
     }
+
+    //ABOUT
+
+    public static void Move_to_Portfolio(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(ABOUT));
+
+        actions.moveToElement(driver.findElement(Portfolio));
+        actions.click().build().perform();
+
+    }
+
+    public static void Move_to_Meet_the_team(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(ABOUT));
+
+        actions.moveToElement(driver.findElement(Meet_the_team));
+        actions.click().build().perform();
+
+    }
+
+    public static void Move_to_Blog(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(ABOUT));
+
+        actions.moveToElement(driver.findElement(Blog));
+        actions.click().build().perform();
+
+    }
+
+    public static void Move_to_Contact_Us(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(ABOUT));
+
+        actions.moveToElement(driver.findElement(Contact_Us));
+        actions.click().build().perform();
+
+    }
+
 }

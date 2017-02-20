@@ -147,6 +147,15 @@ public class Verify_Pages {
 
     public static void Verify_Extension_Support_Contact_us_form(WebDriver driver) throws InterruptedException {
 
+
+
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        try {
+            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#typeform-overlay")));
+            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#typeform-overlay")));
+        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
+            System.out.println("#typeform-overlay not visible");}
+
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
 
         driver.findElement(By.cssSelector("div[class='content'] div[class='button general full enabled hover-effect']")).click();
@@ -242,8 +251,17 @@ public class Verify_Pages {
         } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println("#healthcheck__overlay not visible");
         }
+        String TextLink1 = driver.findElement(By.cssSelector(".site_url")).getText();
+        System.out.println(TextLink1);
+        String expectedlink1 = "https://www.iwdagency.com/extensions/";
+        assertEquals(TextLink1, expectedlink1);
+        System.out.println("Link is correct https://www.iwdagency.com/extensions");
 
-        driver.findElement(By.cssSelector("form[id='health_check__scan_url'] input[name='site_url']")).sendKeys("http://dev.m2ce.deviwd.com/");
+        driver.findElement(By.cssSelector(".health_check__remove.fa.fa-times")).click();
+        wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".site_url")));
+        System.out.println("Link was removed");
+
+        driver.findElement(By.cssSelector("form[id='health_check__scan_url'] input[name='site_url']")).sendKeys("http://dev.weeetail.com/extensions/");
         driver.findElement(By.cssSelector("#health_check__scan_url>button")).click();
 
         try {
@@ -253,10 +271,10 @@ public class Verify_Pages {
         System.out.println("#healthcheck__overlay not visible");
         }
 
-        String TextLink = driver.findElement(By.cssSelector(".site_url")).getText();
-        System.out.println(TextLink);
-        String expectedlink = "http://dev.m2ce.deviwd.com/";
-        assertEquals(TextLink, expectedlink);
+        String TextLink2 = driver.findElement(By.cssSelector(".site_url")).getText();
+        System.out.println(TextLink2);
+        String expectedlink2 = "http://dev.weeetail.com/extensions/";
+        assertEquals(TextLink2, expectedlink2);
         System.out.println("Link is correct dev.m2ce.deviwd.com");
 
 
