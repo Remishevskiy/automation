@@ -48,6 +48,16 @@ public class WordPress_header3_Meet_the_team {
         Header.Move_to_Meet_the_team(driver);
         test.log(LogStatus.INFO, "Meet_the_team was opened");
 
+        Verify_Pages.Verify_buttons_left_right_Meet_the_team(driver);
+        test.log(LogStatus.INFO, "buttons_left_right_Meet_the_team are working correct");
+
+        Verify_Pages.Verify_current_url_Meet_the_team(driver);
+        test.log(LogStatus.INFO, "urrent_url_Meet_the_team is correct");
+
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "Verify_all_elements_in_header is done");
+
+
 
 
 

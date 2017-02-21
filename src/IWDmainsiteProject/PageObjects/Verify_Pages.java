@@ -279,7 +279,37 @@ public class Verify_Pages {
         String expectedlink2 = "http://dev.weeetail.com/extensions/";
         assertEquals(TextLink2, expectedlink2);
         System.out.println("Link is correct dev.m2ce.deviwd.com");
+    }
+    //Meet the team
+    public static void Verify_current_url_Meet_the_team(WebDriver driver) {
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/#meet-the-team";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/#meet-the-team");
+    }
+
+    public static void Verify_buttons_left_right_Meet_the_team(WebDriver driver) throws InterruptedException {
 
 
-}}
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")));
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")));
+        System.out.println("Right and left buttons were found");
+
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        System.out.println("Functionality of right and left buttons works");
+
+
+    }
+
+
+}
 
