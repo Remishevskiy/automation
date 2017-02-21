@@ -149,14 +149,17 @@ public class Verify_Pages {
 
 
 
-        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        /*WebDriverWait wait1 = new WebDriverWait(driver, 10);
         try {
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#typeform-overlay")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#typeform-overlay")));
+            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("typeform-overlay")));
+            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("typeform-overlay")));
         } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
             System.out.println("#typeform-overlay not visible");}
 
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));*/
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
+
+
 
         driver.findElement(By.cssSelector("div[class='content'] div[class='button general full enabled hover-effect']")).click();
         driver.findElement(By.id("45706099")).click();

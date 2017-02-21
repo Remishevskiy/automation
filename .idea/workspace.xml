@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Blog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Contact_Us.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Meet_the_team.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Portfolio.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Health_Check.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +34,8 @@
       <file leaf-file-name="Verify_Pages.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="156" column="65" lean-forward="true" selection-start-line="156" selection-start-column="65" selection-end-line="156" selection-end-column="65" />
+            <state relative-caret-position="340">
+              <caret line="163" column="36" lean-forward="true" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +43,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1088">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Header.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="36" column="78" lean-forward="true" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+            <state relative-caret-position="221">
+              <caret line="36" column="78" lean-forward="false" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -62,7 +66,7 @@
       <file leaf-file-name="WordPress_header3_Contact_Us.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Contact_Us.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
+            <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
@@ -72,9 +76,11 @@
       <file leaf-file-name="WordPress_header2_Extension_Support.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
+            <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -207,20 +214,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="untitled1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -236,24 +229,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,102 +272,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IWDmainsiteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IWDmainsiteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IWDmainsiteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PageObjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IWDmainsiteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1028,38 +910,45 @@
       <option name="project" value="LOCAL" />
       <updated>1487548656103</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Header3">
+      <created>1487633559812</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1487633559812</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordPress_header2_Extension_Support - 2017.02.21 at 01h 23m 57s.xml">
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.21 at 23h 39m 13s.xml">
       <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.21 at 00h 43m 22s.xml">
-      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.21 at 23h 41m 16s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.21 at 00h 45m 35s.xml">
-      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.21 at 23h 45m 11s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.21 at 00h 47m 19s.xml">
-      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.21 at 23h 52m 05s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.21 at 00h 59m 30s.xml">
-      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.22 at 00h 07m 09s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header2_Health_Check - 2017.02.21 at 01h 01m 44s.xml">
-      <configuration name="WordPress_header2_Health_Check" configurationId="TestNG" />
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.22 at 00h 08m 02s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header3_Contact_Us - 2017.02.21 at 01h 13m 07s.xml">
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.22 at 00h 11m 25s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WordPress_header2_Extension_Support - 2017.02.22 at 00h 12m 36s.xml">
+      <configuration name="WordPress_header2_Extension_Support" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WordPress_header3_Contact_Us - 2017.02.21 at 23h 59m 21s.xml">
       <configuration name="WordPress_header3_Contact_Us" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WordPress_header3_Contact_Us - 2017.02.21 at 01h 14m 50s.xml">
-      <configuration name="WordPress_header3_Contact_Us" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WordPress_header3_Contact_Us - 2017.02.21 at 01h 21m 51s.xml">
-      <configuration name="WordPress_header3_Contact_Us" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WordPress_header3_Contact_Us - 2017.02.21 at 01h 29m 18s.xml">
+    <history-entry file="WordPress_header3_Contact_Us - 2017.02.22 at 00h 13m 25s.xml">
       <configuration name="WordPress_header3_Contact_Us" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1085,19 +974,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630669" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.475162" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34557235" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3736501" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384449" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384449" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1148,7 +1037,8 @@
     <MESSAGE value="Extent report" />
     <MESSAGE value="Main_site" />
     <MESSAGE value="Health_Check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Health_Check" />
+    <MESSAGE value="Header3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1293,13 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1465,23 +1348,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="78" lean-forward="true" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+        <state relative-caret-position="221">
+          <caret line="36" column="78" lean-forward="false" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/TestCases/NotLoggedUserBuyPrViaBraintreeAndChangeBilling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header2_Extension_Support.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
+        <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Contact_Us.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
+        <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
@@ -1489,8 +1382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/Verify_Pages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="156" column="65" lean-forward="true" selection-start-line="156" selection-start-column="65" selection-end-line="156" selection-end-column="65" />
+        <state relative-caret-position="340">
+          <caret line="163" column="36" lean-forward="true" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
