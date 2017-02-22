@@ -48,6 +48,14 @@ public class WordPress_header3_Blog {
         Header.Move_to_Blog(driver);
         test.log(LogStatus.INFO, "Blog was opened");
 
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "All_elements_in_header are displaying");
+
+        Verify_Pages.Verify_Title_link_Blog(driver);
+        test.log(LogStatus.INFO, "Verify_Title_link is correct");
+
+        Verify_Pages.Verify_Links_Blog(driver);
+        test.log(LogStatus.INFO, "Verify_Links_Blog is done");
 
 
         test.log(LogStatus.PASS, "Test Passed");

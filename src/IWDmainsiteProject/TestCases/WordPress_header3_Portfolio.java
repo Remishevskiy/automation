@@ -48,10 +48,14 @@ public class WordPress_header3_Portfolio {
         Header.Move_to_Portfolio(driver);
         test.log(LogStatus.INFO, "Portfolio was opened");
 
+        Verify_Pages.Verify_Title_link_Portfolio(driver);
+        test.log(LogStatus.INFO, "Title and link is correct");
 
+        Verify_Pages.Verify_ALL_Shops_Links_Portfolio(driver);
+        test.log(LogStatus.INFO, "ALL_Shops_Links are correct");
 
-
-
+        Header.Verify_all_elements_in_header(driver);
+        test.log(LogStatus.INFO, "Verify_all_elements_in_header are displaying");
 
         test.log(LogStatus.PASS, "Test Passed");
     }

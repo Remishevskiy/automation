@@ -149,14 +149,8 @@ public class Verify_Pages {
 
 
 
-        /*WebDriverWait wait1 = new WebDriverWait(driver, 10);
-        try {
-            wait1.until(ExpectedConditions.visibilityOfElementLocated(By.id("typeform-overlay")));
-            wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.id("typeform-overlay")));
-        } catch (org.openqa.selenium.NoSuchElementException | TimeoutException e) {
-            System.out.println("#typeform-overlay not visible");}
-
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));*/
+        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-classic']")));
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-classic']")));
 
 
@@ -182,7 +176,7 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector("div[class='button-wrapper submit'] div[class='button general hover-effect enabled']"));
         System.out.println("Submit button was found");
         driver.switchTo().defaultContent();
-        driver.findElement(By.cssSelector("#typeform-wrapper>img")).click();
+        driver.findElement(By.cssSelector(".typeform-wrapper.show.drawer>img")).click();
         System.out.println("Test Contact us form passed");
 
     }
@@ -292,7 +286,6 @@ public class Verify_Pages {
 
     public static void Verify_buttons_left_right_Meet_the_team(WebDriver driver) throws InterruptedException {
 
-
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")));
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")));
@@ -305,10 +298,142 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
         driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
         driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
         System.out.println("Functionality of right and left buttons works");
+
+    }
+
+    //Portfolio https://www.iwdagency.com/portfolio
+
+    public static void Verify_Title_link_Portfolio(WebDriver driver) {
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "IWD Agency's Portfolio";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/portfolio";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/portfolio");
+
+    }
+    public static void Verify_ALL_Shops_Links_Portfolio(WebDriver driver) {
+
+        String text_Penn_State_Creamery = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/penn-state-creamery'] span[class='name']")).getText();
+        System.out.println(text_Penn_State_Creamery);
+        String expected_Penn_State_Creamery = "PENN STATE CREAMERY";
+        assertEquals(expected_Penn_State_Creamery, text_Penn_State_Creamery);
+        System.out.println("Penn State Creamery was found");
+
+        String text_Buga_Nation = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/buga-nation'] span[class='name']")).getText();
+        System.out.println(text_Buga_Nation);
+        String expected_Buga_Nation = "BUGA NATION";
+        assertEquals(expected_Buga_Nation, text_Buga_Nation);
+        System.out.println("Buga Nation was found");
+
+        String text_Marucci = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/marucci-sporting-goods'] span[class='name']")).getText();
+        System.out.println(text_Marucci);
+        String expected_Marucci = "MARUCCI";
+        assertEquals(expected_Marucci, text_Marucci);
+        System.out.println("Marucci was found");
+
+        String text_EvoShield = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/atlanta-georgia'] span[class='name']")).getText();
+        System.out.println(text_EvoShield);
+        String expected_EvoShield = "EVOSHIELD";
+        assertEquals(expected_EvoShield, text_EvoShield);
+        System.out.println("EvoShield was found");
+
+        String text_Golf_SkiWarehouse = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/golf-ski-warehouse'] span[class='name']")).getText();
+        System.out.println(text_Golf_SkiWarehouse);
+        String expected_Golf_SkiWarehouse = "GOLF & SKI WAREHOUSE";
+        assertEquals(expected_Golf_SkiWarehouse, text_Golf_SkiWarehouse);
+        System.out.println("GOLF & SKI WAREHOUSE was found");
+
+        String text_tasc_Performance = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/new-orleans'] span[class='name']")).getText();
+        System.out.println(text_tasc_Performance);
+        String expected_tasc_Performance = "TASC PERFORMANCE";
+        assertEquals(expected_tasc_Performance, text_tasc_Performance);
+        System.out.println("TASC PERFOMANCE was found");
+
+        String text_Piccadilly = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/restaurant-web-development'] span[class='name']")).getText();
+        System.out.println(text_Piccadilly);
+        String expected_Piccadilly = "PICCADILLY";
+        assertEquals(expected_Piccadilly, text_Piccadilly);
+        System.out.println("PICCADILLY was found");
+
+        String text_Railing_Dynamics = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/new-jersey-magento-development'] span[class='name']")).getText();
+        System.out.println(text_Railing_Dynamics);
+        String expected_Railing_Dynamics = "RAILING DYNAMICS";
+        assertEquals(expected_Railing_Dynamics, text_Railing_Dynamics);
+        System.out.println("RAILING DYNAMICS was found");
+
+        String text_Storyville = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/austin-texas'] span[class='name']")).getText();
+        System.out.println(text_Storyville);
+        String expected_Storyville = "STORYVILLE";
+        assertEquals(expected_Storyville, text_Storyville);
+        System.out.println("Storyville was found");
+
+        String text_Lemon_Drop_Gifts = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/oregon-magento-development'] span[class='name']")).getText();
+        System.out.println(text_Lemon_Drop_Gifts);
+        String expected_Lemon_Drop_Gifts = "LEMON DROP GIFTS";
+        assertEquals(expected_Lemon_Drop_Gifts, text_Lemon_Drop_Gifts);
+        System.out.println("LEMON DROP GIFTS was found");
+
+        String text_Top_Gun_Supply = driver.findElement(By.cssSelector("div[class='portfolio-item-new'] a[href='/ohio-magento-ecommerce'] span[class='name']")).getText();
+        System.out.println(text_Top_Gun_Supply);
+        String expected_Top_Gun_Supply = "TOP GUN SUPPLY";
+        assertEquals(expected_Top_Gun_Supply, text_Top_Gun_Supply);
+        System.out.println("TOP GUN SUPPLY was found");
+
+    }
+
+    //BLOG https://www.iwdagency.com/blog
+    public static void Verify_Title_link_Blog(WebDriver driver) {
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "IWD Blog | Magento eCommerce Marketing & Related News | IWD Agency's Blog";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/blog";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/blog");
+
+    }
+
+    public static void Verify_Links_Blog(WebDriver driver) {
+
+        String actual_eCommerce = driver.findElement(By.cssSelector("li[class='cat-item cat-item-2'] a[href='https://www.iwdagency.com/blog/category/ecommerce/']")).getText();
+        System.out.println(actual_eCommerce);
+        String expected_eCommerce = "ECOMMERCE";
+        assertEquals(actual_eCommerce, expected_eCommerce);
+        System.out.println("ECOMERCE was found");
+
+        String actual_Magento = driver.findElement(By.cssSelector("li[class='cat-item cat-item-3'] a[href='https://www.iwdagency.com/blog/category/magento/']")).getText();
+        System.out.println(actual_Magento);
+        String expected_Magento = "MAGENTO";
+        assertEquals(actual_Magento, expected_Magento);
+        System.out.println("Magento was found");
+
+        String actual_Marketing = driver.findElement(By.cssSelector("li[class='cat-item cat-item-4'] a[href='https://www.iwdagency.com/blog/category/marketing/']")).getText();
+        System.out.println(actual_Marketing);
+        String expected_Marketing = "MARKETING";
+        assertEquals(actual_Marketing, expected_Marketing);
+        System.out.println("Marketing was found");
+
+
 
 
     }
+
+
 
 
 }
