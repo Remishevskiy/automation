@@ -157,7 +157,7 @@ public class Verify_Pages {
             System.out.println("#typeform-overlay not visible");}
 
         wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));*/
-        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-drawer']")));
+        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[src='https://joe568.typeform.com/to/ecFKHU?typeform-embed=popup-classic']")));
 
 
 
