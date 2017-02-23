@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import static org.testng.Assert.assertEquals;
+
 /**
  * Created by Oleg on 10.02.2017.
  */
@@ -33,8 +35,10 @@ public class Header {
 
     //Else
     static By Shopping_Cart = By.cssSelector(".fa.fa-shopping-cart");
+    static By Message_Shopping_Cart = By.cssSelector("header[id='header'] .empty");
     static By User_Account = By.cssSelector("a[href*='https://www.iwdagency.com/extensions/downloadable/customer/products']");
     static By Magento_Extensions = By.cssSelector(".magento-extensions>span");
+    static By Checkout_suite = By.cssSelector(".item.link-to-product.item-111");
 
 
     //Verify all elements in header
@@ -145,4 +149,41 @@ public class Header {
 
     }
 
+    public static void Move_to_Shopping_cart(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(Shopping_Cart));
+
+        actions.moveToElement(driver.findElement(Message_Shopping_Cart));
+        actions.build().perform();
+        String actual_Shopping_cart = driver.findElement(By.cssSelector("header[id='header'] p[class='empty']")).getText();
+        System.out.println(actual_Shopping_cart);
+        String expected_Shopping_cart = "Your shopping cart is empty.";
+        assertEquals(actual_Shopping_cart, expected_Shopping_cart);
+        System.out.println("Your shopping cart is empty was found");
+
+    }
+
+    public static void Verify_Account_link(WebDriver driver) {
+
+        String actual_User_Account = driver.findElement(User_Account).getAttribute("href");
+        System.out.println(actual_User_Account);
+        String expected_User_Account = "https://www.iwdagency.com/extensions/downloadable/customer/products";
+        assertEquals(actual_User_Account, expected_User_Account);
+        System.out.println("Account_link was found");
+
+    }
+
+    public static void Move_to_Checkout_suite(WebDriver driver) {
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(Magento_Extensions));
+
+        actions.moveToElement(driver.findElement(Checkout_suite));
+        actions.click().build().perform();
+        System.out.println("Checkout_suite was opened");
+
+
+    }
 }
+

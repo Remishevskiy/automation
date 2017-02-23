@@ -433,6 +433,22 @@ public class Verify_Pages {
 
     }
 
+    public static void Verify_Title_link_Checkout_suite(WebDriver driver) {
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Magento One Step & Page Checkout Extension";
+        assertEquals(actualTitle, expectedTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/extensions/one-step-page-checkout.html";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/extensions/one-step-page-checkout.html");
+
+    }
+
 
 
 
