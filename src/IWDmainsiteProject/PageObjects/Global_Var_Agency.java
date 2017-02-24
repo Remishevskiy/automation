@@ -9,4 +9,6 @@ public class Global_Var_Agency {
 
     public static final String URL_MainWebSiteIWD_Magento = "https://www.iwdagency.com/extensions/";
 
+    public static final String URL_MainWebSiteIWD_Weeetail = "https://www.iwdagency.com/weeetail/";
+
 }

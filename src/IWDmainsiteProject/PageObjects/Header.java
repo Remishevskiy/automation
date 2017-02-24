@@ -40,6 +40,10 @@ public class Header {
     static By Magento_Extensions = By.cssSelector(".magento-extensions>span");
     static By Checkout_suite = By.cssSelector(".item.link-to-product.item-111");
 
+    //Weeetail
+    static By User_Account_Weeetail = By.cssSelector("a[href='https://www.iwdagency.com/weeetail/portal/account/']");
+
+
 
     //Verify all elements in header
     public static void Verify_all_elements_in_header(WebDriver driver) {
@@ -53,6 +57,19 @@ public class Header {
         System.out.println("Verify_all_elements_in_header is done, Pass");
 
     }
+
+    public static void Verify_all_elements_in_header_weeetail(WebDriver driver) {
+
+        driver.findElement(BUILD_A_STORE);
+        driver.findElement(OPTIMIZATION_SUPPORT);
+        driver.findElement(ABOUT);
+        driver.findElement(Shopping_Cart);
+        driver.findElement(User_Account_Weeetail);
+        driver.findElement(Magento_Extensions);
+        System.out.println("Verify_all_elements_in_header is done, Pass");
+
+    }
+
 
 
     //BUILD_A_STORE

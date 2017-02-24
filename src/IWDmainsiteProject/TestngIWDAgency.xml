@@ -2,11 +2,39 @@
     <parameter name="report.config" value="\src\driver\extent-config.xml" />
         <test name="checkout">
         <classes>
-           <!-- <class name="IWDmainsiteProject.TestCases.WordPress_header1_bulidastore_doitYourself" />
-            <class name="IWDmainsiteProject.TestCases.WordPress_header1_Work_with_a_team" />-->
-            <class name="IWDmainsiteProject.TestCases.WordPress_header2_Store_Optimization_Support" />
+
+            <class name="IWDmainsiteProject.TestCases.WordPress_header1_bulidastore_doitYourself" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header1_Work_with_a_team" />
             <class name="IWDmainsiteProject.TestCases.WordPress_header2_Extension_Support" />
             <class name="IWDmainsiteProject.TestCases.WordPress_header2_Health_Check" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header2_Store_Optimization_Support" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header3_Blog" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header3_Contact_Us" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header3_Meet_the_team" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header3_Portfolio" />
+            <class name="IWDmainsiteProject.TestCases.WordPress_header4_Shopping_cart_acount_magento_extention" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header1_bulidastore_doitYourself" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header1_Work_with_a_team" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header2_Extension_Support" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header2_Health_Check" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header2_Store_Optimization_Support" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header3_Blog" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header3_Contact_Us" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header3_Meet_the_team" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header3_Portfolio" />
+            <class name="IWDmainsiteProject.TestCases.Magento_header4_Shopping_cart_acount_magento_extention" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header1_bulidastore_doitYourself" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header1_Work_with_a_team" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header2_Extension_Support" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header2_Health_Check" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header2_Store_Optimization_Support" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Blog" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Contact_Us" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Meet_the_team" />
+            <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Portfolio" />
+
+
+
         </classes>
         </test>
         </suite>
