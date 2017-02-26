@@ -287,19 +287,19 @@ public class Verify_Pages {
     public static void Verify_buttons_left_right_Meet_the_team(WebDriver driver) throws InterruptedException {
 
         WebDriverWait wait1 = new WebDriverWait(driver, 10);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")));
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")));
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[class='fa fa-chevron-circle-left']")));
+        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span[class='fa fa-chevron-circle-right']")));
         System.out.println("Right and left buttons were found");
 
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-next-9349545'] span[class='fa fa-chevron-circle-right']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
-        driver.findElement(By.cssSelector("div[id='ts-owlslider-controls-prev-9349545'] span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-right']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
+        driver.findElement(By.cssSelector("span[class='fa fa-chevron-circle-left']")).click();
         System.out.println("Functionality of right and left buttons works");
 
     }

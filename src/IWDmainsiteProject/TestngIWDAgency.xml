@@ -1,6 +1,6 @@
 <suite name="Test - IWDAgency" parallel="none">
     <parameter name="report.config" value="\src\driver\extent-config.xml" />
-        <test name="checkout">
+        <test name="IWD Header">
         <classes>
 
             <class name="IWDmainsiteProject.TestCases.WordPress_header1_bulidastore_doitYourself" />
