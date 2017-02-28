@@ -1,9 +1,10 @@
-package IWDmainsiteProject.TestCases;
+package IWDmainsiteProject.TestCases.footer;
 
 import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
 import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
+import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -15,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class Magento_header1_bulidastore_doitYourself {
+public class WordPress_footer {
 
     ExtentReports extent;
     ExtentTest test;
@@ -27,13 +28,14 @@ public class Magento_header1_bulidastore_doitYourself {
         extent = ReportAndScreenShot.Report();
     }
 
+
     @BeforeMethod
 
     public void beforeMethod() {
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(Global_Var_Agency.URL_MainWebSiteIWD_Magento);
+        driver.get(Global_Var_Agency.URL_MainWebSiteIWD);
         driver.manage().window().maximize();
 
     }
@@ -44,20 +46,10 @@ public class Magento_header1_bulidastore_doitYourself {
         String ClassName = getClass().getName();
         test = extent.startTest("Report-"+ClassName);
 
-        Header.Move_to_Do_It_Yourself(driver);
-        test.log(LogStatus.INFO, "Do_It_Yourself was opened");
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "footer is correct");
 
-        Verify_Pages.Verify_Title_Do_It_Yourself(driver);
-        test.log(LogStatus.INFO, "Title is correct");
 
-        Verify_Pages.Verify_Preview_a_tour_Video_Do_It_Yourself(driver);
-        test.log(LogStatus.INFO, "Video is displayed");
-
-        Verify_Pages.Verify_Weeetail_Themes_a_tour_Video_Do_It_Yourself(driver);
-        test.log(LogStatus.INFO, "All weetail themes were found");
-
-        Verify_Pages.Verify_Preview_a_tour_Video2_Do_It_Yourself(driver);
-        test.log(LogStatus.INFO, "Video2 is displayed");
 
         test.log(LogStatus.PASS, "Test Passed");
     }

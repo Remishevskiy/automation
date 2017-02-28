@@ -3,57 +3,38 @@ package utility;
 
 public class SquareRoot2 {
 
-    public static void main(String[] args) {
-        double a = 3;
-        double b = 2.5;
-        double c = -0.5;
-
-        double D = b * b - 4 * a * c;
-        double x1;
-        double x2;
+            public static void main(String[] args) {
+                int[] array = {30, 2, 10, 4, 6};
+                int length = array.length;
 
 
-        System.out.println(D);
-        if (D > 0.0)
-        {
-            x1 = ((-b + Math.sqrt(D)) / (2 * a));
-            x2 = ((-b - Math.sqrt(D)) / (2 * a));
-
-            if ((x1 >= 0 | x1 < 0) & (x2 >= 0 | x2 < 0))
-            {
-                System.out.println("x1="+x1);
-                System.out.println("x2="+x2);
-            }
-
-            else
-            {
-                System.out.println("x1=0.0");
-                System.out.println("x2=0.0");
-            }
-        }
-
-        else if (D == 0)
-        {
-            x1 = (- b)/(2*a);
-            x2 = x1;
-
-            if ((x1 >= 0 | x1 < 0) & (x2 >= 0 | x2 < 0))
-            {
-                System.out.println("x1="+x1);
-                System.out.println("x2="+x2);
-            }
-
-            else
-            {
-                System.out.println("x1=");
-                System.out.println("x2=");
+                int step = length/ 2;//инициализируем шаг.
+                while (step > 0)//пока шаг не 0
+                {
+                    for (int i = 0; i < (length - step); i++)
+                    {
+                        int j = i;
+                        //будем идти начиная с i-го элемента
+                        while (j >= 0 && array[j] > array[j + step])
+                        //пока не пришли к началу массива
+                        //и пока рассматриваемый элемент больше
+                        //чем элемент находящийся на расстоянии шага
+                        {
+                            //меняем их местами
+                            int temp = array[j];
+                            array[j] = array[j + step];
+                            array[j + step] = temp;
+                            j--;
+                        }
+                    }
+                    step = step / 2;//уменьшаем шаг
+                }
+                // Выводим отсортированный массив
+                for (int i = 0; i < length; i++) {
+                    System.out.print(array[i] + " ");
+                }
             }
         }
 
-        else
-        {
-            System.out.println("x1=");
-            System.out.println("x2=");
-        }
-    }}
-		
+
+
