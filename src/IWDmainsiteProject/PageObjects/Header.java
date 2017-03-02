@@ -16,8 +16,8 @@ public class Header {
     public WebDriver driver;
 
     //BUILD_A_STORE
-    static By BUILD_A_STORE = By.cssSelector(".build-store-menu a");
-    static By Do_It_Yourself = By.cssSelector("a[href*='http://weeetail.com']");
+    static By BUILD_A_STORE = By.cssSelector("li[class='build-store-menu sub-level'] a[href='/magento-development']");
+    static String Do_It_Yourself = "http://weeetail.com";
     static By Work_With_A_Team = By.cssSelector("a[href*='/magento-development']");
 
     //OPTIMIZATION & SUPPORT
@@ -75,11 +75,13 @@ public class Header {
     //BUILD_A_STORE
     public static void Move_to_Do_It_Yourself(WebDriver driver) {
 
-        Actions actions = new Actions(driver);
+        driver.get(Do_It_Yourself);
+
+        /*Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(BUILD_A_STORE));
 
         actions.moveToElement(driver.findElement(Do_It_Yourself));
-        actions.click().build().perform();
+        actions.click().build().perform();*/
 
     }
 
@@ -87,10 +89,10 @@ public class Header {
 
         Actions actions = new Actions(driver);
         actions.moveToElement(driver.findElement(BUILD_A_STORE));
-
-        actions.moveToElement(driver.findElement(Work_With_A_Team));
         actions.click().build().perform();
-
+        /*actions.moveToElement(driver.findElement(Work_With_A_Team));
+        actions.click().build().perform();
+*/
     }
 
     //OPTIMIZATION & SUPPORT

@@ -23,7 +23,6 @@ public class footer {
     static By google = By.cssSelector("li[class='icon-google last'] a[href='https://plus.google.com/+Interiorwebdesign/posts']");
 
     //Footer
-    static By ecommerce_services = By.cssSelector("ul[class='services'] a[href='/weeetail']");
     static By magento_development = By.cssSelector("ul[class='services'] a[href='/magento-development']");
     static By b2b_wholesale = By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']");
     static By magento_support = By.cssSelector("ul[class='services'] a[href='/magento-support']");
@@ -41,11 +40,6 @@ public class footer {
         driver.findElement(blog);
         driver.findElement(google);
 
-        String actual_ecomerce = driver.findElement(ecommerce_services).getText();
-        System.out.println(actual_ecomerce);
-        String expected_ecomerce = "ECOMMERCE SERVICES";
-        assertEquals(actual_ecomerce, expected_ecomerce);
-        System.out.println("ecommerce_services is correct");
 
         String actual_magento_development = driver.findElement(magento_development).getText();
         System.out.println(actual_magento_development);
@@ -83,25 +77,15 @@ public class footer {
         assertEquals(actual_terms_conditions, expected_terms_conditions);
         System.out.println("terms_conditions is correct");
 
-
-
     }
 
 
-    //BUILD_A_STORE
-    public static void Move_to_Do_It_Yourself(WebDriver driver) {
+    //magento_development
+    public static void Click_on_magento_development(WebDriver driver) {
 
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(facebook));
-
-        actions.moveToElement(driver.findElement(facebook));
-        actions.click().build().perform();
+        driver.findElement(magento_development);
 
     }
-
-
-
-
-    }
+}
 
 
