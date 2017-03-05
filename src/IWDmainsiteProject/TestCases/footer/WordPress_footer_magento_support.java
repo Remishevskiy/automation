@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer {
+public class WordPress_footer_magento_support {
 
     ExtentReports extent;
     ExtentTest test;
@@ -49,23 +49,23 @@ public class WordPress_footer {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_magento_development(driver);
-        test.log(LogStatus.INFO, "clicl on magento_development is done");
+        footer.Click_on_magento_support(driver);
+        test.log(LogStatus.INFO, "click on magento_support is done");
 
-        Header.Move_to_Work_With_A_Team(driver);
-        test.log(LogStatus.INFO, "Link Work_With_A_Team was opened");
-
-        Verify_Pages.Verify_Title_Work_With_A_Team(driver);
+        Verify_Pages.Verify_Title_Store_Optimization_Support(driver);
         test.log(LogStatus.INFO, "Title is correct");
+
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "Footer is correct");
 
         Header.Verify_all_elements_in_header(driver);
         test.log(LogStatus.INFO, "Header displayed correct");
 
-        Verify_Pages.Verify_Button_SEETHEIRPROJECT_Work_With_A_Team(driver);
-        test.log(LogStatus.INFO, "Button SEE THEIR PROJECT is working");
+        Verify_Pages.Verify_ALL_Links_START_NOW_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Links START_NOW are correct");
 
-        Verify_Pages.Verify_Text_Work_With_A_Team(driver);
-        test.log(LogStatus.INFO, "Text on page is correct");
+        Verify_Pages.Verify_Button_WATCH_A_VIDEO_ABOUT_US_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Video works correct");
 
         test.log(LogStatus.PASS, "Test Passed");
     }

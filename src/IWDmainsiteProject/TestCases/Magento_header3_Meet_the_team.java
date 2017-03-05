@@ -4,6 +4,7 @@ import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
 import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
+import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -47,6 +48,9 @@ public class Magento_header3_Meet_the_team {
 
         Header.Move_to_Meet_the_team(driver);
         test.log(LogStatus.INFO, "Meet_the_team was opened");
+
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "Footer is correct");
 
         Verify_Pages.Verify_buttons_left_right_Meet_the_team(driver);
         test.log(LogStatus.INFO, "buttons_left_right_Meet_the_team are working correct");

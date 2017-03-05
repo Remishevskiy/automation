@@ -4,6 +4,7 @@ import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
 import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
+import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -51,11 +52,16 @@ public class WordPress_header3_Portfolio {
         Verify_Pages.Verify_Title_link_Portfolio(driver);
         test.log(LogStatus.INFO, "Title and link is correct");
 
+
         Verify_Pages.Verify_ALL_Shops_Links_Portfolio(driver);
         test.log(LogStatus.INFO, "ALL_Shops_Links are correct");
 
         Header.Verify_all_elements_in_header(driver);
         test.log(LogStatus.INFO, "Verify_all_elements_in_header are displaying");
+
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "Footer is correct");
+
 
         test.log(LogStatus.PASS, "Test Passed");
     }

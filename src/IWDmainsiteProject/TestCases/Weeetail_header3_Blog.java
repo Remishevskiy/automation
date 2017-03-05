@@ -4,6 +4,7 @@ import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
 import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
+import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -52,7 +53,11 @@ public class Weeetail_header3_Blog {
         test.log(LogStatus.INFO, "All_elements_in_header are displaying");
 
         Verify_Pages.Verify_Title_link_Blog(driver);
-        test.log(LogStatus.INFO, "Verify_Title_link is correct");
+        test.log(LogStatus.INFO, "Verify_Title_links are correct");
+
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "Footer is correct");
+
 
         Verify_Pages.Verify_Links_Blog(driver);
         test.log(LogStatus.INFO, "Verify_Links_Blog is done");

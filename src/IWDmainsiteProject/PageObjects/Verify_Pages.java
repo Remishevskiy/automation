@@ -449,6 +449,77 @@ public class Verify_Pages {
 
     }
 
+    //B2B eCommerce Suite
+
+    public static void Verify_title_link_b2b(WebDriver driver) {
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Magento B2B eCommerce Extension | Wholesale Software";
+        assertEquals(actualTitle, expectedTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/extensions/b2b-wholesale-suite.html";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/extensions/b2b-wholesale-suite.html");
+
+    }
+
+    public static void Verify_guides_button_b2b(WebDriver driver) {
+
+        driver.findElement(By.cssSelector("div[class='demos-guides-link'] button[class='demos-guides-button']")).click();
+        String user_guide = driver.findElement(By.cssSelector("li[class='link-button user-guide'] a[href='https://www.iwdagency.com/help/m2-b2b-suite/b2b-suite-2-settings']")).getText();
+        System.out.println(user_guide);
+        String expected_user_guide = "User Guide";
+        assertEquals(user_guide, expected_user_guide);
+        System.out.println("user_guide is correct");
+
+        String installation_guide = driver.findElement(By.cssSelector("li[class='link-button install-guide'] a[href='https://www.iwdagency.com/help/general-information/installing-iwd-extensions']")).getText();
+        System.out.println(installation_guide);
+        String expected_installation_guide = "Installation Guide";
+        assertEquals(installation_guide, expected_installation_guide);
+        System.out.println("installation_guide is correct");
+
+        driver.findElement(By.cssSelector("li[class='link-button user-guide'] a[href='https://www.iwdagency.com/help/m2-b2b-suite/b2b-suite-2-settings']")).click();
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "[M2] B2B Suite Settings - IWD Agency Support Center";
+        assertEquals(actualTitle, expectedTitle);
+        System.out.println("Title of page is correct");
+
+        String b2b_suite_settings = driver.findElement(By.cssSelector(".header-title")).getText();
+        System.out.println(b2b_suite_settings);
+        String expected_b2b_suite_settings = "[M2] B2B Suite Settings";
+        assertEquals(b2b_suite_settings, expected_b2b_suite_settings);
+        System.out.println("[M2] B2B Suite Settings is correct");
+
+        driver.findElement(By.cssSelector("a[href='#DefaultSettings']"));
+        driver.findElement(By.cssSelector("a[href='#Access']"));
+        driver.findElement(By.cssSelector("a[href='#Registration']"));
+        driver.findElement(By.cssSelector("a[href='#Requester']"));
+        driver.findElement(By.cssSelector("a[href='#Notifications']"));
+        driver.findElement(By.cssSelector("a[href='#Tables']"));
+        driver.findElement(By.cssSelector("a[href='#Download']"));
+        driver.findElement(By.cssSelector("a[href='#Order']"));
+        driver.findElement(By.cssSelector("a[href='#Account']"));
+        driver.findElement(By.cssSelector("a[href='#Credit']"));
+        driver.findElement(By.cssSelector("a[href='#Guest']"));
+        driver.findElement(By.cssSelector("a[href='#Matrix']"));
+
+
+
+
+
+
+
+
+
+    }
+
+
+
 
 
 

@@ -32,7 +32,6 @@ public class footer {
     static By terms_conditions = By.cssSelector("a[href='/terms-and-conditions']");
 
 
-
     //Verify all elements in header
     public static void verify_all_elements_in_footer(WebDriver driver) {
 
@@ -83,9 +82,41 @@ public class footer {
     //magento_development
     public static void Click_on_magento_development(WebDriver driver) {
 
-        driver.findElement(magento_development);
+        driver.findElement(magento_development).click();
 
     }
+
+
+    public static void Click_on_b2b_wholesale(WebDriver driver) {
+
+        driver.findElement(b2b_wholesale).click();
+
+    }
+
+    public static void Click_on_magento_support(WebDriver driver) {
+
+        driver.findElement(magento_support).click();
+
+    }
+
+    public static void Click_on_partner_program(WebDriver driver) {
+
+        driver.findElement(partner_program).click();
+
+    }
+
+    public static void Click_on_privacy_policy(WebDriver driver) {
+
+        driver.findElement(privacy_policy).click();
+
+    }
+
+    public static void Click_on_terms_conditions(WebDriver driver) {
+
+        driver.findElement(terms_conditions).click();
+
+    }
+
 }
 
 
