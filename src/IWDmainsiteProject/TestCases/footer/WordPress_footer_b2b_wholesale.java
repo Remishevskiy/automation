@@ -58,12 +58,17 @@ public class WordPress_footer_b2b_wholesale {
         Verify_Pages.Verify_guides_button_b2b(driver);
         test.log(LogStatus.INFO, "guides_button on b2b_wholesale works correct");
 
-
         Header.Verify_all_elements_in_header(driver);
         test.log(LogStatus.INFO, "Header is correct");
 
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "Footer is correct");
+
+        Verify_Pages.Verify_installation_guide_button_b2b(driver);
+        test.log(LogStatus.INFO, "Test Verify_installation_guide_button_b2b is done");
+
+        Verify_Pages.Verify_get_started_price_b2b(driver);
+        test.log(LogStatus.INFO, "Verify_get_started_price_b2b is done");
 
 
 

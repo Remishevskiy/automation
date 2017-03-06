@@ -4,6 +4,10 @@ package IWDmainsiteProject.PageObjects;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Iterator;
+import java.util.Set;
+
 import static org.testng.Assert.assertEquals;
 
 /**
@@ -428,9 +432,6 @@ public class Verify_Pages {
         assertEquals(actual_Marketing, expected_Marketing);
         System.out.println("Marketing was found");
 
-
-
-
     }
 
     public static void Verify_Title_link_Checkout_suite(WebDriver driver) {
@@ -481,47 +482,264 @@ public class Verify_Pages {
         String expected_installation_guide = "Installation Guide";
         assertEquals(installation_guide, expected_installation_guide);
         System.out.println("installation_guide is correct");
+        String homePage = driver.getWindowHandle();
 
         driver.findElement(By.cssSelector("li[class='link-button user-guide'] a[href='https://www.iwdagency.com/help/m2-b2b-suite/b2b-suite-2-settings']")).click();
-        String actualTitle = driver.getTitle();
-        System.out.println(actualTitle);
-        String expectedTitle = "[M2] B2B Suite Settings - IWD Agency Support Center";
-        assertEquals(actualTitle, expectedTitle);
-        System.out.println("Title of page is correct");
 
-        String b2b_suite_settings = driver.findElement(By.cssSelector(".header-title")).getText();
-        System.out.println(b2b_suite_settings);
-        String expected_b2b_suite_settings = "[M2] B2B Suite Settings";
-        assertEquals(b2b_suite_settings, expected_b2b_suite_settings);
-        System.out.println("[M2] B2B Suite Settings is correct");
+        Set<String> windows = driver.getWindowHandles();
+        //System.out.println(windows.size());
 
-        driver.findElement(By.cssSelector("a[href='#DefaultSettings']"));
-        driver.findElement(By.cssSelector("a[href='#Access']"));
-        driver.findElement(By.cssSelector("a[href='#Registration']"));
-        driver.findElement(By.cssSelector("a[href='#Requester']"));
-        driver.findElement(By.cssSelector("a[href='#Notifications']"));
-        driver.findElement(By.cssSelector("a[href='#Tables']"));
-        driver.findElement(By.cssSelector("a[href='#Download']"));
-        driver.findElement(By.cssSelector("a[href='#Order']"));
-        driver.findElement(By.cssSelector("a[href='#Account']"));
-        driver.findElement(By.cssSelector("a[href='#Credit']"));
-        driver.findElement(By.cssSelector("a[href='#Guest']"));
-        driver.findElement(By.cssSelector("a[href='#Matrix']"));
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
+
+        while(iterator.hasNext()){
+            currentWindowId = iterator.next().toString();
+            //System.out.println(currentWindowId);
+
+            if(!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+
+                String actualTitle = driver.getTitle();
+                System.out.println(actualTitle);
+                String expectedTitle = "[M2] B2B Suite Settings - IWD Agency Support Center";
+                assertEquals(actualTitle, expectedTitle);
+                System.out.println("Title of page is correct");
+
+                String b2b_suite_settings = driver.findElement(By.cssSelector(".header-title")).getText();
+                System.out.println(b2b_suite_settings);
+                String expected_b2b_suite_settings = "[M2] B2B Suite Settings";
+                assertEquals(b2b_suite_settings, expected_b2b_suite_settings);
+                System.out.println("[M2] B2B Suite Settings is correct");
+
+                driver.findElement(By.cssSelector("a[href='#DefaultSettings']"));
+                driver.findElement(By.cssSelector("a[href='#Access']"));
+                driver.findElement(By.cssSelector("a[href='#Registration']"));
+                driver.findElement(By.cssSelector("a[href='#Requester']"));
+                driver.findElement(By.cssSelector("a[href='#Notifications']"));
+                driver.findElement(By.cssSelector("a[href='#Tables']"));
+                driver.findElement(By.cssSelector("a[href='#Download']"));
+                driver.findElement(By.cssSelector("a[href='#Order']"));
+                driver.findElement(By.cssSelector("a[href='#Account']"));
+                driver.findElement(By.cssSelector("a[href='#Credit']"));
+                driver.findElement(By.cssSelector("a[href='#Guest']"));
+                driver.findElement(By.cssSelector("a[href='#Matrix']"));
+
+                driver.close();
+                driver.switchTo().window(homePage);
+                driver.findElement(By.cssSelector("div[class=\"md-content es-wrapper\"] a[class=\"close\"]")).click();
+                System.out.println("Test Verify_guides_button_b2b is done");
+
+            }}}
+
+            public static void Verify_installation_guide_button_b2b(WebDriver driver) {
+
+                String homePage2 = driver.getWindowHandle();
 
 
+                driver.findElement(By.cssSelector("div[class='demos-guides-link'] button[class='demos-guides-button']")).click();
+                driver.findElement(By.cssSelector("li[class='link-button install-guide'] a[href='https://www.iwdagency.com/help/general-information/installing-iwd-extensions']")).click();
+                Set<String> windows2 = driver.getWindowHandles();
+                //System.out.println(windows.size());
+
+                Iterator iterator2 = windows2.iterator();
+                String currentWindowId2;
+
+                while(iterator2.hasNext()){
+                    currentWindowId2 = iterator2.next().toString();
+                    //System.out.println(currentWindowId);
+
+                    if(!currentWindowId2.equals(homePage2)) {
+                        driver.switchTo().window(currentWindowId2);
+
+                        String actualtitle_Installing = driver.getTitle();
+                        System.out.println(actualtitle_Installing);
+                        String expectedtitle_Installing = "Installing IWD Extensions - IWD Agency Support Center";
+                        assertEquals(actualtitle_Installing, expectedtitle_Installing);
+                        System.out.println("Title of page Installing is correct");
+
+                        String installing_iwd_extensions = driver.findElement(By.cssSelector(".header-title")).getText();
+                        System.out.println(installing_iwd_extensions);
+                        String expected_installing_iwd_extensions = "Installing IWD Extensions";
+                        assertEquals(installing_iwd_extensions, expected_installing_iwd_extensions);
+                        System.out.println("Installing IWD Extensions is correct");
+
+                        driver.findElement(By.cssSelector("a[href='#MAGENTO 1 INSTALLATION']"));
+                        driver.findElement(By.cssSelector("a[href='#MAGENTO 2 INSTALLATION']"));
+                        driver.findElement(By.cssSelector("a[href='#ACTIVATING LICENSES']"));
+                        driver.findElement(By.cssSelector("a[href='/extensions/media/modules/m2/iwd_all.zip']"));
+                        driver.findElement(By.cssSelector("a[href='/extensions/downloadable/customer/products']"));
+                        driver.findElement(By.cssSelector("a[href='https://iwdagency.com/help/general-information/installing-iwd-all"));
+
+                        driver.close();
+                        driver.switchTo().window(homePage2);
+                        driver.findElement(By.cssSelector("div[class=\"md-content es-wrapper\"] a[class=\"close\"]")).click();
+
+                    }
+                }
+            }
+    public static void Verify_get_started_price_b2b(WebDriver driver) throws InterruptedException {
+
+        //M1
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-1&plans=Monthly\"]")).click();
+
+        WebDriverWait wait_for_popup = new WebDriverWait(driver, 10);
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
 
 
+        String actual_price_m1 = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m1);
+        String expected_price_m1 = "$50 /mo";
+        assertEquals(expected_price_m1, actual_price_m1);
+        System.out.println("$50 /mo was found");
 
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m1_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m1_shopping_cart);
+        String expected_price_m1_shopping_cart = "$50.00";
+        assertEquals(expected_price_m1_shopping_cart, actual_price_m1_shopping_cart);
+        System.out.println("Price $50 in shopping cart is right ");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
+
+        //M2 Bronze
+
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-2&plans=Bronze\"]")).click();
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#select_-177328")));
+
+        String actual_price_m2_bronze = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m2_bronze);
+        String expected_price_m2_bronze = "$50 /mo";
+        assertEquals(actual_price_m2_bronze, expected_price_m2_bronze);
+        System.out.println("$50 /mo was found for m2");
+
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m2_bronze_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m2_bronze_shopping_cart);
+        String expected_price_m2_bronze_shopping_cart = "$50.00";
+        assertEquals(expected_price_m2_bronze_shopping_cart, actual_price_m2_bronze_shopping_cart);
+        System.out.println("Price $50 in shopping cart is right for m2");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
+
+        // M2 Silver
+
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-2&plans=Silver\"]")).click();
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#select_-177328")));
+
+
+        String actual_price_m2_silver = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m2_silver);
+        String expected_price_m2_silver = "$250 /mo";
+        assertEquals(expected_price_m2_silver, actual_price_m2_silver);
+        System.out.println("$250 /mo was found for m2");
+
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m2_silver_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m2_silver_shopping_cart);
+        String expected_price_m2_silver_shopping_cart = "$250.00";
+        assertEquals(expected_price_m2_silver_shopping_cart, actual_price_m2_silver_shopping_cart);
+        System.out.println("Price $250 in shopping cart is right for m2");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
+
+        //M2 Bronze M2 Gold
+
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-2&plans=Gold\"]")).click();
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#select_-177328")));
+
+        String actual_price_m2_gold = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m2_gold);
+        String expected_price_m2_gold = "$500 /mo";
+        assertEquals(expected_price_m2_gold, actual_price_m2_gold);
+        System.out.println("$500 /mo was found for m2");
+
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m2_gold_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m2_gold_shopping_cart);
+        String expected_price_m2_gold_shopping_cart = "$500.00";
+        assertEquals(expected_price_m2_gold_shopping_cart, actual_price_m2_gold_shopping_cart);
+        System.out.println("Price $500 in shopping cart is right for m2");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
+
+        //M2 Bronze M2 Platinum
+
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-2&plans=Platinum\"]")).click();
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#select_-177328")));
+
+        String actual_price_m2_platinum = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m2_platinum);
+        String expected_price_m2_platinum = "$1000 /mo";
+        assertEquals(expected_price_m2_platinum, actual_price_m2_platinum);
+        System.out.println("$1000 /mo was found for m2");
+
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m2_platinum_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m2_platinum_shopping_cart);
+        String expected_price_m2_platinum_shopping_cart = "$1,000.00";
+        assertEquals(expected_price_m2_platinum_shopping_cart, actual_price_m2_platinum_shopping_cart);
+        System.out.println("Price $1,000.00 in shopping cart is right for m2");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
+
+        //M2 Bronze M2 Diamond
+
+        driver.findElement(By.cssSelector("a[href=\"/extensions/b2b-wholesale-suite.html?editions=magento-2&plans=Diamond\"]")).click();
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ajaxcart-content")));
+        wait_for_popup.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#select_-177328")));
+
+        String actual_price_m2_diamond = driver.findElement(By.cssSelector("#product-price-44")).getText();
+        System.out.println(actual_price_m2_diamond);
+        String expected_price_m2_diamond = "$2000 /mo";
+        assertEquals(expected_price_m2_diamond, actual_price_m2_diamond);
+        System.out.println("$2000 /mo was found for m2");
+
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#options_105_text")).sendKeys("test.com");
+        driver.findElement(By.cssSelector(".button.btn-add-to-cart.left")).click();
+
+        String actual_price_m2_diamond_shopping_cart = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_price_m2_diamond_shopping_cart);
+        String expected_price_m2_diamond_shopping_cart = "$2,000.00";
+        assertEquals(expected_price_m2_diamond_shopping_cart, actual_price_m2_diamond_shopping_cart);
+        System.out.println("Price $2,000.00 in shopping cart is right for m2");
+
+        driver.findElement(By.cssSelector(".fa.fa-times")).click();
+        driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
+        driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
 
 
 
 
     }
-
-
-
-
-
-
 }
 
