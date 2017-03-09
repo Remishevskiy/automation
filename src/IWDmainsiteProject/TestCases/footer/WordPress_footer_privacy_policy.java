@@ -2,7 +2,6 @@ package IWDmainsiteProject.TestCases.footer;
 
 import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
-import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
 import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -16,7 +15,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_b2b_wholesale {
+public class WordPress_footer_privacy_policy {
 
     ExtentReports extent;
     ExtentTest test;
@@ -49,27 +48,14 @@ public class WordPress_footer_b2b_wholesale {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_b2b_wholesale(driver);
-        test.log(LogStatus.INFO, "click on b2b_wholesale is done");
-
-        Verify_Pages.Verify_title_link_b2b(driver);
-        test.log(LogStatus.INFO, "title on b2b_wholesale is correct");
-
-        Verify_Pages.Verify_guides_button_b2b(driver);
-        test.log(LogStatus.INFO, "guides_button on b2b_wholesale works correct");
-
-        Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "Header is correct");
+        footer.Click_on_privacy_policy(driver);
+        test.log(LogStatus.INFO, "Click_on_privacy_policy is done");
 
         footer.verify_all_elements_in_footer(driver);
-        test.log(LogStatus.INFO, "Footer is correct");
+        test.log(LogStatus.INFO, "footer is correct");
 
-        Verify_Pages.Verify_installation_guide_button_b2b(driver);
-        test.log(LogStatus.INFO, "Test Verify_installation_guide_button_b2b is done");
-
-        Verify_Pages.Verify_get_started_price_b2b(driver);
-        test.log(LogStatus.INFO, "Verify_get_started_price_b2b is done");
-
+        Verify_Pages.Verify_privacy_policy(driver);
+        test.log(LogStatus.INFO, "Verify_privacy_policy text is correct");
 
 
         test.log(LogStatus.PASS, "Test Passed");
@@ -80,6 +66,7 @@ public class WordPress_footer_b2b_wholesale {
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
+
             String ClassName = getClass().getName();
             String screenShotPath = ReportAndScreenShot.capture(driver, ClassName);
             test.log(LogStatus.FAIL, result.getThrowable());

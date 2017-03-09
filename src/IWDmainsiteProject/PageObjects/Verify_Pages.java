@@ -1,6 +1,7 @@
 package IWDmainsiteProject.PageObjects;
 
 
+import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -737,9 +738,50 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector("div[class='cart-empty'] a[href='https://www.iwdagency.com/extensions/']"));
         driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
 
+    }
+
+    public static void Verify_partner_program(WebDriver driver)  {
+
+        String homePage = driver.getWindowHandle();
+        footer.Click_on_partner_program(driver);
+        System.out.println("click on partner_program is done");
+        Set<String> windows = driver.getWindowHandles();
 
 
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
 
+        while(iterator.hasNext()) {
+            currentWindowId = iterator.next().toString();
+            if (!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+            }
+        }
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "IWD_Partner_Program.pdf";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/extensions/IWD_Partner_Program.pdf";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/extensions/IWD_Partner_Program.pdf");
+
+        driver.findElement(By.cssSelector(".textLayer"));
+        System.out.println("PDF was found");
+
+                driver.close();
+                driver.switchTo().window(homePage);
+
+        }
+
+    public static void Verify_privacy_policy(WebDriver driver)  {
+
+        String actual_privacy_policy_text = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
+        System.out.println(actual_privacy_policy_text);
     }
 }
 

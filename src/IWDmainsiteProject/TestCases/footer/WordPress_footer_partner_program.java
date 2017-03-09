@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_b2b_wholesale {
+public class WordPress_footer_partner_program {
 
     ExtentReports extent;
     ExtentTest test;
@@ -49,27 +49,9 @@ public class WordPress_footer_b2b_wholesale {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_b2b_wholesale(driver);
-        test.log(LogStatus.INFO, "click on b2b_wholesale is done");
 
-        Verify_Pages.Verify_title_link_b2b(driver);
-        test.log(LogStatus.INFO, "title on b2b_wholesale is correct");
-
-        Verify_Pages.Verify_guides_button_b2b(driver);
-        test.log(LogStatus.INFO, "guides_button on b2b_wholesale works correct");
-
-        Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "Header is correct");
-
-        footer.verify_all_elements_in_footer(driver);
-        test.log(LogStatus.INFO, "Footer is correct");
-
-        Verify_Pages.Verify_installation_guide_button_b2b(driver);
-        test.log(LogStatus.INFO, "Test Verify_installation_guide_button_b2b is done");
-
-        Verify_Pages.Verify_get_started_price_b2b(driver);
-        test.log(LogStatus.INFO, "Verify_get_started_price_b2b is done");
-
+        Verify_Pages.Verify_partner_program(driver);
+        test.log(LogStatus.INFO, "Verify_partner page is correct");
 
 
         test.log(LogStatus.PASS, "Test Passed");
@@ -80,6 +62,7 @@ public class WordPress_footer_b2b_wholesale {
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
+
             String ClassName = getClass().getName();
             String screenShotPath = ReportAndScreenShot.capture(driver, ClassName);
             test.log(LogStatus.FAIL, result.getThrowable());
