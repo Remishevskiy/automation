@@ -3,6 +3,10 @@ package IWDmainsiteProject.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+
+import java.util.Iterator;
+import java.util.Set;
+
 import static org.testng.Assert.assertEquals;
 
 /**
@@ -30,6 +34,9 @@ public class footer {
 
     static By privacy_policy = By.cssSelector("a[href='/privacy-policy-cookie-restriction-mode']");
     static By terms_conditions = By.cssSelector("a[href='/terms-and-conditions']");
+    static By all_rights_reserved = By.cssSelector(".copy");
+
+
 
 
     //Verify all elements in header
@@ -76,6 +83,12 @@ public class footer {
         assertEquals(actual_terms_conditions, expected_terms_conditions);
         System.out.println("terms_conditions is correct");
 
+        String actual_all_rights_reserved = driver.findElement(all_rights_reserved).getText();
+        System.out.println(actual_all_rights_reserved);
+        String expected_all_rights_reserved = "IWD © 2015 ALL RIGHTS RESERVED";
+        assertEquals(actual_all_rights_reserved, expected_all_rights_reserved);
+        System.out.println("all_rights_reserved is correct");
+
     }
 
 
@@ -114,6 +127,43 @@ public class footer {
     public static void Click_on_terms_conditions(WebDriver driver) {
 
         driver.findElement(terms_conditions).click();
+
+    }
+
+    public static void Click_on_facebook(WebDriver driver) {
+
+        driver.findElement(facebook).click();
+
+    }
+
+    public static void Click_on_blog(WebDriver driver) {
+
+        String homePage = driver.getWindowHandle();
+        driver.findElement(blog).click();
+        Set<String> windows = driver.getWindowHandles();
+
+
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
+
+        while(iterator.hasNext()) {
+            currentWindowId = iterator.next().toString();
+            if (!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+            }
+        }
+
+    }
+
+    public static void Click_on_google(WebDriver driver) {
+
+        driver.findElement(google).click();
+
+    }
+
+    public static void Click_on_reviews(WebDriver driver) {
+
+        driver.findElement(reviews).click();
 
     }
 

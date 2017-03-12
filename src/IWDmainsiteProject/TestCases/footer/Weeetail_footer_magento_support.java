@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_privacy_policy {
+public class Weeetail_footer_magento_support {
 
     ExtentReports extent;
     ExtentTest test;
@@ -35,7 +35,7 @@ public class WordPress_footer_privacy_policy {
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(Global_Var_Agency.URL_MainWebSiteIWD);
+        driver.get(Global_Var_Agency.URL_MainWebSiteIWD_Weeetail);
         driver.manage().window().maximize();
 
     }
@@ -49,22 +49,23 @@ public class WordPress_footer_privacy_policy {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_privacy_policy(driver);
-        test.log(LogStatus.INFO, "Click_on_privacy_policy is done");
+        footer.Click_on_magento_support(driver);
+        test.log(LogStatus.INFO, "click on magento_support is done");
+
+        Verify_Pages.Verify_Title_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Title is correct");
 
         footer.verify_all_elements_in_footer(driver);
-        test.log(LogStatus.INFO, "footer is correct");
+        test.log(LogStatus.INFO, "Footer is correct");
 
         Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "header is correct");
+        test.log(LogStatus.INFO, "Header displayed correct");
 
-        Verify_Pages.Verify_privacy_policy(driver);
-        test.log(LogStatus.INFO, "privacy_policy");
+        Verify_Pages.Verify_ALL_Links_START_NOW_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Links START_NOW are correct");
 
-        Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
-        test.log(LogStatus.INFO, "Contact_us_form works correctly");
-
-
+        Verify_Pages.Verify_Button_WATCH_A_VIDEO_ABOUT_US_Store_Optimization_Support(driver);
+        test.log(LogStatus.INFO, "Video works correct");
 
         test.log(LogStatus.PASS, "Test Passed");
     }

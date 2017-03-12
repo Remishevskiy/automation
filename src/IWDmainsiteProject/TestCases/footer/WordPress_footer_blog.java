@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_privacy_policy {
+public class WordPress_footer_blog {
 
     ExtentReports extent;
     ExtentTest test;
@@ -49,22 +49,20 @@ public class WordPress_footer_privacy_policy {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_privacy_policy(driver);
-        test.log(LogStatus.INFO, "Click_on_privacy_policy is done");
-
-        footer.verify_all_elements_in_footer(driver);
-        test.log(LogStatus.INFO, "footer is correct");
+        footer.Click_on_blog(driver);
+        test.log(LogStatus.INFO, "Click_on_blog is done");
 
         Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "header is correct");
+        test.log(LogStatus.INFO, "All_elements_in_header are displaying");
 
-        Verify_Pages.Verify_privacy_policy(driver);
-        test.log(LogStatus.INFO, "privacy_policy");
+        footer.verify_all_elements_in_footer(driver);
+        test.log(LogStatus.INFO, "Footer is correct");
 
-        Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
-        test.log(LogStatus.INFO, "Contact_us_form works correctly");
+        Verify_Pages.Verify_Title_link_Blog(driver);
+        test.log(LogStatus.INFO, "Verify_Title_link is correct");
 
-
+        Verify_Pages.Verify_Links_Blog(driver);
+        test.log(LogStatus.INFO, "Verify_Links_Blog is done");
 
         test.log(LogStatus.PASS, "Test Passed");
     }

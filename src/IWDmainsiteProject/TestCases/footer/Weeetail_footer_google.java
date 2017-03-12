@@ -2,7 +2,6 @@ package IWDmainsiteProject.TestCases.footer;
 
 import IWDmainsiteProject.AppModule.ReportAndScreenShot;
 import IWDmainsiteProject.PageObjects.Global_Var_Agency;
-import IWDmainsiteProject.PageObjects.Header;
 import IWDmainsiteProject.PageObjects.Verify_Pages;
 import IWDmainsiteProject.PageObjects.footer;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -16,7 +15,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_privacy_policy {
+public class Weeetail_footer_google {
 
     ExtentReports extent;
     ExtentTest test;
@@ -35,7 +34,7 @@ public class WordPress_footer_privacy_policy {
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(Global_Var_Agency.URL_MainWebSiteIWD);
+        driver.get(Global_Var_Agency.URL_MainWebSiteIWD_Weeetail);
         driver.manage().window().maximize();
 
     }
@@ -49,22 +48,8 @@ public class WordPress_footer_privacy_policy {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_privacy_policy(driver);
-        test.log(LogStatus.INFO, "Click_on_privacy_policy is done");
-
-        footer.verify_all_elements_in_footer(driver);
-        test.log(LogStatus.INFO, "footer is correct");
-
-        Header.Verify_all_elements_in_header(driver);
-        test.log(LogStatus.INFO, "header is correct");
-
-        Verify_Pages.Verify_privacy_policy(driver);
-        test.log(LogStatus.INFO, "privacy_policy");
-
-        Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
-        test.log(LogStatus.INFO, "Contact_us_form works correctly");
-
-
+        Verify_Pages.Verify_google(driver);
+        test.log(LogStatus.INFO, "Verify_facebook is done");
 
         test.log(LogStatus.PASS, "Test Passed");
     }
@@ -74,7 +59,6 @@ public class WordPress_footer_privacy_policy {
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
-
             String ClassName = getClass().getName();
             String screenShotPath = ReportAndScreenShot.capture(driver, ClassName);
             test.log(LogStatus.FAIL, result.getThrowable());

@@ -3,6 +3,38 @@
         <test name="IWD Header">
         <classes>
 
+            //footer
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_b2b_wholesale" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_blog" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_facebook" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_google" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_magento_development" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_magento_support" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_partner_program" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_privacy_policy" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_reviews" />
+            <class name="IWDmainsiteProject.TestCases.footer.Magento_footer_terms_conditions" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_b2b_wholesale" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_blog" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_facebook" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_google" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_magento_development" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_magento_support" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_partner_program" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_privacy_policy" />
+            <class name="IWDmainsiteProject.TestCases.footer.Weeetail_footer_terms_conditions" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_b2b_wholesale" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_blog" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_facebook" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_google" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_magento_development" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_magento_support" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_partner_program" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_privacy_policy" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_reviews" />
+            <class name="IWDmainsiteProject.TestCases.footer.WordPress_footer_terms_conditions" />
+
+            //header
             <class name="IWDmainsiteProject.TestCases.WordPress_header1_bulidastore_doitYourself" />
             <class name="IWDmainsiteProject.TestCases.WordPress_header1_Work_with_a_team" />
             <class name="IWDmainsiteProject.TestCases.WordPress_header2_Extension_Support" />
@@ -32,8 +64,6 @@
             <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Contact_Us" />
             <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Meet_the_team" />
             <class name="IWDmainsiteProject.TestCases.Weeetail_header3_Portfolio" />
-
-
 
         </classes>
         </test>

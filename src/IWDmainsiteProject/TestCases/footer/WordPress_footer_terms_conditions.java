@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_privacy_policy {
+public class WordPress_footer_terms_conditions {
 
     ExtentReports extent;
     ExtentTest test;
@@ -49,7 +49,7 @@ public class WordPress_footer_privacy_policy {
         footer.verify_all_elements_in_footer(driver);
         test.log(LogStatus.INFO, "footer is correct");
 
-        footer.Click_on_privacy_policy(driver);
+        footer.Click_on_terms_conditions(driver);
         test.log(LogStatus.INFO, "Click_on_privacy_policy is done");
 
         footer.verify_all_elements_in_footer(driver);
@@ -58,13 +58,11 @@ public class WordPress_footer_privacy_policy {
         Header.Verify_all_elements_in_header(driver);
         test.log(LogStatus.INFO, "header is correct");
 
-        Verify_Pages.Verify_privacy_policy(driver);
+        Verify_Pages.Verify_terms_conditions(driver);
         test.log(LogStatus.INFO, "privacy_policy");
 
         Verify_Pages.Verify_Extension_Support_Contact_us_form(driver);
         test.log(LogStatus.INFO, "Contact_us_form works correctly");
-
-
 
         test.log(LogStatus.PASS, "Test Passed");
     }

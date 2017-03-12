@@ -407,7 +407,7 @@ public class Verify_Pages {
 
         String currentURL = driver.getCurrentUrl();
         System.out.println(currentURL);
-        String expectedcurrentURL = "https://www.iwdagency.com/blog";
+        String expectedcurrentURL = "https://www.iwdagency.com/blog/";
         assertEquals(currentURL, expectedcurrentURL);
         System.out.println("Link is correct https://www.iwdagency.com/blog");
 
@@ -739,7 +739,7 @@ public class Verify_Pages {
         driver.findElement(By.cssSelector("ul[class='services'] a[href='/extensions/b2b-wholesale-suite.html']")).click();
 
     }
-
+    //partner_program page
     public static void Verify_partner_program(WebDriver driver)  {
 
         String homePage = driver.getWindowHandle();
@@ -767,6 +767,7 @@ public class Verify_Pages {
         String currentURL = driver.getCurrentUrl();
         System.out.println(currentURL);
         String expectedcurrentURL = "https://www.iwdagency.com/extensions/IWD_Partner_Program.pdf";
+
         assertEquals(currentURL, expectedcurrentURL);
         System.out.println("Link is correct https://www.iwdagency.com/extensions/IWD_Partner_Program.pdf");
 
@@ -777,11 +778,183 @@ public class Verify_Pages {
                 driver.switchTo().window(homePage);
 
         }
-
+    //privacy_policy page
     public static void Verify_privacy_policy(WebDriver driver)  {
 
-        String actual_privacy_policy_text = driver.findElement(By.cssSelector("div[class=\"cart-price\"] span[class=\"price\"]")).getText();
-        System.out.println(actual_privacy_policy_text);
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Privacy Policy | Magento eCommerce Marketing & Related News";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/privacy-policy-cookie-restriction-mode/";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/privacy-policy-cookie-restriction-mode/");
+
+        String actualCOOKIE_Name = driver.findElement(By.cssSelector("div[class=\"gw-go-col-wrap gw-go-col-wrap-0 gw-go-disable-enlarge gw-go-disable-hover\"] div[class=\"gw-go-header\"] p")).getText();
+        System.out.println(actualCOOKIE_Name);
+        String expectedCOOKIE_Name = "COOKIE Name";
+        assertEquals(expectedCOOKIE_Name, actualCOOKIE_Name);
+        System.out.println("COOKIE_Name is correct");
+
+        String actualCOOKIE_Description = driver.findElement(By.cssSelector("div[class=\"gw-go-col-wrap gw-go-col-wrap-1 gw-go-disable-enlarge gw-go-disable-hover\"] div[class=\"gw-go-header\"] p")).getText();
+        System.out.println(actualCOOKIE_Name);
+        String expectedCOOKIE_Description = "COOKIE Description";
+        assertEquals(expectedCOOKIE_Description, actualCOOKIE_Description);
+        System.out.println("COOKIE_Description is correct");
+
+        driver.findElement(By.cssSelector(".vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-custom.typeform-share.link")).click();
+
     }
+    //terms_conditions page
+    public static void Verify_terms_conditions(WebDriver driver) {
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Terms & Conditions - Magento eCommerce Solutions | Interior Web Design";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/terms-and-conditions/";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/terms-and-conditions/");
+
+        driver.findElement(By.cssSelector(".vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-custom.typeform-share.link")).click();
+
+    }
+    //footer_facebook
+    public static void Verify_facebook(WebDriver driver) {
+
+        String homePage = driver.getWindowHandle();
+        footer.Click_on_facebook(driver);
+        Set<String> windows = driver.getWindowHandles();
+
+
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
+
+        while(iterator.hasNext()) {
+            currentWindowId = iterator.next().toString();
+            if (!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+            }
+        }
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "IWD Agency | Facebook";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.facebook.com/iwdagency";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.facebook.com/iwdagency");
+
+        driver.close();
+        driver.switchTo().window(homePage);
+
+
+    }
+
+    //footer_google
+    public static void Verify_google(WebDriver driver) {
+
+        String homePage = driver.getWindowHandle();
+        footer.Click_on_google(driver);
+        Set<String> windows = driver.getWindowHandles();
+
+
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
+
+        while(iterator.hasNext()) {
+            currentWindowId = iterator.next().toString();
+            if (!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+            }
+        }
+
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "IWD Agency - Google+";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://plus.google.com/+Interiorwebdesign";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://plus.google.com/+Interiorwebdesign");
+
+        driver.close();
+        driver.switchTo().window(homePage);
+
+    }
+
+    //footer_google
+    public static void Verify_reviews(WebDriver driver) {
+
+        String homePage = driver.getWindowHandle();
+        footer.Click_on_reviews(driver);
+        Set<String> windows = driver.getWindowHandles();
+
+
+        Iterator iterator = windows.iterator();
+        String currentWindowId;
+
+        while(iterator.hasNext()) {
+            currentWindowId = iterator.next().toString();
+            if (!currentWindowId.equals(homePage)) {
+                driver.switchTo().window(currentWindowId);
+            }
+        }
+        String actualTitle = driver.getTitle();
+        System.out.println(actualTitle);
+        String expectedTitle = "Customer Reviews";
+        assertEquals(expectedTitle, actualTitle);
+        System.out.println("Title is correct");
+
+        String currentURL = driver.getCurrentUrl();
+        System.out.println(currentURL);
+        String expectedcurrentURL = "https://www.iwdagency.com/reviews/";
+        assertEquals(currentURL, expectedcurrentURL);
+        System.out.println("Link is correct https://www.iwdagency.com/reviews/");
+
+        driver.findElement(By.xpath("//p[contains(.,'IWD Agency Customer Reviews:')]"));
+        driver.findElement(By.xpath("//span[contains(.,'Nothing but amazing!')]"));
+        driver.findElement(By.xpath("//span[contains(.,'Stephanie Moody')]"));
+
+        //Leave a review
+        driver.findElement(By.cssSelector(".vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-square.vc_btn3-style-custom")).click();
+
+        String actual_leave_a_review = driver.findElement(By.cssSelector(".rwp-ratings-form-label")).getText();
+        System.out.println(actual_leave_a_review);
+        String expected_leave_a_reviewe = "LEAVE A REVIEW";
+        assertEquals(expected_leave_a_reviewe, actual_leave_a_review);
+        System.out.println("Leave a Review title is correct");
+
+        driver.findElement(By.cssSelector("div[class=\"rwp-rating-form-content rwp-no-avatar\"] input[placeholder=\"Name\"]")).sendKeys("IWD Test Name");
+        driver.findElement(By.cssSelector("div[class=\"rwp-rating-form-content rwp-no-avatar\"] input[placeholder=\"Review Title\"]")).sendKeys("IWD Test Review Title");
+        driver.findElement(By.cssSelector("div[class=\"rwp-rating-form-content rwp-no-avatar\"] textarea[placeholder=\"Write your review\"]")).sendKeys("IWD Test Write your review");
+
+        String actual_rating = driver.findElement(By.cssSelector(".rwp-lab")).getText();
+        System.out.println(actual_rating);
+        String expected_rating = "Rating:";
+        assertEquals(expected_rating, actual_rating);
+        System.out.println("Rating: is correct");
+
+        driver.findElement(By.cssSelector("div[class=\"rwp-stars\"] label[for=\"rwp-rating-1961-4b35bc789a120e0b49c7fcfba6d71488-9-141470591\"]")).click();
+
+        //Make click for submit
+        driver.findElement(By.cssSelector(".rwp-submit-wrap>input"));
+
+    }
+
 }
 

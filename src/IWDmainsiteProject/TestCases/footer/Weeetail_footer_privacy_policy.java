@@ -16,7 +16,7 @@ import org.testng.annotations.*;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class WordPress_footer_privacy_policy {
+public class Weeetail_footer_privacy_policy {
 
     ExtentReports extent;
     ExtentTest test;
@@ -35,7 +35,7 @@ public class WordPress_footer_privacy_policy {
 
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(Global_Var_Agency.URL_MainWebSiteIWD);
+        driver.get(Global_Var_Agency.URL_MainWebSiteIWD_Weeetail);
         driver.manage().window().maximize();
 
     }
