@@ -1,56 +1,82 @@
 package utility;
 
 
-public class SquareRoot2 {
+import javax.xml.soap.Node;
 
-     public static void main(String args[]){
-
-              for (int i = 1; i < 26; i++) {
-
-        switch (i) {
-            case 1:  System.out.print(" *"+ " " );
-                continue;
-            case 5:  {System.out.print(" *"+ " ");
-                System.out.println();
-                continue;}
-            case 6:  {System.out.print(" "+i+ " ");
-                continue;}
-            case 7:  System.out.print(" *"+ " ");
-                continue;
-            case 9:  System.out.print(" *"+ " ");
-                continue;
-            case 10:  {System.out.print(i+ " ");
-                System.out.println();
-                continue;}
-            case 13:  System.out.print(" *"+ " ");
-                continue;
-            case 15:  {System.out.print(i+ " ");
-                System.out.println();
-                continue;}
-            case 17:  System.out.print(" *"+ " ");
-                continue;
-            case 19:  System.out.print(" *"+ " ");
-                continue;
-            case 20:  {System.out.print(i+ " ");
-                System.out.println();
-                continue;}
-
-            case 21:  System.out.print(" *"+ " ");
-                continue;
-            case 25:  System.out.print(" *"+ " ");
-                continue;
-            default: {
-                if (i<10) System.out.print(" " + i + " ");
-                else System.out.print(i + " ");
-                continue;
-            }
-        }
-
+/*public class LinkedList { private Node head; private Node tail; private int size;
+    public LinkedList() {
+        tail = null;
+        head = null;
+        size = 0;
     }
 
-    //PUT YOUR CODE HERE
-}
-}
+    public void add (Integer data) {
+        Node newNode = new Node();
+        newNode.setData(data);
+        if (tail == null) {
+            tail = newNode;
+            head = newNode;
+            size++;
+        }
+        else {
+            tail.setNext(newNode);
+            tail = newNode;
+            size++;
+        }
+    }
+
+    public Integer get(int index) {
+        Node findNode = head;
+        if (findNode == null || index > (size - 1) || index < 0) {
+            return null;
+        }
+        while (findNode != null) {
+            for (int i = 0; i < index; i++) {
+                findNode = findNode.getNext();
+            }
+            return findNode.getData();
+        }
+        return findNode.getData();
+    }
+
+    public boolean delete(int index) {
+        Node curNode = head;
+        Node prevNode = head;
+        while (curNode != null) {
+            if (curNode == null || index > (size - 1) || index < 0) {
+                return false;}
+            if (head == tail) {
+                tail = null;
+                head = null;
+                size--;
+                return true;
+            }
+            if (index == 0) {
+                head = head.getNext();
+                size--;
+                return true;}
+
+            else    {
+                while (curNode != null) {
+                    curNode = curNode.getNext();
+                    for (int i = 0; i < (index-1); i++) {
+                        prevNode = curNode;
+                        curNode = curNode.getNext();
+                    }
+                    prevNode.setNext(curNode.getNext());
+                    size--;
+                    return true;
+                }
+            }
+        }
+        return true;
+    }
+
+    public int size() {
+        return size;
+    }
+}*/
+
 
 
 
