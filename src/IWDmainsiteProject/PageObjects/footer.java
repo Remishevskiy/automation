@@ -49,7 +49,7 @@ public class footer {
 
         String actual_magento_development = driver.findElement(magento_development).getText();
         System.out.println(actual_magento_development);
-        String expected_magento_development = "MAGENTO DEVELOPMENT";//////////////////////1
+        String expected_magento_development = "MAGENTO DEVELOPMENT1";//////////////////////1
         assertEquals(actual_magento_development, expected_magento_development);
         System.out.println("magento_development is correct");
 
