@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="Footer done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Card.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Comparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Deck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Fibonacci.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/FibonacciTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Rank.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Sort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Prometheus/Suit.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" afterPath="" />
+    <list default="true" id="475f47dc-a74b-48f1-9ad9-b948e1c2f9a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/footer.java" afterPath="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/footer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utility/SquareRoot2.java" afterPath="$PROJECT_DIR$/src/utility/SquareRoot2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/LaunchingChrome.java" afterPath="$PROJECT_DIR$/src/automationFramework/LaunchingChrome.java" />
     </list>
     <ignored path="untitled1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,19 +34,41 @@
       <file leaf-file-name="Magento_footer_b2b_wholesale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_b2b_wholesale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="967">
-              <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportAndScreenShot.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Magento_footer_blog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weeetail_footer_blog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Weeetail_footer_blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportAndScreenShot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Meet_the_team.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/WordPress_header3_Portfolio.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer_magento_support.java" />
@@ -111,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer_facebook.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer_blog2.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer_reviews.java" />
-        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_b2b_wholesale.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_blog.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_facebook.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_google.java" />
@@ -145,6 +154,8 @@
         <option value="$PROJECT_DIR$/src/Prometheus/Sort.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/footer.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/test.java" />
+        <option value="$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_b2b_wholesale.java" />
         <option value="$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java" />
       </list>
     </option>
@@ -183,20 +194,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.8 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -307,6 +304,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IWDmainsiteProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Report" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="image" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,14 +389,13 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/lib/testng-6.9.9.jar!/" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extent-config.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Testing\untitled1\src\driver" />
-      <recent name="D:\Testing\untitled1\src\" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="driver" />
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Testing\untitled1\src\IWDmainsiteProject" />
@@ -381,38 +403,18 @@
       <recent name="D:\Testing\untitled1\src\driver" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Prometheus" />
       <recent name="IWDmainsiteProject.TestCases.footer" />
+      <recent name="Prometheus" />
       <recent name="IWDmainsiteProject.TestCases" />
       <recent name="IWDmainsiteProject.PageObjects" />
       <recent name="utility" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="driver" />
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Testing\untitled1\src\driver" />
+      <recent name="D:\Testing\untitled1\src\" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Magento_footer_b2b_wholesale">
-    <configuration default="false" name="FibonacciTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Prometheus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Prometheus.FibonacciTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="untitled1" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.Magento_footer_blog">
     <configuration default="false" name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -486,6 +488,39 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="IWDmainsiteProject.TestCases.footer" />
       <option name="MAIN_CLASS_NAME" value="IWDmainsiteProject.TestCases.footer.Magento_footer_b2b_wholesale" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="Magento_footer_blog" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="IWDmainsiteProject.TestCases.footer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="untitled1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="IWDmainsiteProject.TestCases.footer" />
+      <option name="MAIN_CLASS_NAME" value="IWDmainsiteProject.TestCases.footer.Magento_footer_blog" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -773,19 +808,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.driver in untitled1" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.TestNG." />
-      <item index="2" class="java.lang.String" itemvalue="Application.FibonacciTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Test2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Sort" />
-      <item index="5" class="java.lang.String" itemvalue="Application.LaunchingChrome" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.Magento_footer_b2b_wholesale" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Test2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Sort" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LaunchingChrome" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.Magento_footer_b2b_wholesale" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.Magento_footer_blog" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.Magento_footer_b2b_wholesale" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LaunchingChrome" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Sort" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Test2" />
-        <item index="4" class="java.lang.String" itemvalue="Application.FibonacciTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.Magento_footer_blog" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.Magento_footer_b2b_wholesale" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LaunchingChrome" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Sort" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -815,6 +850,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Император\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1027,39 +1065,46 @@
       <option name="project" value="LOCAL" />
       <updated>1489357185530</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Last save">
+      <created>1489854331211</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1489854331211</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 09m 32s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 00m 30s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 09m 46s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 02m 15s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 11m 51s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 03m 39s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 13m 46s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 07m 14s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 34m 43s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 08m 12s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 35m 49s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 10m 50s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 42m 54s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 11m 40s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 43m 27s.xml">
+    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 19h 39m 45s.xml">
       <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 45m 58s.xml">
-      <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
+    <history-entry file="Magento_footer_blog - 2017.03.18 at 19h 06m 02s.xml">
+      <configuration name="Magento_footer_blog" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Magento_footer_b2b_wholesale - 2017.03.18 at 17h 47m 01s.xml">
-      <configuration name="Magento_footer_b2b_wholesale" configurationId="TestNG" />
+    <history-entry file="Magento_footer_blog - 2017.03.18 at 19h 41m 25s.xml">
+      <configuration name="Magento_footer_blog" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
@@ -1078,12 +1123,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23434125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630669" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20302376" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2699784" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34557235" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
@@ -1100,7 +1146,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23434125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26349893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1154,7 +1199,8 @@
     <MESSAGE value="Footer, b2b get started" />
     <MESSAGE value="Footer, partner program" />
     <MESSAGE value="Footer done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer done" />
+    <MESSAGE value="Last save" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last save" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1167,31 +1213,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/WordPress_footer_google.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_google.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_facebook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1234,13 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Weeetail_footer_blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1339,6 +1357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="152" column="23" lean-forward="false" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,13 +1488,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentTest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1486,33 +1499,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentReports.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="245" column="29" lean-forward="false" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/Report/Report.html" />
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/PageObjects/footer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1423">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_b2b_wholesale.java">
+    <entry file="file://$PROJECT_DIR$/nullIWDmainsiteProject.TestCases.footer.Magento_footer_b2b_wholesale.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentReports.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        <state relative-caret-position="102">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../QAtools/JavaInstal/extentreports-java-2.41.2/extentreports-java-2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/ExtentTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Weeetail_footer_blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/AppModule/ReportAndScreenShot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state relative-caret-position="391">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_b2b_wholesale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IWDmainsiteProject/TestCases/footer/Magento_footer_blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

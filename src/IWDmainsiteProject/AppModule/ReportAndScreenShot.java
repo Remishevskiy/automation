@@ -44,6 +44,7 @@ public class ReportAndScreenShot {
                 .addSystemInfo("Environment", "Firefpx 46.0")
                 .addSystemInfo("User Name", "Remishevskiy Oleg");
 
+
         return extent;
     }
 
@@ -53,9 +54,9 @@ public class ReportAndScreenShot {
         File source = ts.getScreenshotAs(OutputType.FILE);
 
 
-        //String dest = "D:/Testing/untitled1/src/report/src/IWDmainsiteProject/Report/image/"+screenShotName+".png";
+        //String dest = "D:/Testing/untitled1/src/IWDmainsiteProject/Report/image/"+screenShotName+".png";
 
-        String dest = System.getProperty("user.dir")+"/src/report/src/IWDmainsiteProject/Report/image/"+screenShotName+".png";
+        String dest = System.getProperty("user.dir")+"\\src\\IWDmainsiteProject\\Report\\image\\"+screenShotName+".png";
         //String dest = System.getProperty("D:/Testing/untitled1/src/report/src/IWDmainsiteProject/Report/image/"+screenShotName+".jpg");
         System.out.println(dest);
         File destination = new File(dest);
